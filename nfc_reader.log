@@ -1,0 +1,1642 @@
+2025-08-01 13:36:11,069 - INFO - アプリケーション開始
+2025-08-01 13:36:11,876 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 13:36:11,876 - INFO - Linux全画面表示設定完了
+2025-08-01 13:36:12,005 - INFO - NFC初期化開始
+2025-08-01 13:36:12,030 - INFO - I2C初期化完了
+2025-08-01 13:36:12,064 - INFO - PN532オブジェクト作成完了
+2025-08-01 13:36:12,082 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 13:36:12,099 - INFO - SAM設定完了
+2025-08-01 13:36:12,100 - INFO - NFC初期化完了
+2025-08-01 13:36:12,101 - INFO - 読み取りループ開始
+2025-08-01 13:36:17,050 - INFO - タグ検出: 04f36801c22a81
+2025-08-01 13:36:17,051 - INFO - タグ処理開始
+2025-08-01 13:36:17,052 - INFO - UID: 04f36801c22a81, バイト列: [4, 243, 104, 1, 194, 42, 129]
+2025-08-01 13:36:17,060 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f36801c22a81
+2025-08-01 13:36:17,071 - INFO - NFCタグ書き込み開始
+2025-08-01 13:36:17,625 - INFO - NFCタグ書き込み完了
+2025-08-01 13:36:17,626 - INFO - Bluetooth送信開始
+2025-08-01 13:36:17,627 - INFO - Bluetooth送信開始 - UID: 04f36801c22a81
+2025-08-01 13:36:17,627 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:36:17,644 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:36:17,647 - INFO - タイムアウト設定完了
+2025-08-01 13:36:17,663 - ERROR - 接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:36:17,675 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 382, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:36:17,678 - INFO - Bluetooth送信完了
+2025-08-01 13:36:17,681 - INFO - タグ処理完了
+2025-08-01 13:36:19,712 - INFO - タグ検出: 04fb6801c22a81
+2025-08-01 13:36:19,712 - INFO - タグ処理開始
+2025-08-01 13:36:19,715 - INFO - UID: 04fb6801c22a81, バイト列: [4, 251, 104, 1, 194, 42, 129]
+2025-08-01 13:36:19,718 - INFO - 生成URL: https://akioka.cloud/questionnaire/04fb6801c22a81
+2025-08-01 13:36:19,727 - INFO - NFCタグ書き込み開始
+2025-08-01 13:36:20,289 - INFO - NFCタグ書き込み完了
+2025-08-01 13:36:20,290 - INFO - Bluetooth送信開始
+2025-08-01 13:36:20,291 - INFO - Bluetooth送信開始 - UID: 04fb6801c22a81
+2025-08-01 13:36:20,291 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:36:20,294 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:36:20,297 - INFO - タイムアウト設定完了
+2025-08-01 13:36:20,308 - ERROR - 接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:36:20,310 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 382, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:36:20,312 - INFO - Bluetooth送信完了
+2025-08-01 13:36:20,313 - INFO - タグ処理完了
+2025-08-01 13:36:22,344 - INFO - タグ検出: 04fb6801c22a81
+2025-08-01 13:36:22,345 - INFO - タグ処理開始
+2025-08-01 13:36:22,348 - INFO - UID: 04fb6801c22a81, バイト列: [4, 251, 104, 1, 194, 42, 129]
+2025-08-01 13:36:22,360 - INFO - 生成URL: https://akioka.cloud/questionnaire/04fb6801c22a81
+2025-08-01 13:36:22,364 - INFO - NFCタグ書き込み開始
+2025-08-01 13:36:22,930 - INFO - NFCタグ書き込み完了
+2025-08-01 13:36:22,931 - INFO - Bluetooth送信開始
+2025-08-01 13:36:22,932 - INFO - Bluetooth送信開始 - UID: 04fb6801c22a81
+2025-08-01 13:36:22,932 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:36:22,936 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:36:22,941 - INFO - タイムアウト設定完了
+2025-08-01 13:36:22,954 - ERROR - 接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:36:22,955 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 382, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:36:22,956 - INFO - Bluetooth送信完了
+2025-08-01 13:36:22,959 - INFO - タグ処理完了
+2025-08-01 13:36:24,998 - INFO - タグ検出: 04fb6801c22a81
+2025-08-01 13:36:24,999 - INFO - タグ処理開始
+2025-08-01 13:36:25,001 - INFO - UID: 04fb6801c22a81, バイト列: [4, 251, 104, 1, 194, 42, 129]
+2025-08-01 13:36:25,004 - INFO - 生成URL: https://akioka.cloud/questionnaire/04fb6801c22a81
+2025-08-01 13:36:25,008 - INFO - NFCタグ書き込み開始
+2025-08-01 13:36:25,589 - INFO - NFCタグ書き込み完了
+2025-08-01 13:36:25,590 - INFO - Bluetooth送信開始
+2025-08-01 13:36:25,590 - INFO - Bluetooth送信開始 - UID: 04fb6801c22a81
+2025-08-01 13:36:25,591 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:36:25,593 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:36:25,594 - INFO - タイムアウト設定完了
+2025-08-01 13:36:25,609 - ERROR - 接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:36:25,610 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 382, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:36:25,611 - INFO - Bluetooth送信完了
+2025-08-01 13:36:25,615 - INFO - タグ処理完了
+2025-08-01 13:36:27,655 - INFO - タグ検出: 04fb6801c22a81
+2025-08-01 13:36:27,656 - INFO - タグ処理開始
+2025-08-01 13:36:27,656 - INFO - UID: 04fb6801c22a81, バイト列: [4, 251, 104, 1, 194, 42, 129]
+2025-08-01 13:36:27,659 - INFO - 生成URL: https://akioka.cloud/questionnaire/04fb6801c22a81
+2025-08-01 13:36:27,662 - INFO - NFCタグ書き込み開始
+2025-08-01 13:36:29,042 - INFO - NFCタグ書き込み完了
+2025-08-01 13:36:29,043 - INFO - Bluetooth送信開始
+2025-08-01 13:36:29,043 - INFO - Bluetooth送信開始 - UID: 04fb6801c22a81
+2025-08-01 13:36:29,044 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:36:29,045 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:36:29,052 - INFO - タイムアウト設定完了
+2025-08-01 13:36:29,061 - ERROR - 接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:36:29,062 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 382, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:36:29,063 - INFO - Bluetooth送信完了
+2025-08-01 13:36:29,065 - INFO - タグ処理完了
+2025-08-01 13:38:20,253 - INFO - アプリケーション開始
+2025-08-01 13:38:20,452 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 13:38:20,453 - INFO - Linux全画面表示設定完了
+2025-08-01 13:38:20,557 - INFO - NFC初期化開始
+2025-08-01 13:38:20,566 - INFO - I2C初期化完了
+2025-08-01 13:38:20,599 - INFO - PN532オブジェクト作成完了
+2025-08-01 13:38:20,615 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 13:38:20,632 - INFO - SAM設定完了
+2025-08-01 13:38:20,633 - INFO - NFC初期化完了
+2025-08-01 13:38:20,634 - INFO - 読み取りループ開始
+2025-08-01 13:38:31,087 - INFO - タグ検出: 04f36801c22a81
+2025-08-01 13:38:31,089 - INFO - タグ処理開始
+2025-08-01 13:38:31,093 - INFO - UID: 04f36801c22a81, バイト列: [4, 243, 104, 1, 194, 42, 129]
+2025-08-01 13:38:31,108 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f36801c22a81
+2025-08-01 13:38:31,123 - INFO - NFCタグ書き込み開始
+2025-08-01 13:38:31,704 - INFO - NFCタグ書き込み完了
+2025-08-01 13:38:31,705 - INFO - Bluetooth送信開始
+2025-08-01 13:38:31,710 - INFO - Bluetooth送信開始 - UID: 04f36801c22a81
+2025-08-01 13:38:31,710 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:38:31,713 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:38:31,721 - INFO - タイムアウト設定完了
+2025-08-01 13:38:32,222 - INFO - Bluetooth接続試行中...
+2025-08-01 13:38:32,233 - ERROR - Bluetooth接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:38:32,244 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 388, in send_to_camera
+    try:
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:38:32,245 - INFO - Bluetooth送信完了
+2025-08-01 13:38:32,251 - INFO - タグ処理完了
+2025-08-01 13:45:34,807 - INFO - アプリケーション開始
+2025-08-01 13:45:35,019 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 13:45:35,020 - INFO - Linux全画面表示設定完了
+2025-08-01 13:45:35,134 - INFO - NFC初期化開始
+2025-08-01 13:45:35,144 - INFO - I2C初期化完了
+2025-08-01 13:45:35,179 - INFO - PN532オブジェクト作成完了
+2025-08-01 13:45:35,196 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 13:45:35,214 - INFO - SAM設定完了
+2025-08-01 13:45:35,215 - INFO - NFC初期化完了
+2025-08-01 13:45:35,216 - INFO - 読み取りループ開始
+2025-08-01 13:45:52,630 - INFO - タグ検出: 04f96801c22a81
+2025-08-01 13:45:52,633 - INFO - タグ処理開始
+2025-08-01 13:45:52,637 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-01 13:45:52,668 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-01 13:45:52,683 - INFO - NFCタグ書き込み開始
+2025-08-01 13:45:53,263 - INFO - NFCタグ書き込み完了
+2025-08-01 13:45:53,264 - INFO - Bluetooth送信開始
+2025-08-01 13:45:53,271 - INFO - Bluetooth送信開始 (試行 1/3) - UID: 04f96801c22a81
+2025-08-01 13:45:53,272 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:45:53,280 - INFO - Bluetoothデバイス確認中: D8:3A:DD:85:B6:0F
+2025-08-01 13:46:04,318 - INFO - 発見されたデバイス数: 1
+2025-08-01 13:46:04,318 - INFO - デバイス: A4:F9:33:5F:2F:57 - AK-PC36-23
+2025-08-01 13:46:04,319 - WARNING - ターゲットデバイスが見つかりません: D8:3A:DD:85:B6:0F
+2025-08-01 13:46:04,319 - WARNING - デバイスが見つからないため、接続を試行します
+2025-08-01 13:46:06,720 - INFO - Bluetoothアダプターリセット完了
+2025-08-01 13:46:08,721 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:46:08,722 - INFO - タイムアウト設定完了
+2025-08-01 13:46:08,724 - INFO - Bluetooth接続試行中...
+2025-08-01 13:46:12,232 - ERROR - Bluetooth接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:46:12,242 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 441, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:46:15,245 - INFO - Bluetooth送信開始 (試行 2/3) - UID: 04f96801c22a81
+2025-08-01 13:46:15,245 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:46:17,248 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:46:17,249 - INFO - タイムアウト設定完了
+2025-08-01 13:46:17,252 - INFO - Bluetooth接続試行中...
+2025-08-01 13:46:20,462 - ERROR - Bluetooth接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:46:20,463 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 441, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:46:23,465 - INFO - Bluetooth送信開始 (試行 3/3) - UID: 04f96801c22a81
+2025-08-01 13:46:23,465 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:46:25,466 - INFO - Bluetoothソケット作成完了
+2025-08-01 13:46:25,467 - INFO - タイムアウト設定完了
+2025-08-01 13:46:25,471 - INFO - Bluetooth接続試行中...
+2025-08-01 13:46:29,421 - ERROR - Bluetooth接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 13:46:29,423 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 441, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 13:46:32,425 - ERROR - Bluetooth送信失敗 (最大試行回数: 3)
+2025-08-01 13:46:32,426 - INFO - Bluetooth送信完了
+2025-08-01 13:46:32,428 - INFO - タグ処理完了
+2025-08-01 13:54:59,617 - INFO - 読み取りループ終了
+2025-08-01 13:55:07,290 - INFO - アプリケーション終了
+2025-08-01 13:55:33,977 - INFO - アプリケーション開始
+2025-08-01 13:55:34,180 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 13:55:34,181 - INFO - Linux全画面表示設定完了
+2025-08-01 13:55:34,286 - INFO - NFC初期化開始
+2025-08-01 13:55:34,295 - INFO - I2C初期化完了
+2025-08-01 13:55:34,327 - INFO - PN532オブジェクト作成完了
+2025-08-01 13:55:34,344 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 13:55:34,360 - INFO - SAM設定完了
+2025-08-01 13:55:34,361 - INFO - NFC初期化完了
+2025-08-01 13:55:34,362 - INFO - 読み取りループ開始
+2025-08-01 13:55:36,981 - INFO - タグ検出: 04f96801c22a81
+2025-08-01 13:55:36,982 - INFO - タグ処理開始
+2025-08-01 13:55:36,984 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-01 13:55:37,003 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-01 13:55:37,007 - INFO - NFCタグ書き込み開始
+2025-08-01 13:55:37,569 - INFO - NFCタグ書き込み完了
+2025-08-01 13:55:37,570 - INFO - Bluetooth送信開始
+2025-08-01 13:55:37,574 - INFO - Bluetooth送信開始 (試行 1/3) - UID: 04f96801c22a81
+2025-08-01 13:55:37,576 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 13:55:37,584 - INFO - Bluetoothデバイス確認中: D8:3A:DD:85:B6:0F
+2025-08-01 13:55:46,117 - INFO - アプリケーション終了
+2025-08-01 15:37:31,777 - INFO - アプリケーション開始
+2025-08-01 15:37:31,975 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 15:37:31,976 - INFO - Linux全画面表示設定完了
+2025-08-01 15:37:32,081 - INFO - NFC初期化開始
+2025-08-01 15:37:32,090 - INFO - I2C初期化完了
+2025-08-01 15:37:32,122 - INFO - PN532オブジェクト作成完了
+2025-08-01 15:37:32,139 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 15:37:32,156 - INFO - SAM設定完了
+2025-08-01 15:37:32,157 - INFO - NFC初期化完了
+2025-08-01 15:37:32,158 - INFO - 読み取りループ開始
+2025-08-01 15:37:35,632 - INFO - タグ検出: 04f96801c22a81
+2025-08-01 15:37:35,633 - INFO - タグ処理開始
+2025-08-01 15:37:35,634 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-01 15:37:35,644 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-01 15:37:35,653 - INFO - NFCタグ書き込み開始
+2025-08-01 15:37:37,846 - INFO - NFCタグ書き込み完了
+2025-08-01 15:37:37,848 - INFO - Bluetooth送信開始
+2025-08-01 15:37:37,859 - INFO - Bluetooth送信開始 (試行 1/3) - UID: 04f96801c22a81
+2025-08-01 15:37:37,860 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 15:37:37,866 - INFO - Bluetoothデバイス確認中: D8:3A:DD:85:B6:0F
+2025-08-01 15:37:48,569 - INFO - 発見されたデバイス数: 1
+2025-08-01 15:37:48,569 - INFO - デバイス: A4:F9:33:5F:2F:57 - AK-PC36-23
+2025-08-01 15:37:48,570 - WARNING - ターゲットデバイスが見つかりません: D8:3A:DD:85:B6:0F
+2025-08-01 15:37:48,570 - WARNING - デバイスが見つからないため、接続を試行します
+2025-08-01 15:37:50,900 - INFO - Bluetoothアダプターリセット完了
+2025-08-01 15:37:52,900 - INFO - Bluetoothソケット作成完了
+2025-08-01 15:37:52,901 - INFO - タイムアウト設定完了
+2025-08-01 15:37:52,902 - INFO - Bluetooth接続試行中...
+2025-08-01 15:37:56,191 - ERROR - Bluetooth接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 15:37:56,197 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 441, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 15:37:59,199 - INFO - Bluetooth送信開始 (試行 2/3) - UID: 04f96801c22a81
+2025-08-01 15:37:59,199 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 15:38:01,200 - INFO - Bluetoothソケット作成完了
+2025-08-01 15:38:01,202 - INFO - タイムアウト設定完了
+2025-08-01 15:38:01,219 - INFO - Bluetooth接続試行中...
+2025-08-01 15:38:05,146 - ERROR - Bluetooth接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 15:38:05,149 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "<string>", line 3, in connect
+_bluetooth.error: (77, 'File descriptor in bad state')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 441, in send_to_camera
+    sock.connect((server_mac_address, port))
+  File "<string>", line 5, in connect
+bluetooth.btcommon.BluetoothError: [Errno 77] File descriptor in bad state
+
+2025-08-01 15:38:07,196 - INFO - アプリケーション終了
+2025-08-01 15:38:10,550 - INFO - アプリケーション開始
+2025-08-01 15:38:10,750 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 15:38:10,751 - INFO - Linux全画面表示設定完了
+2025-08-01 15:38:10,855 - INFO - NFC初期化開始
+2025-08-01 15:38:10,864 - INFO - I2C初期化完了
+2025-08-01 15:38:10,898 - INFO - PN532オブジェクト作成完了
+2025-08-01 15:38:10,915 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 15:38:10,931 - INFO - SAM設定完了
+2025-08-01 15:38:10,933 - INFO - NFC初期化完了
+2025-08-01 15:38:10,934 - INFO - 読み取りループ開始
+2025-08-01 15:38:13,865 - INFO - タグ検出: 04f96801c22a81
+2025-08-01 15:38:13,866 - INFO - タグ処理開始
+2025-08-01 15:38:13,870 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-01 15:38:13,874 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-01 15:38:13,883 - INFO - NFCタグ書き込み開始
+2025-08-01 15:38:14,448 - INFO - NFCタグ書き込み完了
+2025-08-01 15:38:14,449 - INFO - Bluetooth送信開始
+2025-08-01 15:38:14,455 - INFO - Bluetooth送信開始 (試行 1/3) - UID: 04f96801c22a81
+2025-08-01 15:38:14,456 - INFO - Bluetooth設定 - MAC: D8:3A:DD:85:B6:0F, Port: 1
+2025-08-01 15:38:14,459 - INFO - Bluetoothデバイス確認中: D8:3A:DD:85:B6:0F
+2025-08-01 15:38:25,014 - INFO - 発見されたデバイス数: 1
+2025-08-01 15:38:25,015 - INFO - デバイス: A4:F9:33:5F:2F:57 - AK-PC36-23
+2025-08-01 15:38:25,016 - WARNING - ターゲットデバイスが見つかりません: D8:3A:DD:85:B6:0F
+2025-08-01 15:38:25,016 - WARNING - デバイスが見つからないため、接続を試行します
+2025-08-01 15:38:25,154 - INFO - アプリケーション終了
+2025-08-01 15:41:10,982 - INFO - アプリケーション開始
+2025-08-01 15:41:11,187 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 15:41:11,188 - INFO - Linux全画面表示設定完了
+2025-08-01 15:41:11,292 - INFO - NFC初期化開始
+2025-08-01 15:41:11,301 - INFO - I2C初期化完了
+2025-08-01 15:41:11,333 - INFO - PN532オブジェクト作成完了
+2025-08-01 15:41:11,350 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 15:41:11,366 - INFO - SAM設定完了
+2025-08-01 15:41:11,367 - INFO - NFC初期化完了
+2025-08-01 15:41:11,368 - INFO - 読み取りループ開始
+2025-08-01 15:41:16,792 - INFO - タグ検出: 04f96801c22a81
+2025-08-01 15:41:16,795 - INFO - タグ処理開始
+2025-08-01 15:41:16,797 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-01 15:41:16,812 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-01 15:41:16,825 - INFO - NFCタグ書き込み開始
+2025-08-01 15:41:17,399 - INFO - NFCタグ書き込み完了
+2025-08-01 15:41:17,400 - INFO - Bluetooth送信開始
+2025-08-01 15:41:17,401 - INFO - Bluetooth送信開始 - UID: 04f96801c22a81
+2025-08-01 15:41:18,489 - ERROR - Bluetooth接続エラー: [Errno 77] File descriptor in bad state
+2025-08-01 15:41:18,490 - INFO - Bluetooth送信完了
+2025-08-01 15:41:18,495 - INFO - タグ処理完了
+2025-08-01 15:43:09,298 - INFO - アプリケーション終了
+2025-08-01 15:43:10,881 - INFO - アプリケーション開始
+2025-08-01 15:43:11,084 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 15:43:11,085 - INFO - Linux全画面表示設定完了
+2025-08-01 15:43:11,190 - INFO - NFC初期化開始
+2025-08-01 15:43:11,199 - INFO - I2C初期化完了
+2025-08-01 15:43:11,231 - INFO - PN532オブジェクト作成完了
+2025-08-01 15:43:11,248 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 15:43:11,265 - INFO - SAM設定完了
+2025-08-01 15:43:11,266 - INFO - NFC初期化完了
+2025-08-01 15:43:11,266 - INFO - 読み取りループ開始
+2025-08-01 15:43:14,128 - INFO - タグ検出: 04f96801c22a81
+2025-08-01 15:43:14,129 - INFO - タグ処理開始
+2025-08-01 15:43:14,130 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-01 15:43:14,133 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-01 15:43:14,134 - INFO - NFCタグ書き込み開始
+2025-08-01 15:43:14,810 - INFO - NFCタグ書き込み完了
+2025-08-01 15:43:14,812 - INFO - Bluetooth送信開始
+2025-08-01 15:43:14,822 - INFO - Bluetooth送信開始 - UID: 04f96801c22a81
+2025-08-01 15:43:16,231 - INFO - Bluetooth送信完了
+2025-08-01 15:43:16,233 - INFO - タグ処理完了
+2025-08-01 15:43:28,451 - INFO - タグ検出: 04f96801c22a81
+2025-08-01 15:43:28,452 - INFO - タグ処理開始
+2025-08-01 15:43:28,454 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-01 15:43:28,476 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-01 15:43:28,489 - INFO - NFCタグ書き込み開始
+2025-08-01 15:43:29,060 - INFO - NFCタグ書き込み完了
+2025-08-01 15:43:29,061 - INFO - Bluetooth送信開始
+2025-08-01 15:43:29,062 - INFO - Bluetooth送信開始 - UID: 04f96801c22a81
+2025-08-01 15:43:30,332 - INFO - Bluetooth送信完了
+2025-08-01 15:43:30,333 - INFO - タグ処理完了
+2025-08-01 15:50:22,073 - INFO - アプリケーション終了
+2025-08-01 15:50:23,753 - INFO - アプリケーション開始
+2025-08-01 15:50:23,960 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 15:50:23,961 - INFO - Linux全画面表示設定完了
+2025-08-01 15:50:24,067 - INFO - NFC初期化開始
+2025-08-01 15:50:24,076 - INFO - I2C初期化完了
+2025-08-01 15:50:24,109 - INFO - PN532オブジェクト作成完了
+2025-08-01 15:50:24,117 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 15:50:24,133 - INFO - SAM設定完了
+2025-08-01 15:50:24,134 - INFO - NFC初期化完了
+2025-08-01 15:50:24,135 - INFO - 読み取りループ開始
+2025-08-01 15:50:32,505 - INFO - タグ検出: 04f96801c22a81
+2025-08-01 15:50:32,506 - INFO - タグ処理開始
+2025-08-01 15:50:32,511 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-01 15:50:32,513 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-01 15:50:32,525 - INFO - NFCタグ書き込み開始
+2025-08-01 15:50:33,081 - INFO - NFCタグ書き込み完了
+2025-08-01 15:50:33,082 - INFO - Bluetooth送信開始
+2025-08-01 15:50:33,086 - INFO - Bluetooth送信開始 - UID: 04f96801c22a81
+2025-08-01 15:50:33,108 - INFO - Bluetooth送信完了 - UID: 04f96801c22a81
+2025-08-01 15:50:33,111 - INFO - Bluetooth送信完了
+2025-08-01 15:50:33,115 - INFO - タグ処理完了
+2025-08-01 16:00:49,229 - INFO - アプリケーション開始
+2025-08-01 16:00:49,431 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 16:00:49,432 - INFO - Linux全画面表示設定完了
+2025-08-01 16:00:49,537 - INFO - NFC初期化開始
+2025-08-01 16:00:49,546 - INFO - I2C初期化完了
+2025-08-01 16:00:51,580 - ERROR - NFC初期化エラー: No I2C device at address: 0x24
+2025-08-01 16:00:51,600 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 168, in __probe_for_device
+    self.i2c.writeto(self.device_address, b"")
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/busio.py", line 223, in writeto
+    return self._i2c.writeto(address, buffer, stop=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py", line 60, in writeto
+    self._i2c_bus.write_bytes(address, buffer[start:end])
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/Adafruit_PureIO/smbus.py", line 303, in write_bytes
+    self._device.write(buf)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 174, in __probe_for_device
+    self.i2c.readfrom_into(self.device_address, result)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/busio.py", line 213, in readfrom_into
+    return self._i2c.readfrom_into(address, buffer, stop=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py", line 67, in readfrom_into
+    readin = self._i2c_bus.read_bytes(address, end - start)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/Adafruit_PureIO/smbus.py", line 170, in read_bytes
+    return self._device.read(number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 81, in setup_nfc
+    self.pn532 = PN532_I2C(self.i2c, debug=False)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/i2c.py", line 98, in __init__
+    self._i2c = i2c_device.I2CDevice(i2c, address)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 62, in __init__
+    self.__probe_for_device()
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 176, in __probe_for_device
+    raise ValueError("No I2C device at address: 0x%x" % self.device_address)
+ValueError: No I2C device at address: 0x24
+
+2025-08-01 16:00:51,602 - INFO - 読み取りループ開始
+2025-08-01 16:00:51,704 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:51,707 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:00:52,717 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:52,718 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:00:53,722 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:53,723 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:00:54,740 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:54,742 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:00:55,772 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:55,772 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:00:56,774 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:56,775 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:00:57,781 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:57,782 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:00:58,784 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:58,784 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:00:59,786 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:00:59,788 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:00,790 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:00,792 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:01,804 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:01,806 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:02,809 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:02,811 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:03,814 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:03,815 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:04,824 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:04,826 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:05,835 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:05,837 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:06,840 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:06,841 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:07,852 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:07,853 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:08,299 - INFO - アプリケーション終了
+2025-08-01 16:01:23,594 - INFO - アプリケーション開始
+2025-08-01 16:01:23,798 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 16:01:23,799 - INFO - Linux全画面表示設定完了
+2025-08-01 16:01:23,906 - INFO - NFC初期化開始
+2025-08-01 16:01:23,915 - INFO - I2C初期化完了
+2025-08-01 16:01:25,948 - ERROR - NFC初期化エラー: No I2C device at address: 0x24
+2025-08-01 16:01:25,960 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 168, in __probe_for_device
+    self.i2c.writeto(self.device_address, b"")
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/busio.py", line 223, in writeto
+    return self._i2c.writeto(address, buffer, stop=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py", line 60, in writeto
+    self._i2c_bus.write_bytes(address, buffer[start:end])
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/Adafruit_PureIO/smbus.py", line 303, in write_bytes
+    self._device.write(buf)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 174, in __probe_for_device
+    self.i2c.readfrom_into(self.device_address, result)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/busio.py", line 213, in readfrom_into
+    return self._i2c.readfrom_into(address, buffer, stop=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py", line 67, in readfrom_into
+    readin = self._i2c_bus.read_bytes(address, end - start)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/Adafruit_PureIO/smbus.py", line 170, in read_bytes
+    return self._device.read(number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 81, in setup_nfc
+    self.pn532 = PN532_I2C(self.i2c, debug=False)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/i2c.py", line 98, in __init__
+    self._i2c = i2c_device.I2CDevice(i2c, address)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 62, in __init__
+    self.__probe_for_device()
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 176, in __probe_for_device
+    raise ValueError("No I2C device at address: 0x%x" % self.device_address)
+ValueError: No I2C device at address: 0x24
+
+2025-08-01 16:01:25,962 - INFO - 読み取りループ開始
+2025-08-01 16:01:26,108 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:26,112 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:27,134 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:27,134 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:28,140 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:28,141 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:29,143 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:29,145 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:30,162 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:30,163 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:31,164 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:31,165 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:32,166 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:32,167 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:33,173 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:33,174 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:34,178 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:34,179 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:35,181 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:35,184 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:36,187 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:36,189 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:37,191 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:37,192 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:38,194 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:38,195 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:39,196 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:39,197 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:40,204 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:40,206 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:41,211 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:41,213 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:01:42,218 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:01:42,219 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:03:49,367 - INFO - アプリケーション開始
+2025-08-01 16:03:50,228 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 16:03:50,229 - INFO - Linux全画面表示設定完了
+2025-08-01 16:03:50,371 - INFO - NFC初期化開始
+2025-08-01 16:03:50,396 - INFO - I2C初期化完了
+2025-08-01 16:03:52,422 - ERROR - NFC初期化エラー: No I2C device at address: 0x24
+2025-08-01 16:03:52,440 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 168, in __probe_for_device
+    self.i2c.writeto(self.device_address, b"")
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/busio.py", line 223, in writeto
+    return self._i2c.writeto(address, buffer, stop=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py", line 60, in writeto
+    self._i2c_bus.write_bytes(address, buffer[start:end])
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/Adafruit_PureIO/smbus.py", line 303, in write_bytes
+    self._device.write(buf)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 174, in __probe_for_device
+    self.i2c.readfrom_into(self.device_address, result)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/busio.py", line 213, in readfrom_into
+    return self._i2c.readfrom_into(address, buffer, stop=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py", line 67, in readfrom_into
+    readin = self._i2c_bus.read_bytes(address, end - start)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/Adafruit_PureIO/smbus.py", line 170, in read_bytes
+    return self._device.read(number)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 81, in setup_nfc
+    self.pn532 = PN532_I2C(self.i2c, debug=False)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/i2c.py", line 98, in __init__
+    self._i2c = i2c_device.I2CDevice(i2c, address)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 62, in __init__
+    self.__probe_for_device()
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_bus_device/i2c_device.py", line 176, in __probe_for_device
+    raise ValueError("No I2C device at address: 0x%x" % self.device_address)
+ValueError: No I2C device at address: 0x24
+
+2025-08-01 16:03:52,442 - INFO - 読み取りループ開始
+2025-08-01 16:03:52,556 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:03:52,558 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:03:53,566 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:03:53,567 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:03:54,572 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:03:54,573 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:03:55,576 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:03:55,578 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:03:56,588 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:03:56,590 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:03:57,593 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:03:57,594 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:03:58,597 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:03:58,599 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:03:59,601 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:03:59,603 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:00,606 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:00,607 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:01,610 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:01,611 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:02,620 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:02,621 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:03,624 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:03,626 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:04,628 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:04,629 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:05,631 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:05,632 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:06,633 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:06,634 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:07,635 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:07,636 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:08,638 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:08,639 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:09,640 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:09,640 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:10,642 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:10,644 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:11,648 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:11,651 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:12,654 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:12,655 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:13,658 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:13,659 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:14,661 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:14,663 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+2025-08-01 16:04:15,673 - ERROR - NFC読み取りエラー: 'NFCReaderGUI' object has no attribute 'pn532'
+2025-08-01 16:04:15,675 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 247, in reading_loop
+    uid = self.pn532.read_passive_target(timeout=1)
+          ^^^^^^^^^^
+AttributeError: 'NFCReaderGUI' object has no attribute 'pn532'
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      2025-08-01 16:09:09,444 - INFO - アプリケーション開始
+2025-08-01 16:09:10,270 - INFO - NFCリーダーアプリケーション開始
+2025-08-01 16:09:10,271 - INFO - Linux全画面表示設定完了
+2025-08-01 16:09:10,404 - INFO - NFC初期化開始
+2025-08-01 16:09:10,426 - INFO - I2C初期化完了
+2025-08-01 16:09:10,458 - INFO - PN532オブジェクト作成完了
+2025-08-01 16:09:10,475 - INFO - ファームウェアバージョン: 1.6
+2025-08-01 16:09:10,491 - INFO - SAM設定完了
+2025-08-01 16:09:10,492 - INFO - NFC初期化完了
+2025-08-01 16:09:10,493 - INFO - 読み取りループ開始
+2025-08-01 16:09:20,131 - INFO - タグ検出: 04256901c22a81
+2025-08-01 16:09:20,134 - INFO - タグ処理開始
+2025-08-01 16:09:20,142 - INFO - UID: 04256901c22a81, バイト列: [4, 37, 105, 1, 194, 42, 129]
+2025-08-01 16:09:20,155 - INFO - 生成URL: https://akioka.cloud/questionnaire/04256901c22a81
+2025-08-01 16:09:20,169 - INFO - NFCタグ書き込み開始
+2025-08-01 16:09:20,735 - INFO - NFCタグ書き込み完了
+2025-08-01 16:09:20,736 - INFO - Bluetooth送信開始
+2025-08-01 16:09:20,737 - INFO - Bluetooth送信開始 - UID: 04256901c22a81
+2025-08-01 16:09:20,756 - INFO - Bluetooth送信完了 - UID: 04256901c22a81
+2025-08-01 16:09:20,760 - INFO - Bluetooth送信完了
+2025-08-01 16:09:20,766 - INFO - タグ処理完了
+2025-08-01 16:09:31,714 - INFO - タグ検出: 04226901c22a81
+2025-08-01 16:09:31,715 - INFO - タグ処理開始
+2025-08-01 16:09:31,717 - INFO - UID: 04226901c22a81, バイト列: [4, 34, 105, 1, 194, 42, 129]
+2025-08-01 16:09:31,727 - INFO - 生成URL: https://akioka.cloud/questionnaire/04226901c22a81
+2025-08-01 16:09:31,740 - INFO - NFCタグ書き込み開始
+2025-08-01 16:09:32,313 - INFO - NFCタグ書き込み完了
+2025-08-01 16:09:32,314 - INFO - Bluetooth送信開始
+2025-08-01 16:09:32,314 - INFO - Bluetooth送信開始 - UID: 04226901c22a81
+2025-08-01 16:09:32,333 - INFO - Bluetooth送信完了 - UID: 04226901c22a81
+2025-08-01 16:09:32,334 - INFO - Bluetooth送信完了
+2025-08-01 16:09:32,336 - INFO - タグ処理完了
+2025-08-01 16:09:39,047 - INFO - タグ検出: 04256901c22a81
+2025-08-01 16:09:39,048 - INFO - タグ処理開始
+2025-08-01 16:09:39,052 - INFO - UID: 04256901c22a81, バイト列: [4, 37, 105, 1, 194, 42, 129]
+2025-08-01 16:09:39,055 - INFO - 生成URL: https://akioka.cloud/questionnaire/04256901c22a81
+2025-08-01 16:09:39,065 - INFO - NFCタグ書き込み開始
+2025-08-01 16:09:39,618 - INFO - NFCタグ書き込み完了
+2025-08-01 16:09:39,619 - INFO - Bluetooth送信開始
+2025-08-01 16:09:39,622 - INFO - Bluetooth送信開始 - UID: 04256901c22a81
+2025-08-01 16:09:39,650 - INFO - Bluetooth送信完了 - UID: 04256901c22a81
+2025-08-01 16:09:39,653 - INFO - Bluetooth送信完了
+2025-08-01 16:09:39,655 - INFO - タグ処理完了
+2025-08-01 16:09:47,289 - INFO - タグ検出: 041c6901c22a81
+2025-08-01 16:09:47,291 - INFO - タグ処理開始
+2025-08-01 16:09:47,295 - INFO - UID: 041c6901c22a81, バイト列: [4, 28, 105, 1, 194, 42, 129]
+2025-08-01 16:09:47,316 - INFO - 生成URL: https://akioka.cloud/questionnaire/041c6901c22a81
+2025-08-01 16:09:47,317 - INFO - NFCタグ書き込み開始
+2025-08-01 16:09:47,881 - INFO - NFCタグ書き込み完了
+2025-08-01 16:09:47,882 - INFO - Bluetooth送信開始
+2025-08-01 16:09:47,882 - INFO - Bluetooth送信開始 - UID: 041c6901c22a81
+2025-08-01 16:09:47,900 - INFO - Bluetooth送信完了 - UID: 041c6901c22a81
+2025-08-01 16:09:47,901 - INFO - Bluetooth送信完了
+2025-08-01 16:09:47,907 - INFO - タグ処理完了
+2025-08-01 16:10:09,964 - INFO - タグ検出: 04246901c22a81
+2025-08-01 16:10:09,965 - INFO - タグ処理開始
+2025-08-01 16:10:09,969 - INFO - UID: 04246901c22a81, バイト列: [4, 36, 105, 1, 194, 42, 129]
+2025-08-01 16:10:09,977 - INFO - 生成URL: https://akioka.cloud/questionnaire/04246901c22a81
+2025-08-01 16:10:09,983 - INFO - NFCタグ書き込み開始
+2025-08-01 16:10:10,551 - INFO - NFCタグ書き込み完了
+2025-08-01 16:10:10,552 - INFO - Bluetooth送信開始
+2025-08-01 16:10:10,553 - INFO - Bluetooth送信開始 - UID: 04246901c22a81
+2025-08-01 16:10:10,571 - INFO - Bluetooth送信完了 - UID: 04246901c22a81
+2025-08-01 16:10:10,575 - INFO - Bluetooth送信完了
+2025-08-01 16:10:10,579 - INFO - タグ処理完了
+2025-08-05 08:06:20,112 - INFO - タグ検出: 04246901c22a81
+2025-08-05 08:06:20,114 - INFO - タグ処理開始
+2025-08-05 08:06:20,122 - INFO - UID: 04246901c22a81, バイト列: [4, 36, 105, 1, 194, 42, 129]
+2025-08-05 08:06:20,133 - INFO - 生成URL: https://akioka.cloud/questionnaire/04246901c22a81
+2025-08-05 08:06:20,137 - INFO - NFCタグ書き込み開始
+2025-08-05 08:06:20,707 - INFO - NFCタグ書き込み完了
+2025-08-05 08:06:20,708 - INFO - Bluetooth送信開始
+2025-08-05 08:06:20,712 - INFO - Bluetooth送信開始 - UID: 04246901c22a81
+2025-08-05 08:06:25,175 - ERROR - Bluetooth接続エラー: [Errno 111] Connection refused
+2025-08-05 08:06:25,179 - INFO - Bluetooth送信完了
+2025-08-05 08:06:25,188 - INFO - タグ処理完了
+2025-08-05 08:11:17,459 - INFO - アプリケーション終了
+2025-08-05 08:11:39,051 - INFO - アプリケーション開始
+2025-08-05 08:11:39,247 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 08:11:39,248 - INFO - Linux全画面表示設定完了
+2025-08-05 08:11:39,353 - INFO - NFC初期化開始
+2025-08-05 08:11:39,362 - INFO - I2C初期化完了
+2025-08-05 08:11:39,396 - INFO - PN532オブジェクト作成完了
+2025-08-05 08:11:39,413 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 08:11:39,430 - INFO - SAM設定完了
+2025-08-05 08:11:39,431 - INFO - NFC初期化完了
+2025-08-05 08:11:39,432 - INFO - 読み取りループ開始
+2025-08-05 08:11:46,081 - INFO - タグ検出: 04246901c22a81
+2025-08-05 08:11:46,083 - INFO - タグ処理開始
+2025-08-05 08:11:46,087 - INFO - UID: 04246901c22a81, バイト列: [4, 36, 105, 1, 194, 42, 129]
+2025-08-05 08:11:46,109 - INFO - 生成URL: https://akioka.cloud/questionnaire/04246901c22a81
+2025-08-05 08:11:46,128 - INFO - NFCタグ書き込み開始
+2025-08-05 08:11:46,690 - INFO - NFCタグ書き込み完了
+2025-08-05 08:11:46,691 - INFO - Bluetooth送信開始
+2025-08-05 08:11:46,693 - INFO - Bluetooth送信開始 - UID: 04246901c22a81
+2025-08-05 08:11:46,716 - ERROR - Bluetooth接続エラー: [Errno 111] Connection refused
+2025-08-05 08:11:46,724 - INFO - Bluetooth送信完了
+2025-08-05 08:11:46,728 - INFO - タグ処理完了
+2025-08-05 08:12:19,616 - INFO - タグ検出: 04246901c22a81
+2025-08-05 08:12:19,618 - INFO - タグ処理開始
+2025-08-05 08:12:19,626 - INFO - UID: 04246901c22a81, バイト列: [4, 36, 105, 1, 194, 42, 129]
+2025-08-05 08:12:19,628 - INFO - 生成URL: https://akioka.cloud/questionnaire/04246901c22a81
+2025-08-05 08:12:19,642 - INFO - NFCタグ書き込み開始
+2025-08-05 08:12:20,208 - INFO - NFCタグ書き込み完了
+2025-08-05 08:12:20,209 - INFO - Bluetooth送信開始
+2025-08-05 08:12:20,213 - INFO - Bluetooth送信開始 - UID: 04246901c22a81
+2025-08-05 08:12:20,222 - ERROR - Bluetooth接続エラー: [Errno 111] Connection refused
+2025-08-05 08:12:20,229 - INFO - Bluetooth送信完了
+2025-08-05 08:12:20,241 - INFO - タグ処理完了
+2025-08-05 08:12:32,872 - INFO - タグ検出: 04246901c22a81
+2025-08-05 08:12:32,874 - INFO - タグ処理開始
+2025-08-05 08:12:32,890 - INFO - UID: 04246901c22a81, バイト列: [4, 36, 105, 1, 194, 42, 129]
+2025-08-05 08:12:32,904 - INFO - 生成URL: https://akioka.cloud/questionnaire/04246901c22a81
+2025-08-05 08:12:32,919 - INFO - NFCタグ書き込み開始
+2025-08-05 08:12:33,664 - INFO - NFCタグ書き込み完了
+2025-08-05 08:12:33,665 - INFO - Bluetooth送信開始
+2025-08-05 08:12:33,667 - INFO - Bluetooth送信開始 - UID: 04246901c22a81
+2025-08-05 08:12:33,683 - ERROR - Bluetooth接続エラー: [Errno 111] Connection refused
+2025-08-05 08:12:33,687 - INFO - Bluetooth送信完了
+2025-08-05 08:12:33,705 - INFO - タグ処理完了
+2025-08-05 08:13:00,789 - INFO - アプリケーション終了
+2025-08-05 08:13:02,777 - INFO - アプリケーション開始
+2025-08-05 08:13:02,974 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 08:13:02,975 - INFO - Linux全画面表示設定完了
+2025-08-05 08:13:03,080 - INFO - NFC初期化開始
+2025-08-05 08:13:03,089 - INFO - I2C初期化完了
+2025-08-05 08:13:03,122 - INFO - PN532オブジェクト作成完了
+2025-08-05 08:13:03,140 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 08:13:03,157 - INFO - SAM設定完了
+2025-08-05 08:13:03,159 - INFO - NFC初期化完了
+2025-08-05 08:13:03,160 - INFO - 読み取りループ開始
+2025-08-05 08:13:07,783 - INFO - タグ検出: 041c6901c22a81
+2025-08-05 08:13:07,785 - INFO - タグ処理開始
+2025-08-05 08:13:07,788 - INFO - UID: 041c6901c22a81, バイト列: [4, 28, 105, 1, 194, 42, 129]
+2025-08-05 08:13:07,802 - INFO - 生成URL: https://akioka.cloud/questionnaire/041c6901c22a81
+2025-08-05 08:13:07,813 - INFO - NFCタグ書き込み開始
+2025-08-05 08:13:08,399 - INFO - NFCタグ書き込み完了
+2025-08-05 08:13:08,400 - INFO - Bluetooth送信開始
+2025-08-05 08:13:08,405 - INFO - Bluetooth送信開始 - UID: 041c6901c22a81
+2025-08-05 08:13:08,419 - ERROR - Bluetooth接続エラー: [Errno 111] Connection refused
+2025-08-05 08:13:08,425 - INFO - Bluetooth送信完了
+2025-08-05 08:13:08,429 - INFO - タグ処理完了
+2025-08-05 08:13:31,628 - INFO - アプリケーション終了
+2025-08-05 08:13:33,321 - INFO - アプリケーション開始
+2025-08-05 08:13:33,524 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 08:13:33,525 - INFO - Linux全画面表示設定完了
+2025-08-05 08:13:33,632 - INFO - NFC初期化開始
+2025-08-05 08:13:33,641 - INFO - I2C初期化完了
+2025-08-05 08:13:33,673 - INFO - PN532オブジェクト作成完了
+2025-08-05 08:13:33,690 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 08:13:33,707 - INFO - SAM設定完了
+2025-08-05 08:13:33,708 - INFO - NFC初期化完了
+2025-08-05 08:13:33,709 - INFO - 読み取りループ開始
+2025-08-05 08:13:37,913 - INFO - タグ検出: 04226901c22a81
+2025-08-05 08:13:37,916 - INFO - タグ処理開始
+2025-08-05 08:13:37,919 - INFO - UID: 04226901c22a81, バイト列: [4, 34, 105, 1, 194, 42, 129]
+2025-08-05 08:13:37,942 - INFO - 生成URL: https://akioka.cloud/questionnaire/04226901c22a81
+2025-08-05 08:13:37,959 - INFO - NFCタグ書き込み開始
+2025-08-05 08:13:38,541 - INFO - NFCタグ書き込み完了
+2025-08-05 08:13:38,542 - INFO - Bluetooth送信開始
+2025-08-05 08:13:38,547 - INFO - Bluetooth送信開始 - UID: 04226901c22a81
+2025-08-05 08:13:38,569 - ERROR - Bluetooth接続エラー: [Errno 111] Connection refused
+2025-08-05 08:13:38,572 - INFO - Bluetooth送信完了
+2025-08-05 08:13:38,579 - INFO - タグ処理完了
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        2025-08-05 08:31:13,454 - INFO - アプリケーション開始
+2025-08-05 08:31:14,333 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 08:31:14,333 - INFO - Linux全画面表示設定完了
+2025-08-05 08:31:14,462 - INFO - NFC初期化開始
+2025-08-05 08:31:14,484 - INFO - I2C初期化完了
+2025-08-05 08:31:14,516 - INFO - PN532オブジェクト作成完了
+2025-08-05 08:31:14,533 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 08:31:14,549 - INFO - SAM設定完了
+2025-08-05 08:31:14,550 - INFO - NFC初期化完了
+2025-08-05 08:31:14,551 - INFO - 読み取りループ開始
+2025-08-05 08:31:17,491 - INFO - タグ検出: 04f96801c22a81
+2025-08-05 08:31:17,492 - INFO - タグ処理開始
+2025-08-05 08:31:17,498 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-05 08:31:17,501 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-05 08:31:17,514 - INFO - NFCタグ書き込み開始
+2025-08-05 08:31:18,069 - INFO - NFCタグ書き込み完了
+2025-08-05 08:31:18,070 - INFO - Bluetooth送信開始
+2025-08-05 08:31:18,070 - INFO - Bluetooth送信開始 - UID: 04f96801c22a81
+2025-08-05 08:31:18,081 - INFO - Bluetooth送信完了 - UID: 04f96801c22a81
+2025-08-05 08:31:18,086 - INFO - Bluetooth送信完了
+2025-08-05 08:31:18,090 - INFO - タグ処理完了
+2025-08-05 08:31:38,713 - INFO - タグ検出: 04f96801c22a81
+2025-08-05 08:31:38,714 - INFO - タグ処理開始
+2025-08-05 08:31:38,716 - INFO - UID: 04f96801c22a81, バイト列: [4, 249, 104, 1, 194, 42, 129]
+2025-08-05 08:31:38,738 - INFO - 生成URL: https://akioka.cloud/questionnaire/04f96801c22a81
+2025-08-05 08:31:38,739 - INFO - NFCタグ書き込み開始
+2025-08-05 08:31:39,308 - INFO - NFCタグ書き込み完了
+2025-08-05 08:31:39,309 - INFO - Bluetooth送信開始
+2025-08-05 08:31:39,309 - INFO - Bluetooth送信開始 - UID: 04f96801c22a81
+2025-08-05 08:31:39,324 - ERROR - Bluetooth接続エラー: [Errno 111] Connection refused
+2025-08-05 08:31:39,328 - INFO - Bluetooth送信完了
+2025-08-05 08:31:39,330 - INFO - タグ処理完了
+2025-08-05 08:32:10,891 - INFO - タグ検出: 041b6901c22a81
+2025-08-05 08:32:10,893 - INFO - タグ処理開始
+2025-08-05 08:32:10,894 - INFO - UID: 041b6901c22a81, バイト列: [4, 27, 105, 1, 194, 42, 129]
+2025-08-05 08:32:10,903 - INFO - 生成URL: https://akioka.cloud/questionnaire/041b6901c22a81
+2025-08-05 08:32:10,906 - INFO - NFCタグ書き込み開始
+2025-08-05 08:32:11,650 - INFO - NFCタグ書き込み完了
+2025-08-05 08:32:11,652 - INFO - Bluetooth送信開始
+2025-08-05 08:32:11,654 - INFO - Bluetooth送信開始 - UID: 041b6901c22a81
+2025-08-05 08:32:11,679 - INFO - Bluetooth送信完了 - UID: 041b6901c22a81
+2025-08-05 08:32:11,693 - INFO - Bluetooth送信完了
+2025-08-05 08:32:11,703 - INFO - タグ処理完了
+2025-08-05 08:32:24,887 - INFO - タグ検出: 041b6901c22a81
+2025-08-05 08:32:24,889 - INFO - タグ処理開始
+2025-08-05 08:32:24,892 - INFO - UID: 041b6901c22a81, バイト列: [4, 27, 105, 1, 194, 42, 129]
+2025-08-05 08:32:24,900 - INFO - 生成URL: https://akioka.cloud/questionnaire/041b6901c22a81
+2025-08-05 08:32:24,922 - INFO - NFCタグ書き込み開始
+2025-08-05 08:32:25,645 - INFO - NFCタグ書き込み完了
+2025-08-05 08:32:25,647 - INFO - Bluetooth送信開始
+2025-08-05 08:32:25,654 - INFO - Bluetooth送信開始 - UID: 041b6901c22a81
+2025-08-05 08:32:25,669 - INFO - Bluetooth送信完了 - UID: 041b6901c22a81
+2025-08-05 08:32:25,672 - INFO - Bluetooth送信完了
+2025-08-05 08:32:25,674 - INFO - タグ処理完了
+2025-08-05 08:34:06,553 - INFO - アプリケーション終了
+2025-08-05 08:34:12,679 - INFO - アプリケーション開始
+2025-08-05 08:34:12,874 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 08:34:12,875 - INFO - Linux全画面表示設定完了
+2025-08-05 08:34:12,982 - INFO - NFC初期化開始
+2025-08-05 08:34:12,990 - INFO - I2C初期化完了
+2025-08-05 08:34:13,022 - INFO - PN532オブジェクト作成完了
+2025-08-05 08:34:13,039 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 08:34:13,056 - INFO - SAM設定完了
+2025-08-05 08:34:13,057 - INFO - NFC初期化完了
+2025-08-05 08:34:13,058 - INFO - 読み取りループ開始
+2025-08-05 08:34:17,471 - INFO - タグ検出: 041b6901c22a81
+2025-08-05 08:34:17,473 - INFO - タグ処理開始
+2025-08-05 08:34:17,475 - INFO - UID: 041b6901c22a81, バイト列: [4, 27, 105, 1, 194, 42, 129]
+2025-08-05 08:34:17,489 - INFO - 生成URL: https://akioka.cloud/questionnaire/041b6901c22a81
+2025-08-05 08:34:17,494 - INFO - NFCタグ書き込み開始
+2025-08-05 08:34:18,243 - INFO - NFCタグ書き込み完了
+2025-08-05 08:34:18,245 - INFO - Bluetooth送信開始
+2025-08-05 08:34:18,254 - INFO - Bluetooth送信開始 - UID: 041b6901c22a81
+2025-08-05 08:34:18,282 - INFO - Bluetooth送信完了 - UID: 041b6901c22a81
+2025-08-05 08:34:18,286 - INFO - Bluetooth送信完了
+2025-08-05 08:34:18,295 - INFO - タグ処理完了
+2025-08-05 08:34:20,336 - INFO - タグ検出: 041b6901c22a81
+2025-08-05 08:34:20,338 - INFO - タグ処理開始
+2025-08-05 08:34:20,339 - INFO - UID: 041b6901c22a81, バイト列: [4, 27, 105, 1, 194, 42, 129]
+2025-08-05 08:34:20,345 - INFO - 生成URL: https://akioka.cloud/questionnaire/041b6901c22a81
+2025-08-05 08:34:20,350 - INFO - NFCタグ書き込み開始
+2025-08-05 08:34:20,952 - INFO - NFCタグ書き込み完了
+2025-08-05 08:34:20,953 - INFO - Bluetooth送信開始
+2025-08-05 08:34:20,954 - INFO - Bluetooth送信開始 - UID: 041b6901c22a81
+2025-08-05 08:34:20,970 - INFO - Bluetooth送信完了 - UID: 041b6901c22a81
+2025-08-05 08:34:20,974 - INFO - Bluetooth送信完了
+2025-08-05 08:34:20,979 - INFO - タグ処理完了
+2025-08-05 08:34:47,306 - INFO - アプリケーション終了
+2025-08-05 08:34:48,945 - INFO - アプリケーション開始
+2025-08-05 08:34:49,146 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 08:34:49,147 - INFO - Linux全画面表示設定完了
+2025-08-05 08:34:49,255 - INFO - NFC初期化開始
+2025-08-05 08:34:49,264 - INFO - I2C初期化完了
+2025-08-05 08:34:49,296 - INFO - PN532オブジェクト作成完了
+2025-08-05 08:34:49,314 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 08:34:49,332 - INFO - SAM設定完了
+2025-08-05 08:34:49,332 - INFO - NFC初期化完了
+2025-08-05 08:34:49,333 - INFO - 読み取りループ開始
+2025-08-05 08:34:51,322 - INFO - タグ検出: 041b6901c22a81
+2025-08-05 08:34:51,323 - INFO - タグ処理開始
+2025-08-05 08:34:51,327 - INFO - UID: 041b6901c22a81, バイト列: [4, 27, 105, 1, 194, 42, 129]
+2025-08-05 08:34:51,334 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/041b6901c22a81
+2025-08-05 08:34:51,336 - INFO - NFCタグ書き込み開始
+2025-08-05 08:34:51,889 - INFO - NFCタグ書き込み完了
+2025-08-05 08:34:51,890 - INFO - Bluetooth送信開始
+2025-08-05 08:34:51,891 - INFO - Bluetooth送信開始 - UID: 041b6901c22a81
+2025-08-05 08:34:51,918 - INFO - Bluetooth送信完了 - UID: 041b6901c22a81
+2025-08-05 08:34:51,925 - INFO - Bluetooth送信完了
+2025-08-05 08:34:51,928 - INFO - タグ処理完了
+2025-08-05 09:13:01,377 - INFO - タグ検出: 041b6901c22a81
+2025-08-05 09:13:01,378 - INFO - タグ処理開始
+2025-08-05 09:13:01,382 - INFO - UID: 041b6901c22a81, バイト列: [4, 27, 105, 1, 194, 42, 129]
+2025-08-05 09:13:01,400 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/041b6901c22a81
+2025-08-05 09:13:01,412 - INFO - NFCタグ書き込み開始
+2025-08-05 09:13:01,973 - INFO - NFCタグ書き込み完了
+2025-08-05 09:13:01,973 - INFO - Bluetooth送信開始
+2025-08-05 09:13:01,974 - INFO - Bluetooth送信開始 - UID: 041b6901c22a81
+2025-08-05 09:13:01,994 - INFO - Bluetooth送信完了 - UID: 041b6901c22a81
+2025-08-05 09:13:01,995 - INFO - Bluetooth送信完了
+2025-08-05 09:13:02,006 - INFO - タグ処理完了
+2025-08-05 11:24:39,208 - INFO - タグ検出: 04146901c22a81
+2025-08-05 11:24:39,210 - INFO - タグ処理開始
+2025-08-05 11:24:39,213 - INFO - UID: 04146901c22a81, バイト列: [4, 20, 105, 1, 194, 42, 129]
+2025-08-05 11:24:39,226 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04146901c22a81
+2025-08-05 11:24:39,236 - INFO - NFCタグ書き込み開始
+2025-08-05 11:24:39,801 - INFO - NFCタグ書き込み完了
+2025-08-05 11:24:39,801 - INFO - Bluetooth送信開始
+2025-08-05 11:24:39,806 - INFO - Bluetooth送信開始 - UID: 04146901c22a81
+2025-08-05 11:24:39,823 - INFO - Bluetooth送信完了 - UID: 04146901c22a81
+2025-08-05 11:24:39,824 - INFO - Bluetooth送信完了
+2025-08-05 11:24:39,826 - INFO - タグ処理完了
+2025-08-05 13:42:38,260 - INFO - アプリケーション終了
+2025-08-05 13:58:06,598 - INFO - アプリケーション開始
+2025-08-05 13:58:06,792 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 13:58:06,792 - INFO - Linux全画面表示設定完了
+2025-08-05 13:58:06,892 - INFO - NFC初期化開始
+2025-08-05 13:58:06,901 - INFO - I2C初期化完了
+2025-08-05 13:58:06,933 - INFO - PN532オブジェクト作成完了
+2025-08-05 13:58:06,949 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 13:58:06,965 - INFO - SAM設定完了
+2025-08-05 13:58:06,966 - INFO - NFC初期化完了
+2025-08-05 13:58:06,967 - INFO - 読み取りループ開始
+2025-08-05 13:58:10,514 - INFO - アプリケーション終了
+2025-08-05 13:58:15,564 - INFO - アプリケーション開始
+2025-08-05 13:58:15,823 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 13:58:15,824 - INFO - Linux全画面表示設定完了
+2025-08-05 13:58:15,924 - INFO - NFC初期化開始
+2025-08-05 13:58:15,933 - INFO - I2C初期化完了
+2025-08-05 13:58:15,964 - INFO - PN532オブジェクト作成完了
+2025-08-05 13:58:15,980 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 13:58:15,996 - INFO - SAM設定完了
+2025-08-05 13:58:15,997 - INFO - NFC初期化完了
+2025-08-05 13:58:15,998 - INFO - 読み取りループ開始
+2025-08-05 13:58:46,147 - INFO - アプリケーション開始
+2025-08-05 13:58:47,361 - INFO - NFCリーダーアプリケーション開始
+2025-08-05 13:58:47,361 - INFO - Linux全画面表示設定完了
+2025-08-05 13:58:47,588 - INFO - NFC初期化開始
+2025-08-05 13:58:47,613 - INFO - I2C初期化完了
+2025-08-05 13:58:47,645 - INFO - PN532オブジェクト作成完了
+2025-08-05 13:58:47,661 - INFO - ファームウェアバージョン: 1.6
+2025-08-05 13:58:47,677 - INFO - SAM設定完了
+2025-08-05 13:58:47,678 - INFO - NFC初期化完了
+2025-08-05 13:58:47,679 - INFO - 読み取りループ開始
+2025-08-05 13:58:54,821 - INFO - タグ検出: 04146901c22a81
+2025-08-05 13:58:54,822 - INFO - タグ処理開始
+2025-08-05 13:58:54,826 - INFO - UID: 04146901c22a81, バイト列: [4, 20, 105, 1, 194, 42, 129]
+2025-08-05 13:58:54,835 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04146901c22a81
+2025-08-05 13:58:54,836 - INFO - NFCタグ書き込み開始
+2025-08-05 13:58:55,389 - INFO - NFCタグ書き込み完了
+2025-08-05 13:58:55,389 - INFO - Bluetooth送信開始
+2025-08-05 13:58:55,390 - INFO - Bluetooth送信開始 - UID: 04146901c22a81
+2025-08-05 13:58:55,415 - INFO - Bluetooth送信完了 - UID: 04146901c22a81
+2025-08-05 13:58:55,417 - INFO - Bluetooth送信完了
+2025-08-05 13:58:55,420 - INFO - タグ処理完了
+2025-08-05 14:03:24,916 - INFO - タグ検出: 04146901c22a81
+2025-08-05 14:03:24,918 - INFO - タグ処理開始
+2025-08-05 14:03:24,920 - INFO - UID: 04146901c22a81, バイト列: [4, 20, 105, 1, 194, 42, 129]
+2025-08-05 14:03:24,930 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04146901c22a81
+2025-08-05 14:03:24,939 - INFO - NFCタグ書き込み開始
+2025-08-05 14:03:25,685 - INFO - NFCタグ書き込み完了
+2025-08-05 14:03:25,687 - INFO - Bluetooth送信開始
+2025-08-05 14:03:25,688 - INFO - Bluetooth送信開始 - UID: 04146901c22a81
+2025-08-05 14:03:25,706 - INFO - Bluetooth送信完了 - UID: 04146901c22a81
+2025-08-05 14:03:25,715 - INFO - Bluetooth送信完了
+2025-08-05 14:03:25,722 - INFO - タグ処理完了
+2025-08-05 14:20:45,662 - INFO - タグ検出: 04146901c22a81
+2025-08-05 14:20:45,663 - INFO - タグ処理開始
+2025-08-05 14:20:45,671 - INFO - UID: 04146901c22a81, バイト列: [4, 20, 105, 1, 194, 42, 129]
+2025-08-05 14:20:45,682 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04146901c22a81
+2025-08-05 14:20:45,695 - INFO - NFCタグ書き込み開始
+2025-08-05 14:20:46,437 - INFO - NFCタグ書き込み完了
+2025-08-05 14:20:46,438 - INFO - Bluetooth送信開始
+2025-08-05 14:20:46,440 - INFO - Bluetooth送信開始 - UID: 04146901c22a81
+2025-08-05 14:20:46,462 - INFO - Bluetooth送信完了 - UID: 04146901c22a81
+2025-08-05 14:20:46,465 - INFO - Bluetooth送信完了
+2025-08-05 14:20:46,470 - INFO - タグ処理完了
+2025-08-05 14:22:14,333 - INFO - 読み取りループ終了
+2025-08-05 14:22:18,390 - INFO - 読み取りループ開始
+2025-08-05 14:30:44,113 - INFO - タグ検出: 04146901c22a81
+2025-08-05 14:30:44,114 - INFO - タグ処理開始
+2025-08-05 14:30:44,116 - INFO - UID: 04146901c22a81, バイト列: [4, 20, 105, 1, 194, 42, 129]
+2025-08-05 14:30:44,127 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04146901c22a81
+2025-08-05 14:30:44,139 - INFO - NFCタグ書き込み開始
+2025-08-05 14:30:44,885 - INFO - NFCタグ書き込み完了
+2025-08-05 14:30:44,887 - INFO - Bluetooth送信開始
+2025-08-05 14:30:44,889 - INFO - Bluetooth送信開始 - UID: 04146901c22a81
+2025-08-05 14:30:44,908 - INFO - Bluetooth送信完了 - UID: 04146901c22a81
+2025-08-05 14:30:44,916 - INFO - Bluetooth送信完了
+2025-08-05 14:30:44,921 - INFO - タグ処理完了
+2025-08-05 14:30:49,202 - INFO - タグ検出: 04f36801c22a81
+2025-08-05 14:30:49,204 - INFO - タグ処理開始
+2025-08-05 14:30:49,211 - INFO - UID: 04f36801c22a81, バイト列: [4, 243, 104, 1, 194, 42, 129]
+2025-08-05 14:30:49,224 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04f36801c22a81
+2025-08-05 14:30:49,227 - INFO - NFCタグ書き込み開始
+2025-08-05 14:30:49,975 - INFO - NFCタグ書き込み完了
+2025-08-05 14:30:49,977 - INFO - Bluetooth送信開始
+2025-08-05 14:30:49,983 - INFO - Bluetooth送信開始 - UID: 04f36801c22a81
+2025-08-05 14:30:50,004 - INFO - Bluetooth送信完了 - UID: 04f36801c22a81
+2025-08-05 14:30:50,023 - INFO - Bluetooth送信完了
+2025-08-05 14:30:50,025 - INFO - タグ処理完了
+2025-08-05 14:30:54,336 - INFO - タグ検出: 04fb6801c22a81
+2025-08-05 14:30:54,337 - INFO - タグ処理開始
+2025-08-05 14:30:54,340 - INFO - UID: 04fb6801c22a81, バイト列: [4, 251, 104, 1, 194, 42, 129]
+2025-08-05 14:30:54,344 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04fb6801c22a81
+2025-08-05 14:30:54,351 - INFO - NFCタグ書き込み開始
+2025-08-05 14:30:54,899 - INFO - NFCタグ書き込み完了
+2025-08-05 14:30:54,900 - INFO - Bluetooth送信開始
+2025-08-05 14:30:54,903 - INFO - Bluetooth送信開始 - UID: 04fb6801c22a81
+2025-08-05 14:30:54,916 - INFO - Bluetooth送信完了 - UID: 04fb6801c22a81
+2025-08-05 14:30:54,918 - INFO - Bluetooth送信完了
+2025-08-05 14:30:54,920 - INFO - タグ処理完了
+2025-08-05 14:31:04,457 - INFO - タグ検出: 04226901c22a81
+2025-08-05 14:31:04,458 - INFO - タグ処理開始
+2025-08-05 14:31:04,466 - INFO - UID: 04226901c22a81, バイト列: [4, 34, 105, 1, 194, 42, 129]
+2025-08-05 14:31:04,469 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04226901c22a81
+2025-08-05 14:31:04,481 - INFO - NFCタグ書き込み開始
+2025-08-05 14:31:05,037 - INFO - NFCタグ書き込み完了
+2025-08-05 14:31:05,038 - INFO - Bluetooth送信開始
+2025-08-05 14:31:05,038 - INFO - Bluetooth送信開始 - UID: 04226901c22a81
+2025-08-05 14:31:05,054 - INFO - Bluetooth送信完了 - UID: 04226901c22a81
+2025-08-05 14:31:05,056 - INFO - Bluetooth送信完了
+2025-08-05 14:31:05,059 - INFO - タグ処理完了
+2025-08-05 14:31:15,305 - INFO - タグ検出: 04126901c22a81
+2025-08-05 14:31:15,307 - INFO - タグ処理開始
+2025-08-05 14:31:15,308 - INFO - UID: 04126901c22a81, バイト列: [4, 18, 105, 1, 194, 42, 129]
+2025-08-05 14:31:15,321 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/04126901c22a81
+2025-08-05 14:31:15,332 - INFO - NFCタグ書き込み開始
+2025-08-05 14:31:16,088 - INFO - NFCタグ書き込み完了
+2025-08-05 14:31:16,089 - INFO - Bluetooth送信開始
+2025-08-05 14:31:16,091 - INFO - Bluetooth送信開始 - UID: 04126901c22a81
+2025-08-05 14:31:16,113 - INFO - Bluetooth送信完了 - UID: 04126901c22a81
+2025-08-05 14:31:16,117 - INFO - Bluetooth送信完了
+2025-08-05 14:31:16,127 - INFO - タグ処理完了
+2025-08-06 08:08:03,901 - INFO - アプリケーション開始
+2025-08-06 08:08:04,918 - INFO - NFCリーダーアプリケーション開始
+2025-08-06 08:08:04,918 - INFO - Linux全画面表示設定完了
+2025-08-06 08:08:05,150 - INFO - NFC初期化開始
+2025-08-06 08:08:05,177 - INFO - I2C初期化完了
+2025-08-06 08:08:05,209 - INFO - PN532オブジェクト作成完了
+2025-08-06 08:08:05,226 - INFO - ファームウェアバージョン: 1.6
+2025-08-06 08:08:05,242 - INFO - SAM設定完了
+2025-08-06 08:08:05,243 - INFO - NFC初期化完了
+2025-08-06 08:08:05,243 - INFO - 読み取りループ開始
+2025-08-06 08:32:33,902 - INFO - タグ検出: 041c6901c22a81
+2025-08-06 08:32:33,903 - INFO - タグ処理開始
+2025-08-06 08:32:33,906 - INFO - UID: 041c6901c22a81, バイト列: [4, 28, 105, 1, 194, 42, 129]
+2025-08-06 08:32:33,914 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/041c6901c22a81
+2025-08-06 08:32:33,921 - INFO - NFCタグ書き込み開始
+2025-08-06 08:32:34,471 - INFO - NFCタグ書き込み完了
+2025-08-06 08:32:34,472 - INFO - Bluetooth送信開始
+2025-08-06 08:32:34,473 - INFO - Bluetooth送信開始 - UID: 041c6901c22a81
+2025-08-06 08:32:34,500 - INFO - Bluetooth送信完了 - UID: 041c6901c22a81
+2025-08-06 08:32:34,501 - INFO - Bluetooth送信完了
+2025-08-06 08:32:34,506 - INFO - タグ処理完了
+2025-08-06 08:37:23,089 - INFO - アプリケーション開始
+2025-08-06 08:37:24,337 - INFO - NFCリーダーアプリケーション開始
+2025-08-06 08:37:24,338 - INFO - Linux全画面表示設定完了
+2025-08-06 08:37:24,614 - INFO - NFC初期化開始
+2025-08-06 08:37:24,649 - INFO - I2C初期化完了
+2025-08-06 08:37:24,681 - INFO - PN532オブジェクト作成完了
+2025-08-06 08:37:24,698 - INFO - ファームウェアバージョン: 1.6
+2025-08-06 08:37:24,714 - INFO - SAM設定完了
+2025-08-06 08:37:24,715 - INFO - NFC初期化完了
+2025-08-06 08:37:24,716 - INFO - 読み取りループ開始
+2025-08-06 09:50:30,434 - INFO - タグ検出: 042a6901c22a81
+2025-08-06 09:50:30,437 - INFO - タグ処理開始
+2025-08-06 09:50:30,445 - INFO - UID: 042a6901c22a81, バイト列: [4, 42, 105, 1, 194, 42, 129]
+2025-08-06 09:50:30,454 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/042a6901c22a81
+2025-08-06 09:50:30,464 - INFO - NFCタグ書き込み開始
+2025-08-06 09:50:31,027 - INFO - NFCタグ書き込み完了
+2025-08-06 09:50:31,028 - INFO - Bluetooth送信開始
+2025-08-06 09:50:31,029 - INFO - Bluetooth送信開始 - UID: 042a6901c22a81
+2025-08-06 09:50:31,047 - INFO - Bluetooth送信完了 - UID: 042a6901c22a81
+2025-08-06 09:50:31,048 - INFO - Bluetooth送信完了
+2025-08-06 09:50:31,051 - INFO - タグ処理完了
+2025-08-06 10:06:03,569 - INFO - アプリケーション開始
+2025-08-06 10:06:04,499 - INFO - NFCリーダーアプリケーション開始
+2025-08-06 10:06:04,499 - INFO - Linux全画面表示設定完了
+2025-08-06 10:06:04,719 - INFO - NFC初期化開始
+2025-08-06 10:06:04,744 - INFO - I2C初期化完了
+2025-08-06 10:06:04,777 - INFO - PN532オブジェクト作成完了
+2025-08-06 10:06:04,795 - INFO - ファームウェアバージョン: 1.6
+2025-08-06 10:06:04,812 - INFO - SAM設定完了
+2025-08-06 10:06:04,813 - INFO - NFC初期化完了
+2025-08-06 10:06:04,813 - INFO - 読み取りループ開始
+2025-08-06 10:06:03,691 - INFO - アプリケーション開始
+2025-08-06 10:06:04,637 - INFO - NFCリーダーアプリケーション開始
+2025-08-06 10:06:04,638 - INFO - Linux全画面表示設定完了
+2025-08-06 10:06:04,859 - INFO - NFC初期化開始
+2025-08-06 10:06:04,903 - INFO - I2C初期化完了
+2025-08-06 10:06:04,935 - INFO - PN532オブジェクト作成完了
+2025-08-06 10:06:04,952 - INFO - ファームウェアバージョン: 1.6
+2025-08-06 10:06:04,968 - INFO - SAM設定完了
+2025-08-06 10:06:04,969 - INFO - NFC初期化完了
+2025-08-06 10:06:04,970 - INFO - 読み取りループ開始
+2025-08-06 10:06:09,070 - INFO - アプリケーション終了
+2025-08-22 08:45:59,649 - INFO - アプリケーション開始
+2025-08-22 08:46:01,633 - INFO - NFCリーダーアプリケーション開始
+2025-08-22 08:46:01,634 - INFO - Linux全画面表示設定完了
+2025-08-22 08:46:01,882 - INFO - NFC初期化開始
+2025-08-22 08:46:01,949 - INFO - I2C初期化完了
+2025-08-22 08:46:01,986 - INFO - PN532オブジェクト作成完了
+2025-08-22 08:46:02,003 - INFO - ファームウェアバージョン: 1.6
+2025-08-22 08:46:02,020 - INFO - SAM設定完了
+2025-08-22 08:46:02,021 - INFO - NFC初期化完了
+2025-08-22 08:46:02,022 - INFO - 読み取りループ開始
+2025-08-22 08:46:09,153 - INFO - タグ検出: 049f5201c22a81
+2025-08-22 08:46:09,154 - INFO - タグ処理開始
+2025-08-22 08:46:09,159 - INFO - UID: 049f5201c22a81, バイト列: [4, 159, 82, 1, 194, 42, 129]
+2025-08-22 08:46:09,163 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/049f5201c22a81
+2025-08-22 08:46:09,171 - INFO - NFCタグ書き込み開始
+2025-08-22 08:46:09,720 - INFO - NFCタグ書き込み完了
+2025-08-22 08:46:09,720 - INFO - Bluetooth送信開始
+2025-08-22 08:46:09,725 - INFO - Bluetooth送信開始 - UID: 049f5201c22a81
+2025-08-22 08:46:14,852 - ERROR - Bluetooth接続エラー: [Errno 112] Host is down
+2025-08-22 08:46:14,854 - INFO - Bluetooth送信完了
+2025-08-22 08:46:14,860 - INFO - タグ処理完了
+2025-08-22 08:46:16,357 - INFO - 読み取りループ開始
+2025-08-22 09:23:27,708 - INFO - タグ検出: 049f5201c22a81
+2025-08-22 09:23:27,710 - INFO - タグ処理開始
+2025-08-22 09:23:27,720 - INFO - UID: 049f5201c22a81, バイト列: [4, 159, 82, 1, 194, 42, 129]
+2025-08-22 09:23:27,726 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/049f5201c22a81
+2025-08-22 09:23:27,734 - INFO - NFCタグ書き込み開始
+2025-08-22 09:23:28,072 - INFO - タグ検出: 049f5201c22a81
+2025-08-22 09:23:28,073 - INFO - タグ処理開始
+2025-08-22 09:23:28,074 - INFO - UID: 049f5201c22a81, バイト列: [4, 159, 82, 1, 194, 42, 129]
+2025-08-22 09:23:28,081 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/049f5201c22a81
+2025-08-22 09:23:28,085 - INFO - NFCタグ書き込み開始
+2025-08-22 09:23:28,632 - INFO - NFCタグ書き込み完了
+2025-08-22 09:23:28,633 - INFO - Bluetooth送信開始
+2025-08-22 09:23:28,637 - INFO - Bluetooth送信開始 - UID: 049f5201c22a81
+2025-08-22 09:23:29,007 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-08-22 09:23:29,007 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-08-22 09:23:29,016 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-08-22 09:23:29,017 - INFO - Bluetooth送信開始
+2025-08-22 09:23:29,018 - INFO - Bluetooth送信開始 - UID: 049f5201c22a81
+2025-08-22 09:23:29,023 - ERROR - Bluetooth接続エラー: [Errno 16] Device or resource busy
+2025-08-22 09:23:29,028 - INFO - Bluetooth送信完了
+2025-08-22 09:23:29,032 - INFO - タグ処理完了
+2025-08-22 09:23:31,185 - INFO - タグ検出: 049f5201c22a81
+2025-08-22 09:23:31,186 - INFO - タグ処理開始
+2025-08-22 09:23:31,187 - INFO - UID: 049f5201c22a81, バイト列: [4, 159, 82, 1, 194, 42, 129]
+2025-08-22 09:23:31,192 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/049f5201c22a81
+2025-08-22 09:23:31,198 - INFO - NFCタグ書き込み開始
+2025-08-22 09:23:33,600 - INFO - NFCタグ書き込み完了
+2025-08-22 09:23:33,602 - INFO - Bluetooth送信開始
+2025-08-22 09:23:33,603 - INFO - Bluetooth送信開始 - UID: 049f5201c22a81
+2025-08-22 09:23:33,633 - ERROR - Bluetooth接続エラー: [Errno 16] Device or resource busy
+2025-08-22 09:23:33,643 - INFO - Bluetooth送信完了
+2025-08-22 09:23:33,649 - INFO - タグ処理完了
+2025-08-22 09:23:33,765 - ERROR - Bluetooth接続エラー: [Errno 112] Host is down
+2025-08-22 09:23:33,766 - INFO - Bluetooth送信完了
+2025-08-22 09:23:33,772 - INFO - タグ処理完了
+2025-08-22 09:23:56,936 - INFO - タグ検出: 049f5201c22a81
+2025-08-22 09:23:56,937 - INFO - タグ処理開始
+2025-08-22 09:23:56,940 - INFO - UID: 049f5201c22a81, バイト列: [4, 159, 82, 1, 194, 42, 129]
+2025-08-22 09:23:56,945 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/049f5201c22a81
+2025-08-22 09:23:56,956 - INFO - NFCタグ書き込み開始
+2025-08-22 09:23:57,039 - INFO - タグ検出: 049f5201c22a81
+2025-08-22 09:23:57,040 - INFO - タグ処理開始
+2025-08-22 09:23:57,042 - INFO - UID: 049f5201c22a81, バイト列: [4, 159, 82, 1, 194, 42, 129]
+2025-08-22 09:23:57,048 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/049f5201c22a81
+2025-08-22 09:23:57,058 - INFO - NFCタグ書き込み開始
+2025-08-22 09:23:57,605 - INFO - NFCタグ書き込み完了
+2025-08-22 09:23:57,606 - INFO - Bluetooth送信開始
+2025-08-22 09:23:57,610 - INFO - Bluetooth送信開始 - UID: 049f5201c22a81
+2025-08-22 09:23:58,010 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-08-22 09:23:58,011 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-08-22 09:23:58,012 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-08-22 09:23:58,013 - INFO - Bluetooth送信開始
+2025-08-22 09:23:58,014 - INFO - Bluetooth送信開始 - UID: 049f5201c22a81
+2025-08-22 09:23:58,019 - ERROR - Bluetooth接続エラー: [Errno 16] Device or resource busy
+2025-08-22 09:23:58,024 - INFO - Bluetooth送信完了
+2025-08-22 09:23:58,027 - INFO - タグ処理完了
+2025-08-22 09:24:02,737 - ERROR - Bluetooth接続エラー: [Errno 112] Host is down
+2025-08-22 09:24:02,740 - INFO - Bluetooth送信完了
+2025-08-22 09:24:02,742 - INFO - タグ処理完了
+2025-08-22 09:23:18,345 - INFO - アプリケーション開始
+2025-08-22 09:23:19,390 - INFO - NFCリーダーアプリケーション開始
+2025-08-22 09:23:19,391 - INFO - Linux全画面表示設定完了
+2025-08-22 09:23:19,624 - INFO - NFC初期化開始
+2025-08-22 09:23:19,690 - INFO - I2C初期化完了
+2025-08-22 09:23:19,722 - INFO - PN532オブジェクト作成完了
+2025-08-22 09:23:19,739 - INFO - ファームウェアバージョン: 1.6
+2025-08-22 09:23:19,755 - INFO - SAM設定完了
+2025-08-22 09:23:19,756 - INFO - NFC初期化完了
+2025-08-22 09:23:19,757 - INFO - 読み取りループ開始
+2025-08-22 09:23:34,538 - INFO - アプリケーション終了
+2025-09-01 07:53:02,863 - INFO - アプリケーション開始
+2025-09-01 07:53:04,083 - INFO - NFCリーダーアプリケーション開始
+2025-09-01 07:53:04,084 - INFO - Linux全画面表示設定完了
+2025-09-01 07:53:04,335 - INFO - NFC初期化開始
+2025-09-01 07:53:04,362 - INFO - I2C初期化完了
+2025-09-01 07:53:04,394 - INFO - PN532オブジェクト作成完了
+2025-09-01 07:53:04,411 - INFO - ファームウェアバージョン: 1.6
+2025-09-01 07:53:04,427 - INFO - SAM設定完了
+2025-09-01 07:53:04,428 - INFO - NFC初期化完了
+2025-09-01 07:53:04,429 - INFO - 読み取りループ開始
+2025-09-18 12:53:22,812 - INFO - 読み取りループ終了
+2025-09-18 12:53:23,320 - INFO - 読み取りループ開始
+2025-09-18 12:53:25,542 - INFO - 読み取りループ終了
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 2025-09-24 14:55:17,376 - INFO - アプリケーション開始
+2025-09-24 14:55:19,403 - INFO - NFCリーダーアプリケーション開始
+2025-09-24 14:55:19,404 - INFO - Linux全画面表示設定完了
+2025-09-24 14:55:19,673 - INFO - NFC初期化開始
+2025-09-24 14:55:19,705 - INFO - I2C初期化完了
+2025-09-24 14:55:19,738 - INFO - PN532オブジェクト作成完了
+2025-09-24 14:55:19,747 - INFO - ファームウェアバージョン: 1.6
+2025-09-24 14:55:19,766 - INFO - SAM設定完了
+2025-09-24 14:55:19,767 - INFO - NFC初期化完了
+2025-09-24 14:55:19,768 - INFO - 読み取りループ開始
+2025-09-24 14:55:27,921 - INFO - タグ検出: 1d641e720f1080
+2025-09-24 14:55:27,922 - INFO - タグ処理開始
+2025-09-24 14:55:27,924 - INFO - UID: 1d641e720f1080, バイト列: [29, 100, 30, 114, 15, 16, 128]
+2025-09-24 14:55:27,934 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d641e720f1080
+2025-09-24 14:55:27,937 - INFO - NFCタグ書き込み開始
+2025-09-24 14:55:30,200 - INFO - NFCタグ書き込み完了
+2025-09-24 14:55:30,201 - INFO - Bluetooth送信開始
+2025-09-24 14:55:30,205 - INFO - Bluetooth送信開始 - UID: 1d641e720f1080
+2025-09-24 14:55:35,338 - ERROR - Bluetooth接続エラー: [Errno 112] Host is down
+2025-09-24 14:55:35,340 - INFO - Bluetooth送信完了
+2025-09-24 14:55:35,348 - INFO - タグ処理完了
+2025-09-24 15:15:15,931 - INFO - タグ検出: 1d641e720f1080
+2025-09-24 15:15:15,933 - INFO - タグ処理開始
+2025-09-24 15:15:15,934 - INFO - UID: 1d641e720f1080, バイト列: [29, 100, 30, 114, 15, 16, 128]
+2025-09-24 15:15:15,953 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d641e720f1080
+2025-09-24 15:15:15,964 - INFO - NFCタグ書き込み開始
+2025-09-24 15:15:17,555 - INFO - NFCタグ書き込み完了
+2025-09-24 15:15:17,556 - INFO - Bluetooth送信開始
+2025-09-24 15:15:17,560 - INFO - Bluetooth送信開始 - UID: 1d641e720f1080
+2025-09-24 15:15:17,574 - INFO - Bluetooth送信完了 - UID: 1d641e720f1080
+2025-09-24 15:15:17,577 - INFO - Bluetooth送信完了
+2025-09-24 15:15:17,579 - INFO - タグ処理完了
+2025-09-24 15:15:19,619 - INFO - タグ検出: 1d641e720f1080
+2025-09-24 15:15:19,619 - INFO - タグ処理開始
+2025-09-24 15:15:19,620 - INFO - UID: 1d641e720f1080, バイト列: [29, 100, 30, 114, 15, 16, 128]
+2025-09-24 15:15:19,626 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d641e720f1080
+2025-09-24 15:15:19,627 - INFO - NFCタグ書き込み開始
+2025-09-24 15:15:22,173 - INFO - NFCタグ書き込み完了
+2025-09-24 15:15:22,176 - INFO - Bluetooth送信開始
+2025-09-24 15:15:22,193 - INFO - Bluetooth送信開始 - UID: 1d641e720f1080
+2025-09-24 15:15:22,207 - INFO - Bluetooth送信完了 - UID: 1d641e720f1080
+2025-09-24 15:15:22,217 - INFO - Bluetooth送信完了
+2025-09-24 15:15:22,220 - INFO - タグ処理完了
