@@ -1,0 +1,16 @@
+#cd /etc/systemd/system
+[Unit]
+Description=My Python GUI App
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/to-murakami/Documents/main.py
+Restart=on-failure
+User=to-murakami
+Group=to-murakami
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/to-murakami/.Xauthority
+WorkingDirectory=/home/to-murakami/Documents
+
+[Install]
+WantedBy=graphical.target
