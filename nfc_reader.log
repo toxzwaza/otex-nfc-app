@@ -1640,3 +1640,2317 @@ TypeError: 'NoneType' object is not subscriptable
 2025-09-24 15:15:22,207 - INFO - Bluetooth送信完了 - UID: 1d641e720f1080
 2025-09-24 15:15:22,217 - INFO - Bluetooth送信完了
 2025-09-24 15:15:22,220 - INFO - タグ処理完了
+2025-09-24 16:07:12,322 - INFO - アプリケーション開始
+2025-09-24 16:14:40,171 - INFO - アプリケーション開始
+2025-09-24 16:14:40,758 - INFO - NFCリーダーアプリケーション開始
+2025-09-24 16:14:40,759 - INFO - Linux全画面表示設定完了
+2025-09-24 16:14:40,819 - INFO - NFC初期化開始
+2025-09-24 16:14:40,829 - ERROR - NFC初期化エラー: No Hardware I2C on (scl,sda)=(3, 2)
+Valid I2C ports: ((1, 3, 2), (0, 1, 0), (10, 45, 44)).
+Make sure I2C is enabled.
+2025-09-24 16:14:40,836 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 85, in setup_nfc
+    self.i2c = busio.I2C(board.SCL, board.SDA)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/busio.py", line 36, in __init__
+    self.init(scl, sda, frequency)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/busio.py", line 179, in init
+    raise ValueError(
+ValueError: No Hardware I2C on (scl,sda)=(3, 2)
+Valid I2C ports: ((1, 3, 2), (0, 1, 0), (10, 45, 44)).
+Make sure I2C is enabled.
+
+2025-09-24 16:14:40,838 - WARNING - NFC初期化が失敗したため、読み取りを開始しません
+2025-09-24 16:14:50,946 - INFO - アプリケーション終了
+2025-09-24 16:31:10,366 - INFO - アプリケーション開始
+2025-09-24 16:31:10,493 - INFO - NFCリーダーアプリケーション開始
+2025-09-24 16:31:10,494 - INFO - Linux全画面表示設定完了
+2025-09-24 16:31:10,540 - INFO - NFC初期化開始
+2025-09-24 16:31:10,550 - INFO - I2C初期化完了
+2025-09-24 16:31:10,582 - INFO - PN532オブジェクト作成完了
+2025-09-24 16:31:10,598 - INFO - ファームウェアバージョン: 1.6
+2025-09-24 16:31:10,614 - INFO - SAM設定完了
+2025-09-24 16:31:10,616 - INFO - NFC初期化完了
+2025-09-24 16:31:10,618 - INFO - 読み取りループ開始
+2025-09-25 08:07:00,594 - INFO - 読み取りループ終了
+2025-09-25 08:07:04,020 - INFO - アプリケーション終了
+2025-09-25 09:13:51,898 - ERROR - 設定ファイルのJSON形式が不正です: Expecting ',' delimiter: line 7 column 25 (char 175)
+2025-09-25 09:13:51,898 - INFO - アプリケーション開始
+2025-09-25 09:13:52,028 - INFO - NFCリーダーアプリケーション開始 - モード: write
+2025-09-25 09:13:52,029 - INFO - Linux全画面表示設定完了
+2025-09-25 09:13:52,077 - INFO - NFC初期化開始
+2025-09-25 09:13:52,086 - INFO - I2C初期化完了
+2025-09-25 09:13:52,118 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:13:52,135 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:13:52,151 - INFO - SAM設定完了
+2025-09-25 09:13:52,152 - INFO - NFC初期化完了
+2025-09-25 09:13:52,153 - INFO - 読み取りループ開始
+2025-09-25 09:13:59,538 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:13:59,540 - INFO - タグ処理開始
+2025-09-25 09:13:59,545 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:13:59,560 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:13:59,572 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:13:59,574 - INFO - NFCタグ書き込み開始
+2025-09-25 09:13:59,580 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:13:59,581 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:13:59,597 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:13:59,608 - INFO - タグ処理完了
+2025-09-25 09:14:01,648 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:14:01,649 - INFO - タグ処理開始
+2025-09-25 09:14:01,652 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:14:01,654 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:14:01,661 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:14:01,661 - INFO - NFCタグ書き込み開始
+2025-09-25 09:14:01,680 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:01,680 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:01,681 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:14:01,683 - INFO - タグ処理完了
+2025-09-25 09:14:05,112 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:14:05,113 - INFO - タグ処理開始
+2025-09-25 09:14:05,114 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:14:05,117 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:14:05,133 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:14:05,134 - INFO - NFCタグ書き込み開始
+2025-09-25 09:14:05,172 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:05,173 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:05,176 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:14:05,179 - INFO - タグ処理完了
+2025-09-25 09:14:12,202 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:14:12,202 - INFO - タグ処理開始
+2025-09-25 09:14:12,206 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:14:12,213 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:14:12,221 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:14:12,222 - INFO - NFCタグ書き込み開始
+2025-09-25 09:14:12,263 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:12,264 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:12,267 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:14:12,279 - INFO - タグ処理完了
+2025-09-25 09:14:14,444 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:14:14,445 - INFO - タグ処理開始
+2025-09-25 09:14:14,446 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:14:14,457 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:14:14,466 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:14:14,466 - INFO - NFCタグ書き込み開始
+2025-09-25 09:14:14,622 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:14,622 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:14,623 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:14:14,624 - INFO - タグ処理完了
+2025-09-25 09:14:16,685 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:14:16,686 - INFO - タグ処理開始
+2025-09-25 09:14:16,687 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:14:16,693 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:14:16,700 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:14:16,702 - INFO - NFCタグ書き込み開始
+2025-09-25 09:14:16,705 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:16,706 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:16,707 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:14:16,709 - INFO - タグ処理完了
+2025-09-25 09:14:33,525 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:14:33,526 - INFO - タグ処理開始
+2025-09-25 09:14:33,530 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:14:33,540 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:14:33,553 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:14:33,554 - INFO - NFCタグ書き込み開始
+2025-09-25 09:14:33,560 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:33,561 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:33,566 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:14:33,575 - INFO - タグ処理完了
+2025-09-25 09:14:39,621 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:14:39,622 - INFO - タグ処理開始
+2025-09-25 09:14:39,623 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:14:39,628 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:14:39,634 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:14:39,635 - INFO - NFCタグ書き込み開始
+2025-09-25 09:14:39,673 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:39,674 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:39,676 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:14:39,681 - INFO - タグ処理完了
+2025-09-25 09:14:45,922 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:14:45,923 - INFO - タグ処理開始
+2025-09-25 09:14:45,925 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:14:45,940 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:14:45,955 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:14:45,956 - INFO - NFCタグ書き込み開始
+2025-09-25 09:14:45,977 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:45,978 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:14:45,980 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:14:46,016 - INFO - タグ処理完了
+2025-09-25 09:15:30,414 - INFO - 読み取りループ終了
+2025-09-25 09:15:31,730 - INFO - アプリケーション終了
+2025-09-25 09:15:34,172 - ERROR - 設定ファイルのJSON形式が不正です: Expecting ',' delimiter: line 7 column 25 (char 175)
+2025-09-25 09:15:34,172 - INFO - アプリケーション開始
+2025-09-25 09:15:34,300 - INFO - NFCリーダーアプリケーション開始 - モード: write
+2025-09-25 09:15:34,301 - INFO - Linux全画面表示設定完了
+2025-09-25 09:15:34,351 - INFO - NFC初期化開始
+2025-09-25 09:15:34,362 - INFO - I2C初期化完了
+2025-09-25 09:15:34,394 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:15:34,410 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:15:34,426 - INFO - SAM設定完了
+2025-09-25 09:15:34,428 - INFO - NFC初期化完了
+2025-09-25 09:15:34,429 - INFO - 読み取りループ開始
+2025-09-25 09:15:36,950 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:15:36,952 - INFO - タグ処理開始
+2025-09-25 09:15:36,953 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:15:36,969 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:15:36,981 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:15:36,984 - INFO - NFCタグ書き込み開始
+2025-09-25 09:15:37,132 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:15:37,132 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:15:37,139 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:15:37,142 - INFO - タグ処理完了
+2025-09-25 09:15:39,181 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:15:39,182 - INFO - タグ処理開始
+2025-09-25 09:15:39,183 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:15:39,188 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:15:39,192 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:15:39,193 - INFO - NFCタグ書き込み開始
+2025-09-25 09:15:39,368 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:15:39,368 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:15:39,369 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 398, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 443, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:15:39,371 - INFO - タグ処理完了
+2025-09-25 09:15:44,859 - INFO - アプリケーション終了
+2025-09-25 09:16:36,212 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:16:36,213 - INFO - アプリケーション開始
+2025-09-25 09:16:36,341 - INFO - NFCリーダーアプリケーション開始 - モード: write
+2025-09-25 09:16:36,341 - INFO - Linux全画面表示設定完了
+2025-09-25 09:16:36,389 - INFO - NFC初期化開始
+2025-09-25 09:16:36,399 - INFO - I2C初期化完了
+2025-09-25 09:16:36,431 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:16:36,447 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:16:36,464 - INFO - SAM設定完了
+2025-09-25 09:16:36,465 - INFO - NFC初期化完了
+2025-09-25 09:16:36,466 - INFO - 読み取りループ開始
+2025-09-25 09:16:38,494 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:16:38,495 - INFO - タグ処理開始
+2025-09-25 09:16:38,497 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:16:38,502 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:16:38,514 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:16:38,515 - INFO - NFCタグ書き込み開始
+2025-09-25 09:16:38,518 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:16:38,519 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:16:38,528 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 416, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 461, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:16:38,560 - INFO - タグ処理完了
+2025-09-25 09:16:48,493 - INFO - アプリケーション終了
+2025-09-25 09:17:28,713 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:17:28,714 - INFO - アプリケーション開始
+2025-09-25 09:17:28,840 - INFO - NFCリーダーアプリケーション開始 - モード: write
+2025-09-25 09:17:28,841 - INFO - Linux全画面表示設定完了
+2025-09-25 09:17:28,890 - INFO - NFC初期化開始
+2025-09-25 09:17:28,901 - INFO - I2C初期化完了
+2025-09-25 09:17:28,933 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:17:28,953 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:17:28,970 - INFO - SAM設定完了
+2025-09-25 09:17:28,972 - INFO - NFC初期化完了
+2025-09-25 09:17:28,973 - INFO - 読み取りループ開始
+2025-09-25 09:17:32,135 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:17:32,137 - INFO - タグ処理開始
+2025-09-25 09:17:32,147 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:17:32,164 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:17:32,175 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:17:32,177 - INFO - NFCタグ書き込み開始
+2025-09-25 09:17:32,185 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:17:32,187 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:17:32,188 - INFO - NFCタグ書き込み完了
+2025-09-25 09:17:32,205 - INFO - タグ処理完了
+2025-09-25 09:18:09,750 - INFO - アプリケーション終了
+2025-09-25 09:18:11,674 - ERROR - 設定ファイルのJSON形式が不正です: Expecting ',' delimiter: line 7 column 24 (char 174)
+2025-09-25 09:18:11,675 - ERROR - JSONファイルにコメント（//）が含まれていないか確認してください
+2025-09-25 09:18:11,675 - INFO - アプリケーション開始
+2025-09-25 09:18:11,808 - WARNING - 設定ファイルが読み込めませんでした。デフォルトモード（write）を使用します
+2025-09-25 09:18:11,809 - INFO - NFCリーダーアプリケーション開始 - モード: write
+2025-09-25 09:18:11,809 - INFO - Linux全画面表示設定完了
+2025-09-25 09:18:11,859 - INFO - NFC初期化開始
+2025-09-25 09:18:11,869 - INFO - I2C初期化完了
+2025-09-25 09:18:11,901 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:18:11,917 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:18:11,933 - INFO - SAM設定完了
+2025-09-25 09:18:11,935 - INFO - NFC初期化完了
+2025-09-25 09:18:11,936 - INFO - 読み取りループ開始
+2025-09-25 09:18:19,122 - INFO - 読み取りループ終了
+2025-09-25 09:18:21,118 - INFO - アプリケーション終了
+2025-09-25 09:18:31,259 - ERROR - 設定ファイルのJSON形式が不正です: Expecting ',' delimiter: line 7 column 24 (char 174)
+2025-09-25 09:18:31,260 - ERROR - JSONファイルにコメント（//）が含まれていないか確認してください
+2025-09-25 09:18:31,260 - INFO - アプリケーション開始
+2025-09-25 09:18:31,391 - WARNING - 設定ファイルが読み込めませんでした。デフォルトモード（write）を使用します
+2025-09-25 09:18:31,392 - INFO - NFCリーダーアプリケーション開始 - モード: write
+2025-09-25 09:18:31,392 - INFO - Linux全画面表示設定完了
+2025-09-25 09:18:31,441 - INFO - NFC初期化開始
+2025-09-25 09:18:31,452 - INFO - I2C初期化完了
+2025-09-25 09:18:31,489 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:18:31,505 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:18:31,522 - INFO - SAM設定完了
+2025-09-25 09:18:31,524 - INFO - NFC初期化完了
+2025-09-25 09:18:31,525 - INFO - 読み取りループ開始
+2025-09-25 09:18:33,335 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:18:33,336 - INFO - タグ処理開始
+2025-09-25 09:18:33,338 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:18:33,353 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:18:33,369 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:18:33,371 - INFO - NFCタグ書き込み開始
+2025-09-25 09:18:33,389 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:18:33,462 - INFO - タグが検出されました。書き込みを続行します
+2025-09-25 09:18:33,463 - ERROR - ページ 4 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,479 - DEBUG - ページ 5 の書き込み成功
+2025-09-25 09:18:33,480 - ERROR - ページ 6 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,495 - DEBUG - ページ 7 の書き込み成功
+2025-09-25 09:18:33,522 - WARNING - ページ 8 の書き込みが失敗しました
+2025-09-25 09:18:33,523 - ERROR - ページ 9 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,523 - ERROR - ページ 10 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,524 - ERROR - ページ 11 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,524 - ERROR - ページ 12 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,525 - ERROR - ページ 13 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,551 - WARNING - ページ 14 の書き込みが失敗しました
+2025-09-25 09:18:33,577 - WARNING - ページ 15 の書き込みが失敗しました
+2025-09-25 09:18:33,578 - ERROR - ページ 16 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,604 - WARNING - ページ 17 の書き込みが失敗しました
+2025-09-25 09:18:33,630 - WARNING - ページ 18 の書き込みが失敗しました
+2025-09-25 09:18:33,630 - ERROR - ページ 19 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,656 - WARNING - ページ 20 の書き込みが失敗しました
+2025-09-25 09:18:33,657 - ERROR - ページ 21 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,682 - WARNING - ページ 22 の書き込みが失敗しました
+2025-09-25 09:18:33,683 - ERROR - ページ 23 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,709 - WARNING - ページ 24 の書き込みが失敗しました
+2025-09-25 09:18:33,745 - WARNING - ページ 25 の書き込みが失敗しました
+2025-09-25 09:18:33,771 - WARNING - ページ 26 の書き込みが失敗しました
+2025-09-25 09:18:33,797 - WARNING - ページ 27 の書き込みが失敗しました
+2025-09-25 09:18:33,823 - WARNING - ページ 28 の書き込みが失敗しました
+2025-09-25 09:18:33,823 - ERROR - ページ 29 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,824 - ERROR - ページ 30 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,850 - WARNING - ページ 31 の書き込みが失敗しました
+2025-09-25 09:18:33,850 - ERROR - ページ 32 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,876 - WARNING - ページ 33 の書き込みが失敗しました
+2025-09-25 09:18:33,877 - ERROR - ページ 34 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:18:33,903 - WARNING - ページ 35 の書き込みが失敗しました
+2025-09-25 09:18:33,929 - WARNING - ページ 36 の書き込みが失敗しました
+2025-09-25 09:18:33,955 - WARNING - ページ 37 の書き込みが失敗しました
+2025-09-25 09:18:33,981 - WARNING - ページ 38 の書き込みが失敗しました
+2025-09-25 09:18:34,007 - WARNING - ページ 39 の書き込みが失敗しました
+2025-09-25 09:18:34,007 - INFO - NFCタグ書き込み処理完了
+2025-09-25 09:18:34,007 - INFO - NFCタグ書き込み完了
+2025-09-25 09:18:34,009 - INFO - タグ処理完了
+2025-09-25 09:19:32,653 - INFO - アプリケーション終了
+2025-09-25 09:19:34,671 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:19:34,672 - INFO - アプリケーション開始
+2025-09-25 09:19:34,801 - INFO - NFCリーダーアプリケーション開始 - モード: send
+2025-09-25 09:19:34,802 - INFO - Linux全画面表示設定完了
+2025-09-25 09:19:34,850 - INFO - NFC初期化開始
+2025-09-25 09:19:34,864 - INFO - I2C初期化完了
+2025-09-25 09:19:34,898 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:19:34,914 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:19:34,931 - INFO - SAM設定完了
+2025-09-25 09:19:34,932 - INFO - NFC初期化完了
+2025-09-25 09:19:34,933 - INFO - 読み取りループ開始
+2025-09-25 09:19:37,985 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:19:37,986 - INFO - タグ処理開始
+2025-09-25 09:19:37,986 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:19:37,999 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:19:38,013 - INFO - 送信モード: Bluetooth送信を実行
+2025-09-25 09:19:38,013 - INFO - Bluetooth送信開始
+2025-09-25 09:19:38,021 - INFO - Bluetooth送信開始 - UID: 1d5321720f1080, 送信メッセージ: [1]1d5321720f1080
+2025-09-25 09:19:38,054 - INFO - Bluetooth送信完了 - UID: 1d5321720f1080, 送信メッセージ: [1]1d5321720f1080
+2025-09-25 09:19:38,057 - INFO - Bluetooth送信完了
+2025-09-25 09:19:38,064 - INFO - タグ処理完了
+2025-09-25 09:19:58,835 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:19:58,837 - INFO - タグ処理開始
+2025-09-25 09:19:58,839 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:19:58,861 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:19:58,884 - INFO - 送信モード: Bluetooth送信を実行
+2025-09-25 09:19:58,886 - INFO - Bluetooth送信開始
+2025-09-25 09:19:58,921 - INFO - Bluetooth送信開始 - UID: 1d5321720f1080, 送信メッセージ: [1]1d5321720f1080
+2025-09-25 09:19:58,963 - INFO - Bluetooth送信完了 - UID: 1d5321720f1080, 送信メッセージ: [1]1d5321720f1080
+2025-09-25 09:19:58,968 - INFO - Bluetooth送信完了
+2025-09-25 09:19:58,980 - INFO - タグ処理完了
+2025-09-25 09:20:16,620 - INFO - タグ検出: 1de21e720f1080
+2025-09-25 09:20:16,621 - INFO - タグ処理開始
+2025-09-25 09:20:16,629 - INFO - UID: 1de21e720f1080, バイト列: [29, 226, 30, 114, 15, 16, 128]
+2025-09-25 09:20:16,633 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1de21e720f1080
+2025-09-25 09:20:16,646 - INFO - 送信モード: Bluetooth送信を実行
+2025-09-25 09:20:16,647 - INFO - Bluetooth送信開始
+2025-09-25 09:20:16,656 - INFO - Bluetooth送信開始 - UID: 1de21e720f1080, 送信メッセージ: [1]1de21e720f1080
+2025-09-25 09:20:16,686 - INFO - Bluetooth送信完了 - UID: 1de21e720f1080, 送信メッセージ: [1]1de21e720f1080
+2025-09-25 09:20:16,710 - INFO - Bluetooth送信完了
+2025-09-25 09:20:16,723 - INFO - タグ処理完了
+2025-09-25 09:20:24,398 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:20:24,399 - INFO - タグ処理開始
+2025-09-25 09:20:24,402 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:20:24,419 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:20:24,430 - INFO - 送信モード: Bluetooth送信を実行
+2025-09-25 09:20:24,430 - INFO - Bluetooth送信開始
+2025-09-25 09:20:24,437 - INFO - Bluetooth送信開始 - UID: 1d5321720f1080, 送信メッセージ: [1]1d5321720f1080
+2025-09-25 09:20:24,463 - INFO - Bluetooth送信完了 - UID: 1d5321720f1080, 送信メッセージ: [1]1d5321720f1080
+2025-09-25 09:20:24,502 - INFO - Bluetooth送信完了
+2025-09-25 09:20:24,519 - INFO - タグ処理完了
+2025-09-25 09:20:32,617 - INFO - タグ検出: 1d5120720f1080
+2025-09-25 09:20:32,619 - INFO - タグ処理開始
+2025-09-25 09:20:32,621 - INFO - UID: 1d5120720f1080, バイト列: [29, 81, 32, 114, 15, 16, 128]
+2025-09-25 09:20:32,636 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5120720f1080
+2025-09-25 09:20:32,648 - INFO - 送信モード: Bluetooth送信を実行
+2025-09-25 09:20:32,649 - INFO - Bluetooth送信開始
+2025-09-25 09:20:32,653 - INFO - Bluetooth送信開始 - UID: 1d5120720f1080, 送信メッセージ: [1]1d5120720f1080
+2025-09-25 09:20:32,699 - INFO - Bluetooth送信完了 - UID: 1d5120720f1080, 送信メッセージ: [1]1d5120720f1080
+2025-09-25 09:20:32,710 - INFO - Bluetooth送信完了
+2025-09-25 09:20:32,721 - INFO - タグ処理完了
+2025-09-25 09:22:45,872 - INFO - アプリケーション終了
+2025-09-25 09:22:49,190 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:22:49,190 - INFO - アプリケーション開始
+2025-09-25 09:22:49,322 - INFO - NFCリーダーアプリケーション開始 - モード: write
+2025-09-25 09:22:49,323 - INFO - Linux全画面表示設定完了
+2025-09-25 09:22:49,373 - INFO - NFC初期化開始
+2025-09-25 09:22:49,383 - INFO - I2C初期化完了
+2025-09-25 09:22:49,415 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:22:49,432 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:22:49,448 - INFO - SAM設定完了
+2025-09-25 09:22:49,450 - INFO - NFC初期化完了
+2025-09-25 09:22:49,451 - INFO - 読み取りループ開始
+2025-09-25 09:22:53,699 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:22:53,701 - INFO - タグ処理開始
+2025-09-25 09:22:53,703 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:22:53,726 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:22:53,739 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:22:53,741 - INFO - NFCタグ書き込み開始
+2025-09-25 09:22:53,761 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:22:54,266 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:22:54,267 - INFO - NFCタグ書き込み完了
+2025-09-25 09:22:54,269 - INFO - タグ処理完了
+2025-09-25 09:22:56,399 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:22:56,400 - INFO - タグ処理開始
+2025-09-25 09:22:56,401 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:22:56,405 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:22:56,414 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:22:56,415 - INFO - NFCタグ書き込み開始
+2025-09-25 09:22:56,423 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:22:56,463 - INFO - タグが検出されました。書き込みを続行します
+2025-09-25 09:22:56,479 - DEBUG - ページ 4 の書き込み成功
+2025-09-25 09:22:56,480 - ERROR - ページ 5 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,496 - DEBUG - ページ 6 の書き込み成功
+2025-09-25 09:22:56,511 - WARNING - ページ 7 の書き込みが失敗しました
+2025-09-25 09:22:56,512 - ERROR - ページ 8 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,527 - DEBUG - ページ 9 の書き込み成功
+2025-09-25 09:22:56,543 - DEBUG - ページ 10 の書き込み成功
+2025-09-25 09:22:56,543 - ERROR - ページ 11 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,559 - DEBUG - ページ 12 の書き込み成功
+2025-09-25 09:22:56,559 - ERROR - ページ 13 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,575 - DEBUG - ページ 14 の書き込み成功
+2025-09-25 09:22:56,590 - DEBUG - ページ 15 の書き込み成功
+2025-09-25 09:22:56,606 - DEBUG - ページ 16 の書き込み成功
+2025-09-25 09:22:56,621 - DEBUG - ページ 17 の書き込み成功
+2025-09-25 09:22:56,622 - ERROR - ページ 18 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,637 - DEBUG - ページ 19 の書き込み成功
+2025-09-25 09:22:56,638 - ERROR - ページ 20 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,653 - DEBUG - ページ 21 の書き込み成功
+2025-09-25 09:22:56,679 - WARNING - ページ 22 の書き込みが失敗しました
+2025-09-25 09:22:56,704 - WARNING - ページ 23 の書き込みが失敗しました
+2025-09-25 09:22:56,730 - WARNING - ページ 24 の書き込みが失敗しました
+2025-09-25 09:22:56,731 - ERROR - ページ 25 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,757 - WARNING - ページ 26 の書き込みが失敗しました
+2025-09-25 09:22:56,757 - ERROR - ページ 27 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,783 - WARNING - ページ 28 の書き込みが失敗しました
+2025-09-25 09:22:56,784 - ERROR - ページ 29 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,810 - WARNING - ページ 30 の書き込みが失敗しました
+2025-09-25 09:22:56,810 - ERROR - ページ 31 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,836 - WARNING - ページ 32 の書き込みが失敗しました
+2025-09-25 09:22:56,872 - WARNING - ページ 33 の書き込みが失敗しました
+2025-09-25 09:22:56,873 - ERROR - ページ 34 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,873 - ERROR - ページ 35 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,899 - WARNING - ページ 36 の書き込みが失敗しました
+2025-09-25 09:22:56,900 - ERROR - ページ 37 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,926 - WARNING - ページ 38 の書き込みが失敗しました
+2025-09-25 09:22:56,926 - ERROR - ページ 39 の書き込みでエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:22:56,926 - INFO - NFCタグ書き込み処理完了
+2025-09-25 09:22:56,927 - INFO - NFCタグ書き込み完了
+2025-09-25 09:22:56,929 - INFO - タグ処理完了
+2025-09-25 09:23:06,757 - INFO - アプリケーション終了
+2025-09-25 09:23:08,704 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:23:08,704 - INFO - アプリケーション開始
+2025-09-25 09:23:08,834 - INFO - NFCリーダーアプリケーション開始 - モード: send
+2025-09-25 09:23:08,835 - INFO - Linux全画面表示設定完了
+2025-09-25 09:23:08,883 - INFO - NFC初期化開始
+2025-09-25 09:23:08,894 - INFO - I2C初期化完了
+2025-09-25 09:23:08,897 - ERROR - NFC初期化エラー: Failed to detect the PN532
+2025-09-25 09:23:08,906 - ERROR - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 136, in setup_nfc
+    self.pn532 = PN532_I2C(self.i2c, debug=False)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/i2c.py", line 99, in __init__
+    super().__init__(debug=debug, irq=irq, reset=reset)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 177, in __init__
+    _ = self.firmware_version
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 356, in firmware_version
+    raise RuntimeError("Failed to detect the PN532")
+RuntimeError: Failed to detect the PN532
+
+2025-09-25 09:23:08,907 - WARNING - NFC初期化が失敗したため、読み取りを開始しません
+2025-09-25 09:23:14,005 - INFO - アプリケーション終了
+2025-09-25 09:23:15,794 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:23:15,795 - INFO - アプリケーション開始
+2025-09-25 09:23:15,925 - INFO - NFCリーダーアプリケーション開始 - モード: send
+2025-09-25 09:23:15,926 - INFO - Linux全画面表示設定完了
+2025-09-25 09:23:15,975 - INFO - NFC初期化開始
+2025-09-25 09:23:15,987 - INFO - I2C初期化完了
+2025-09-25 09:23:16,019 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:23:16,036 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:23:16,052 - INFO - SAM設定完了
+2025-09-25 09:23:16,053 - INFO - NFC初期化完了
+2025-09-25 09:23:16,054 - INFO - 読み取りループ開始
+2025-09-25 09:23:17,444 - INFO - タグ検出: 1d5321720f1080
+2025-09-25 09:23:17,445 - INFO - タグ処理開始
+2025-09-25 09:23:17,453 - INFO - UID: 1d5321720f1080, バイト列: [29, 83, 33, 114, 15, 16, 128]
+2025-09-25 09:23:17,457 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5321720f1080
+2025-09-25 09:23:17,465 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:23:17,466 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:23:17,467 - WARNING - タグが検出されません。書込み確認をスキップします
+2025-09-25 09:23:17,468 - INFO - Bluetooth送信開始
+2025-09-25 09:23:17,474 - INFO - Bluetooth送信開始 - UID: 1d5321720f1080, 送信メッセージ: [1]1d5321720f1080
+2025-09-25 09:23:17,517 - INFO - Bluetooth送信完了 - UID: 1d5321720f1080, 送信メッセージ: [1]1d5321720f1080
+2025-09-25 09:23:17,520 - INFO - Bluetooth送信完了
+2025-09-25 09:23:17,528 - INFO - タグ処理完了
+2025-09-25 09:23:23,835 - INFO - タグ検出: 1d241e720f1080
+2025-09-25 09:23:23,835 - INFO - タグ処理開始
+2025-09-25 09:23:23,840 - INFO - UID: 1d241e720f1080, バイト列: [29, 36, 30, 114, 15, 16, 128]
+2025-09-25 09:23:23,848 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d241e720f1080
+2025-09-25 09:23:23,852 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:23:23,853 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:23:23,856 - WARNING - タグが検出されません。書込み確認をスキップします
+2025-09-25 09:23:23,857 - INFO - Bluetooth送信開始
+2025-09-25 09:23:23,858 - INFO - Bluetooth送信開始 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:23:23,890 - INFO - Bluetooth送信完了 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:23:23,898 - INFO - Bluetooth送信完了
+2025-09-25 09:23:23,904 - INFO - タグ処理完了
+2025-09-25 09:23:28,045 - INFO - タグ検出: 1d5721720f1080
+2025-09-25 09:23:28,046 - INFO - タグ処理開始
+2025-09-25 09:23:28,054 - INFO - UID: 1d5721720f1080, バイト列: [29, 87, 33, 114, 15, 16, 128]
+2025-09-25 09:23:28,056 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:23:28,068 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:23:28,070 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:23:28,382 - DEBUG - ページ 14 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:23:28,419 - DEBUG - ページ 16 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:23:28,558 - DEBUG - ページ 21 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:23:28,666 - DEBUG - ページ 25 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:23:28,838 - DEBUG - ページ 31 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:23:28,873 - DEBUG - ページ 33 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:23:28,940 - DEBUG - ページ 36 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:23:28,941 - INFO - 期待するURLが見つかりませんでした。期待値: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:23:28,944 - INFO - タグにURLが書き込まれていません。書込みを実行します
+2025-09-25 09:23:28,953 - INFO - NFCタグ書き込み開始
+2025-09-25 09:23:28,973 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:23:29,481 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:23:29,481 - INFO - NFCタグ書き込み完了
+2025-09-25 09:23:29,482 - INFO - Bluetooth送信開始
+2025-09-25 09:23:29,489 - INFO - Bluetooth送信開始 - UID: 1d5721720f1080, 送信メッセージ: [1]1d5721720f1080
+2025-09-25 09:23:29,513 - INFO - Bluetooth送信完了 - UID: 1d5721720f1080, 送信メッセージ: [1]1d5721720f1080
+2025-09-25 09:23:29,531 - INFO - Bluetooth送信完了
+2025-09-25 09:23:29,555 - INFO - タグ処理完了
+2025-09-25 09:23:45,139 - INFO - タグ検出: 1d241e720f1080
+2025-09-25 09:23:45,140 - INFO - タグ処理開始
+2025-09-25 09:23:45,143 - INFO - UID: 1d241e720f1080, バイト列: [29, 36, 30, 114, 15, 16, 128]
+2025-09-25 09:23:45,161 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d241e720f1080
+2025-09-25 09:23:45,165 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:23:45,166 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:23:45,180 - WARNING - タグが検出されません。書込み確認をスキップします
+2025-09-25 09:23:45,181 - INFO - Bluetooth送信開始
+2025-09-25 09:23:45,187 - INFO - Bluetooth送信開始 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:23:45,250 - INFO - Bluetooth送信完了 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:23:45,255 - INFO - Bluetooth送信完了
+2025-09-25 09:23:45,259 - INFO - タグ処理完了
+2025-09-25 09:24:12,988 - INFO - タグ検出: 1d241e720f1080
+2025-09-25 09:24:12,988 - INFO - タグ処理開始
+2025-09-25 09:24:12,991 - INFO - UID: 1d241e720f1080, バイト列: [29, 36, 30, 114, 15, 16, 128]
+2025-09-25 09:24:12,999 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d241e720f1080
+2025-09-25 09:24:13,011 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:24:13,011 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:24:13,212 - DEBUG - ページ 9 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,229 - DEBUG - ページ 11 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,246 - DEBUG - ページ 13 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,295 - DEBUG - ページ 17 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,345 - DEBUG - ページ 21 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,362 - DEBUG - ページ 23 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,390 - DEBUG - ページ 25 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,466 - DEBUG - ページ 30 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,483 - DEBUG - ページ 32 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,500 - DEBUG - ページ 34 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:24:13,575 - INFO - 期待するURLが見つかりませんでした。期待値: https://akioka-sub.cloud/questionnaire/1d241e720f1080
+2025-09-25 09:24:13,575 - INFO - タグにURLが書き込まれていません。書込みを実行します
+2025-09-25 09:24:13,576 - INFO - NFCタグ書き込み開始
+2025-09-25 09:24:13,580 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d241e720f1080
+2025-09-25 09:24:14,093 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:24:14,093 - INFO - NFCタグ書き込み完了
+2025-09-25 09:24:14,093 - INFO - Bluetooth送信開始
+2025-09-25 09:24:14,095 - INFO - Bluetooth送信開始 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:24:14,112 - INFO - Bluetooth送信完了 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:24:14,113 - INFO - Bluetooth送信完了
+2025-09-25 09:24:14,115 - INFO - タグ処理完了
+2025-09-25 09:25:19,728 - INFO - タグ検出: 1d321e720f1080
+2025-09-25 09:25:19,729 - INFO - タグ処理開始
+2025-09-25 09:25:19,732 - INFO - UID: 1d321e720f1080, バイト列: [29, 50, 30, 114, 15, 16, 128]
+2025-09-25 09:25:19,742 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:25:19,755 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:25:19,758 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:25:20,080 - DEBUG - ページ 5 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,129 - DEBUG - ページ 9 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,162 - DEBUG - ページ 12 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,206 - DEBUG - ページ 15 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,207 - DEBUG - ページ 16 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,208 - DEBUG - ページ 17 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,208 - DEBUG - ページ 18 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,290 - DEBUG - ページ 24 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,307 - DEBUG - ページ 26 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,351 - DEBUG - ページ 29 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,378 - DEBUG - ページ 31 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,379 - DEBUG - ページ 32 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,380 - DEBUG - ページ 33 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,380 - DEBUG - ページ 34 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,397 - DEBUG - ページ 36 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:20,397 - INFO - 期待するURLが見つかりませんでした。期待値: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:25:20,397 - INFO - タグにURLが書き込まれていません。書込みを実行します
+2025-09-25 09:25:20,398 - INFO - NFCタグ書き込み開始
+2025-09-25 09:25:20,399 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:25:20,400 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:25:20,400 - INFO - NFCタグ書き込み完了
+2025-09-25 09:25:20,403 - INFO - Bluetooth送信開始
+2025-09-25 09:25:20,405 - INFO - Bluetooth送信開始 - UID: 1d321e720f1080, 送信メッセージ: [1]1d321e720f1080
+2025-09-25 09:25:20,423 - INFO - Bluetooth送信完了 - UID: 1d321e720f1080, 送信メッセージ: [1]1d321e720f1080
+2025-09-25 09:25:20,424 - INFO - Bluetooth送信完了
+2025-09-25 09:25:20,426 - INFO - タグ処理完了
+2025-09-25 09:25:34,876 - INFO - タグ検出: 1d321e720f1080
+2025-09-25 09:25:34,878 - INFO - タグ処理開始
+2025-09-25 09:25:34,880 - INFO - UID: 1d321e720f1080, バイト列: [29, 50, 30, 114, 15, 16, 128]
+2025-09-25 09:25:34,890 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:25:34,915 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:25:34,917 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:25:34,962 - DEBUG - ページ 4 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:34,981 - DEBUG - ページ 6 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,001 - DEBUG - ページ 8 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,002 - DEBUG - ページ 9 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,020 - DEBUG - ページ 11 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,021 - DEBUG - ページ 12 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,021 - DEBUG - ページ 13 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,071 - DEBUG - ページ 17 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,121 - DEBUG - ページ 21 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,138 - DEBUG - ページ 23 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,199 - DEBUG - ページ 27 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,200 - DEBUG - ページ 28 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,200 - DEBUG - ページ 29 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,201 - DEBUG - ページ 30 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,228 - DEBUG - ページ 32 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,255 - DEBUG - ページ 34 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,283 - DEBUG - ページ 36 読み取りエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:25:35,283 - INFO - 期待するURLが見つかりませんでした。期待値: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:25:35,284 - INFO - タグにURLが書き込まれていません。書込みを実行します
+2025-09-25 09:25:35,284 - INFO - NFCタグ書き込み開始
+2025-09-25 09:25:35,286 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:25:35,792 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:25:35,792 - INFO - NFCタグ書き込み完了
+2025-09-25 09:25:35,793 - INFO - Bluetooth送信開始
+2025-09-25 09:25:35,794 - INFO - Bluetooth送信開始 - UID: 1d321e720f1080, 送信メッセージ: [1]1d321e720f1080
+2025-09-25 09:25:35,835 - INFO - Bluetooth送信完了 - UID: 1d321e720f1080, 送信メッセージ: [1]1d321e720f1080
+2025-09-25 09:25:35,837 - INFO - Bluetooth送信完了
+2025-09-25 09:25:35,842 - INFO - タグ処理完了
+2025-09-25 09:25:39,364 - INFO - タグ検出: 1d321e720f1080
+2025-09-25 09:25:39,365 - INFO - タグ処理開始
+2025-09-25 09:25:39,366 - INFO - UID: 1d321e720f1080, バイト列: [29, 50, 30, 114, 15, 16, 128]
+2025-09-25 09:25:39,378 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:25:39,382 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:25:39,382 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:25:39,385 - WARNING - タグが検出されません。書込み確認をスキップします
+2025-09-25 09:25:39,386 - INFO - Bluetooth送信開始
+2025-09-25 09:25:39,388 - INFO - Bluetooth送信開始 - UID: 1d321e720f1080, 送信メッセージ: [1]1d321e720f1080
+2025-09-25 09:25:39,424 - INFO - Bluetooth送信完了 - UID: 1d321e720f1080, 送信メッセージ: [1]1d321e720f1080
+2025-09-25 09:25:39,424 - INFO - Bluetooth送信完了
+2025-09-25 09:25:39,427 - INFO - タグ処理完了
+2025-09-25 09:26:46,314 - INFO - 読み取りループ終了
+2025-09-25 09:26:47,030 - INFO - アプリケーション終了
+2025-09-25 09:26:49,251 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:26:49,252 - INFO - アプリケーション開始
+2025-09-25 09:26:49,384 - INFO - NFCリーダーアプリケーション開始 - モード: send
+2025-09-25 09:26:49,385 - INFO - Linux全画面表示設定完了
+2025-09-25 09:26:49,438 - INFO - NFC初期化開始
+2025-09-25 09:26:49,449 - INFO - I2C初期化完了
+2025-09-25 09:26:49,481 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:26:49,497 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:26:49,514 - INFO - SAM設定完了
+2025-09-25 09:26:49,515 - INFO - NFC初期化完了
+2025-09-25 09:26:49,516 - INFO - 読み取りループ開始
+2025-09-25 09:26:54,039 - INFO - タグ検出: 1d5721720f1080
+2025-09-25 09:26:54,041 - INFO - タグ処理開始
+2025-09-25 09:26:54,043 - INFO - UID: 1d5721720f1080, バイト列: [29, 87, 33, 114, 15, 16, 128]
+2025-09-25 09:26:54,058 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:26:54,077 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:26:54,078 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:26:54,082 - WARNING - タグが検出されません。書込み確認をスキップします
+2025-09-25 09:26:54,082 - INFO - Bluetooth送信開始
+2025-09-25 09:26:54,086 - INFO - Bluetooth送信開始 - UID: 1d5721720f1080, 送信メッセージ: [1]1d5721720f1080
+2025-09-25 09:26:54,115 - INFO - Bluetooth送信完了 - UID: 1d5721720f1080, 送信メッセージ: [1]1d5721720f1080
+2025-09-25 09:26:54,139 - INFO - Bluetooth送信完了
+2025-09-25 09:26:54,146 - INFO - タグ処理完了
+2025-09-25 09:27:13,068 - INFO - アプリケーション終了
+2025-09-25 09:27:14,870 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:27:14,870 - INFO - アプリケーション開始
+2025-09-25 09:27:15,001 - INFO - NFCリーダーアプリケーション開始 - モード: send
+2025-09-25 09:27:15,001 - INFO - Linux全画面表示設定完了
+2025-09-25 09:27:15,055 - INFO - NFC初期化開始
+2025-09-25 09:27:15,067 - INFO - I2C初期化完了
+2025-09-25 09:27:15,100 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:27:15,116 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:27:15,132 - INFO - SAM設定完了
+2025-09-25 09:27:15,134 - INFO - NFC初期化完了
+2025-09-25 09:27:15,135 - INFO - 読み取りループ開始
+2025-09-25 09:27:17,918 - INFO - タグ検出: 1d5721720f1080
+2025-09-25 09:27:17,921 - INFO - タグ処理開始
+2025-09-25 09:27:17,931 - INFO - UID: 1d5721720f1080, バイト列: [29, 87, 33, 114, 15, 16, 128]
+2025-09-25 09:27:17,949 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:27:17,970 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:27:17,972 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:27:17,988 - WARNING - タグが検出されません。書込み確認をスキップします
+2025-09-25 09:27:17,989 - INFO - Bluetooth送信開始
+2025-09-25 09:27:18,004 - INFO - Bluetooth送信開始 - UID: 1d5721720f1080, 送信メッセージ: [1]1d5721720f1080
+2025-09-25 09:27:18,061 - INFO - Bluetooth送信完了 - UID: 1d5721720f1080, 送信メッセージ: [1]1d5721720f1080
+2025-09-25 09:27:18,093 - INFO - Bluetooth送信完了
+2025-09-25 09:27:18,101 - INFO - タグ処理完了
+ーーー2025-09-25 09:27:48,738 - INFO - タグ検出: 1d241e720f1080
+2025-09-25 09:27:48,738 - INFO - タグ処理開始
+2025-09-25 09:27:48,739 - INFO - UID: 1d241e720f1080, バイト列: [29, 36, 30, 114, 15, 16, 128]
+2025-09-25 09:27:48,742 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d241e720f1080
+2025-09-25 09:27:48,750 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:27:48,750 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:27:49,260 - WARNING - タグが検出されません。書込み確認をスキップします
+2025-09-25 09:27:49,260 - INFO - Bluetooth送信開始
+2025-09-25 09:27:49,261 - INFO - Bluetooth送信開始 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:27:49,283 - INFO - Bluetooth送信完了 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:27:49,283 - INFO - Bluetooth送信完了
+2025-09-25 09:27:49,287 - INFO - タグ処理完了
+2025-09-25 09:28:01,269 - INFO - タグ検出: 1d241e720f1080
+2025-09-25 09:28:01,270 - INFO - タグ処理開始
+2025-09-25 09:28:01,279 - INFO - UID: 1d241e720f1080, バイト列: [29, 36, 30, 114, 15, 16, 128]
+2025-09-25 09:28:01,296 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d241e720f1080
+2025-09-25 09:28:01,310 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:28:01,311 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:28:01,398 - DEBUG - ページ 4 読み取り試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:28:01,710 - DEBUG - ページ 4 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:02,021 - DEBUG - ページ 4 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:02,122 - DEBUG - ページ 4 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:02,123 - DEBUG - ページ 5 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:02,434 - DEBUG - ページ 5 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:02,535 - DEBUG - ページ 5 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:02,635 - DEBUG - ページ 5 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:02,847 - DEBUG - ページ 6 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:03,158 - DEBUG - ページ 6 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:03,259 - DEBUG - ページ 6 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:03,360 - DEBUG - ページ 6 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:03,574 - DEBUG - ページ 7 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:03,886 - DEBUG - ページ 7 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:04,197 - DEBUG - ページ 7 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:04,298 - DEBUG - ページ 7 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:04,299 - DEBUG - ページ 8 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:04,610 - DEBUG - ページ 8 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:04,922 - DEBUG - ページ 8 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:05,022 - DEBUG - ページ 8 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:05,023 - DEBUG - ページ 9 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:05,337 - DEBUG - ページ 9 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:05,438 - DEBUG - ページ 9 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:05,538 - DEBUG - ページ 9 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:05,540 - DEBUG - ページ 10 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:05,850 - DEBUG - ページ 10 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:05,952 - DEBUG - ページ 10 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:06,052 - DEBUG - ページ 10 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:06,053 - DEBUG - ページ 11 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:06,365 - DEBUG - ページ 11 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:06,467 - DEBUG - ページ 11 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:06,568 - DEBUG - ページ 11 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:06,570 - DEBUG - ページ 12 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:06,734 - DEBUG - ページ 12 読み取り試行 2/3: 結果がNone
+2025-09-25 09:28:06,836 - DEBUG - ページ 12 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:06,937 - DEBUG - ページ 12 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:07,147 - DEBUG - ページ 13 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:07,248 - DEBUG - ページ 13 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:07,558 - DEBUG - ページ 13 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:07,659 - DEBUG - ページ 13 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:07,870 - DEBUG - ページ 14 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:08,179 - DEBUG - ページ 14 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:08,490 - DEBUG - ページ 14 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:08,590 - DEBUG - ページ 14 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:08,804 - DEBUG - ページ 15 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:09,116 - DEBUG - ページ 15 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:09,218 - DEBUG - ページ 15 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:09,319 - DEBUG - ページ 15 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:09,527 - DEBUG - ページ 16 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:09,837 - DEBUG - ページ 16 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:10,149 - DEBUG - ページ 16 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:10,249 - DEBUG - ページ 16 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:10,461 - DEBUG - ページ 17 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:10,774 - DEBUG - ページ 17 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:10,876 - DEBUG - ページ 17 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:10,977 - DEBUG - ページ 17 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:11,188 - DEBUG - ページ 18 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:11,498 - DEBUG - ページ 18 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:11,812 - DEBUG - ページ 18 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:11,913 - DEBUG - ページ 18 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:11,915 - DEBUG - ページ 19 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:12,225 - DEBUG - ページ 19 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:12,539 - DEBUG - ページ 19 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:12,640 - DEBUG - ページ 19 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:12,850 - DEBUG - ページ 20 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:13,161 - DEBUG - ページ 20 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:13,473 - DEBUG - ページ 20 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:13,574 - DEBUG - ページ 20 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:13,576 - DEBUG - ページ 21 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:13,886 - DEBUG - ページ 21 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:14,203 - DEBUG - ページ 21 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:14,303 - DEBUG - ページ 21 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:14,304 - DEBUG - ページ 22 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:14,616 - DEBUG - ページ 22 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:14,717 - DEBUG - ページ 22 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:14,817 - DEBUG - ページ 22 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:15,030 - DEBUG - ページ 23 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:15,131 - DEBUG - ページ 23 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:15,442 - DEBUG - ページ 23 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:15,542 - DEBUG - ページ 23 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:15,754 - DEBUG - ページ 24 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:16,066 - DEBUG - ページ 24 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:16,167 - DEBUG - ページ 24 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:16,267 - DEBUG - ページ 24 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:16,481 - DEBUG - ページ 25 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:16,792 - DEBUG - ページ 25 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:16,893 - DEBUG - ページ 25 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:16,994 - DEBUG - ページ 25 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:17,205 - DEBUG - ページ 26 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:17,306 - DEBUG - ページ 26 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:17,618 - DEBUG - ページ 26 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:17,718 - DEBUG - ページ 26 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:17,720 - DEBUG - ページ 27 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:18,031 - DEBUG - ページ 27 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:18,342 - DEBUG - ページ 27 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:18,443 - DEBUG - ページ 27 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:18,444 - DEBUG - ページ 28 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:18,755 - DEBUG - ページ 28 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:18,856 - DEBUG - ページ 28 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:18,957 - DEBUG - ページ 28 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:19,163 - DEBUG - ページ 29 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:19,474 - DEBUG - ページ 29 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:19,786 - DEBUG - ページ 29 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:19,886 - DEBUG - ページ 29 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:20,098 - DEBUG - ページ 30 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:20,410 - DEBUG - ページ 30 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:20,512 - DEBUG - ページ 30 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:20,614 - DEBUG - ページ 30 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:20,825 - DEBUG - ページ 31 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:20,927 - DEBUG - ページ 31 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:21,236 - DEBUG - ページ 31 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:21,337 - DEBUG - ページ 31 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:21,338 - DEBUG - ページ 32 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:21,647 - DEBUG - ページ 32 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:21,749 - DEBUG - ページ 32 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:21,850 - DEBUG - ページ 32 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:22,063 - DEBUG - ページ 33 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:22,374 - DEBUG - ページ 33 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:22,686 - DEBUG - ページ 33 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:22,787 - DEBUG - ページ 33 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:22,999 - DEBUG - ページ 34 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:23,311 - DEBUG - ページ 34 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:23,622 - DEBUG - ページ 34 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:23,723 - DEBUG - ページ 34 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:23,935 - DEBUG - ページ 35 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:24,036 - DEBUG - ページ 35 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:24,346 - DEBUG - ページ 35 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:24,447 - DEBUG - ページ 35 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:24,658 - DEBUG - ページ 36 読み取り試行 1/3: タグが検出されません
+2025-09-25 09:28:24,970 - DEBUG - ページ 36 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:28:25,282 - DEBUG - ページ 36 読み取り試行 3/3: タグが検出されません
+2025-09-25 09:28:25,383 - DEBUG - ページ 36 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:28:25,384 - INFO - タグにURLが書き込まれていません。書込みを実行します
+2025-09-25 09:28:25,386 - INFO - NFCタグ書き込み開始
+2025-09-25 09:28:25,417 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d241e720f1080
+2025-09-25 09:28:25,421 - DEBUG - タグ検出試行 1/3 失敗
+2025-09-25 09:28:25,826 - DEBUG - タグ検出試行 2/3 失敗
+2025-09-25 09:28:26,234 - DEBUG - タグ検出試行 3/3 失敗
+2025-09-25 09:28:26,334 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:28:26,335 - INFO - NFCタグ書き込み完了
+2025-09-25 09:28:26,337 - INFO - Bluetooth送信開始
+2025-09-25 09:28:26,344 - INFO - Bluetooth送信開始 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:28:26,377 - INFO - Bluetooth送信完了 - UID: 1d241e720f1080, 送信メッセージ: [1]1d241e720f1080
+2025-09-25 09:28:26,380 - INFO - Bluetooth送信完了
+2025-09-25 09:28:26,391 - INFO - タグ処理完了
+2025-09-25 09:37:08,440 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:37:08,457 - INFO - アプリケーション開始
+2025-09-25 09:37:08,587 - INFO - NFCリーダーアプリケーション開始 - モード: send
+2025-09-25 09:37:08,587 - INFO - Linux全画面表示設定完了
+2025-09-25 09:37:08,635 - INFO - NFC初期化開始
+2025-09-25 09:37:08,644 - INFO - I2C初期化完了
+2025-09-25 09:37:08,662 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:37:08,678 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:37:08,694 - INFO - SAM設定完了
+2025-09-25 09:37:08,695 - INFO - NFC初期化完了
+2025-09-25 09:37:08,696 - INFO - 読み取りループ開始
+2025-09-25 09:37:12,875 - INFO - タグ検出: 1de520720f1080
+2025-09-25 09:37:12,876 - INFO - タグ処理開始
+2025-09-25 09:37:12,877 - INFO - UID: 1de520720f1080, バイト列: [29, 229, 32, 114, 15, 16, 128]
+2025-09-25 09:37:12,885 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:37:12,893 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:37:12,894 - INFO - 送信モード: NFCタグの書込み状況を確認中...
+2025-09-25 09:37:12,902 - WARNING - タグが検出されません。書込み確認をスキップします
+2025-09-25 09:37:12,902 - INFO - Bluetooth送信開始
+2025-09-25 09:37:12,904 - INFO - Bluetooth送信開始 - UID: 1de520720f1080, 送信メッセージ: [1]1de520720f1080
+2025-09-25 09:37:12,946 - INFO - Bluetooth送信完了 - UID: 1de520720f1080, 送信メッセージ: [1]1de520720f1080
+2025-09-25 09:37:12,957 - INFO - Bluetooth送信完了
+2025-09-25 09:37:12,963 - INFO - タグ処理完了
+2025-09-25 09:39:04,416 - INFO - 読み取りループ終了
+2025-09-25 09:39:06,097 - INFO - アプリケーション終了
+2025-09-25 09:39:08,257 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:39:08,258 - INFO - アプリケーション開始
+2025-09-25 09:39:08,393 - INFO - NFCリーダーアプリケーション開始 - モード: send
+2025-09-25 09:39:08,394 - INFO - Linux全画面表示設定完了
+2025-09-25 09:39:08,446 - INFO - NFC初期化開始
+2025-09-25 09:39:08,458 - INFO - I2C初期化完了
+2025-09-25 09:39:08,493 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:39:08,510 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:39:08,529 - INFO - SAM設定完了
+2025-09-25 09:39:08,530 - INFO - NFC初期化完了
+2025-09-25 09:39:08,531 - INFO - 読み取りループ開始
+2025-09-25 09:39:12,032 - INFO - タグ検出: 1de520720f1080
+2025-09-25 09:39:12,034 - INFO - タグ処理開始
+2025-09-25 09:39:12,036 - INFO - UID: 1de520720f1080, バイト列: [29, 229, 32, 114, 15, 16, 128]
+2025-09-25 09:39:12,043 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:39:12,058 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:39:12,059 - INFO - 送信モード: 簡易書込み確認と書込み実行
+2025-09-25 09:39:12,068 - WARNING - タグが検出されません。書込みを実行します
+2025-09-25 09:39:12,081 - INFO - NFCタグ書き込み開始
+2025-09-25 09:39:12,083 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:39:12,085 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:39:12,086 - INFO - NFCタグ書き込み完了
+2025-09-25 09:39:12,116 - INFO - Bluetooth送信開始
+2025-09-25 09:39:12,122 - INFO - Bluetooth送信開始 - UID: 1de520720f1080, 送信メッセージ: [1]1de520720f1080
+2025-09-25 09:39:12,180 - INFO - Bluetooth送信完了 - UID: 1de520720f1080, 送信メッセージ: [1]1de520720f1080
+2025-09-25 09:39:12,181 - INFO - Bluetooth送信完了
+2025-09-25 09:39:12,184 - INFO - タグ処理完了
+2025-09-25 09:39:32,201 - INFO - タグ検出: 1de520720f1080
+2025-09-25 09:39:32,202 - INFO - タグ処理開始
+2025-09-25 09:39:32,205 - INFO - UID: 1de520720f1080, バイト列: [29, 229, 32, 114, 15, 16, 128]
+2025-09-25 09:39:32,218 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:39:32,231 - INFO - 送信モード: 書込み確認とBluetooth送信を実行
+2025-09-25 09:39:32,232 - INFO - 送信モード: 簡易書込み確認と書込み実行
+2025-09-25 09:39:32,333 - DEBUG - ページ 4 読み取り試行 1/3: 結果の型が不正: <class 'bytearray'>
+2025-09-25 09:39:32,434 - DEBUG - ページ 4 読み取り試行 2/3: タグが検出されません
+2025-09-25 09:39:32,693 - DEBUG - ページ 4 読み取り試行 3/3: 結果の型が不正: <class 'bytearray'>
+2025-09-25 09:39:32,794 - DEBUG - ページ 4 読み取り失敗: 3回の試行すべて失敗
+2025-09-25 09:39:32,794 - INFO - タグにURLが書き込まれていません。書込みを実行します
+2025-09-25 09:39:32,795 - INFO - NFCタグ書き込み開始
+2025-09-25 09:39:32,796 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:39:32,835 - INFO - タグが検出されました。書き込みを続行します
+2025-09-25 09:39:32,837 - DEBUG - ページ 4 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:32,986 - DEBUG - ページ 4 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:39:33,125 - DEBUG - ページ 4 書き込み試行 3/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:39:33,226 - DEBUG - ページ 4 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:33,226 - WARNING - ページ 4 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:33,227 - DEBUG - ページ 5 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:33,381 - DEBUG - ページ 5 書き込み成功（試行 2/3）: True
+2025-09-25 09:39:33,381 - DEBUG - ページ 5 の書き込み成功 (1/36)
+2025-09-25 09:39:33,441 - DEBUG - ページ 6 書き込み成功（試行 1/3）: True
+2025-09-25 09:39:33,441 - DEBUG - ページ 6 の書き込み成功 (2/36)
+2025-09-25 09:39:33,485 - DEBUG - ページ 7 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:39:33,586 - DEBUG - ページ 7 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:33,725 - DEBUG - ページ 7 書き込み試行 3/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:39:33,826 - DEBUG - ページ 7 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:33,826 - WARNING - ページ 7 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:33,880 - DEBUG - ページ 8 書き込み成功（試行 1/3）: True
+2025-09-25 09:39:33,880 - DEBUG - ページ 8 の書き込み成功 (3/36)
+2025-09-25 09:39:33,963 - DEBUG - ページ 9 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:39:34,102 - DEBUG - ページ 9 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:39:34,203 - DEBUG - ページ 9 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:34,304 - DEBUG - ページ 9 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:34,304 - WARNING - ページ 9 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:34,305 - DEBUG - ページ 10 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:34,444 - DEBUG - ページ 10 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:39:34,545 - DEBUG - ページ 10 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:34,646 - DEBUG - ページ 10 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:34,646 - WARNING - ページ 10 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:34,685 - DEBUG - ページ 11 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:39:34,786 - DEBUG - ページ 11 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:34,942 - DEBUG - ページ 11 書き込み成功（試行 3/3）: True
+2025-09-25 09:39:34,943 - DEBUG - ページ 11 の書き込み成功 (4/36)
+2025-09-25 09:39:35,002 - DEBUG - ページ 12 書き込み成功（試行 1/3）: True
+2025-09-25 09:39:35,002 - DEBUG - ページ 12 の書き込み成功 (5/36)
+2025-09-25 09:39:35,008 - DEBUG - ページ 13 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:35,109 - DEBUG - ページ 13 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:35,420 - DEBUG - ページ 13 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:35,521 - DEBUG - ページ 13 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:35,522 - WARNING - ページ 13 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:35,523 - WARNING - ページ 14 書き込み前にタグが検出されません
+2025-09-25 09:39:35,523 - DEBUG - ページ 14 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:35,835 - DEBUG - ページ 14 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:36,148 - DEBUG - ページ 14 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:36,248 - DEBUG - ページ 14 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:36,249 - WARNING - ページ 14 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:36,462 - DEBUG - ページ 15 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:36,773 - DEBUG - ページ 15 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:36,875 - DEBUG - ページ 15 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:36,976 - DEBUG - ページ 15 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:36,977 - WARNING - ページ 15 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:36,978 - DEBUG - ページ 16 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:37,289 - DEBUG - ページ 16 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:37,600 - DEBUG - ページ 16 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:37,701 - DEBUG - ページ 16 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:37,701 - WARNING - ページ 16 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:37,914 - DEBUG - ページ 17 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:38,226 - DEBUG - ページ 17 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:38,537 - DEBUG - ページ 17 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:38,638 - DEBUG - ページ 17 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:38,639 - WARNING - ページ 17 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:38,850 - DEBUG - ページ 18 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:39,161 - DEBUG - ページ 18 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:39,263 - DEBUG - ページ 18 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:39,364 - DEBUG - ページ 18 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:39,365 - WARNING - ページ 18 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:39,478 - WARNING - ページ 19 書き込み前にタグが検出されません
+2025-09-25 09:39:39,687 - DEBUG - ページ 19 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:39,998 - DEBUG - ページ 19 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:40,308 - DEBUG - ページ 19 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:40,409 - DEBUG - ページ 19 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:40,410 - WARNING - ページ 19 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:40,412 - DEBUG - ページ 20 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:40,720 - DEBUG - ページ 20 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:41,032 - DEBUG - ページ 20 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:41,133 - DEBUG - ページ 20 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:41,133 - WARNING - ページ 20 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:41,344 - DEBUG - ページ 21 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:41,655 - DEBUG - ページ 21 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:41,757 - DEBUG - ページ 21 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:41,858 - DEBUG - ページ 21 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:41,858 - WARNING - ページ 21 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:42,070 - DEBUG - ページ 22 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:42,171 - DEBUG - ページ 22 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:42,272 - DEBUG - ページ 22 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:42,372 - DEBUG - ページ 22 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:42,373 - WARNING - ページ 22 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:42,586 - DEBUG - ページ 23 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:42,898 - DEBUG - ページ 23 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:43,209 - DEBUG - ページ 23 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:43,310 - DEBUG - ページ 23 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:43,310 - WARNING - ページ 23 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:43,311 - WARNING - ページ 24 書き込み前にタグが検出されません
+2025-09-25 09:39:43,523 - DEBUG - ページ 24 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:43,624 - DEBUG - ページ 24 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:43,726 - DEBUG - ページ 24 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:43,826 - DEBUG - ページ 24 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:43,827 - WARNING - ページ 24 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:44,039 - DEBUG - ページ 25 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:44,351 - DEBUG - ページ 25 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:44,452 - DEBUG - ページ 25 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:44,552 - DEBUG - ページ 25 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:44,555 - WARNING - ページ 25 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:44,760 - DEBUG - ページ 26 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:44,861 - DEBUG - ページ 26 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:45,173 - DEBUG - ページ 26 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:45,273 - DEBUG - ページ 26 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:45,274 - WARNING - ページ 26 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:45,486 - DEBUG - ページ 27 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:45,587 - DEBUG - ページ 27 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:45,892 - DEBUG - ページ 27 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:45,993 - DEBUG - ページ 27 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:45,993 - WARNING - ページ 27 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:45,994 - DEBUG - ページ 28 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:46,306 - DEBUG - ページ 28 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:46,407 - DEBUG - ページ 28 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:46,507 - DEBUG - ページ 28 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:46,508 - WARNING - ページ 28 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:46,615 - WARNING - ページ 29 書き込み前にタグが検出されません
+2025-09-25 09:39:46,616 - DEBUG - ページ 29 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:46,717 - DEBUG - ページ 29 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:47,023 - DEBUG - ページ 29 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:47,124 - DEBUG - ページ 29 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:47,125 - WARNING - ページ 29 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:47,337 - DEBUG - ページ 30 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:47,649 - DEBUG - ページ 30 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:47,961 - DEBUG - ページ 30 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:48,062 - DEBUG - ページ 30 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:48,062 - WARNING - ページ 30 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:48,273 - DEBUG - ページ 31 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:48,586 - DEBUG - ページ 31 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:48,899 - DEBUG - ページ 31 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:48,999 - DEBUG - ページ 31 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:49,000 - WARNING - ページ 31 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:49,002 - DEBUG - ページ 32 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:49,320 - DEBUG - ページ 32 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:49,633 - DEBUG - ページ 32 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:49,733 - DEBUG - ページ 32 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:49,734 - WARNING - ページ 32 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:49,946 - DEBUG - ページ 33 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:50,259 - DEBUG - ページ 33 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:50,360 - DEBUG - ページ 33 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:50,460 - DEBUG - ページ 33 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:50,461 - WARNING - ページ 33 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:50,568 - WARNING - ページ 34 書き込み前にタグが検出されません
+2025-09-25 09:39:50,781 - DEBUG - ページ 34 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:50,882 - DEBUG - ページ 34 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:51,193 - DEBUG - ページ 34 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:51,294 - DEBUG - ページ 34 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:51,294 - WARNING - ページ 34 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:51,295 - DEBUG - ページ 35 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:51,606 - DEBUG - ページ 35 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:51,918 - DEBUG - ページ 35 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:52,019 - DEBUG - ページ 35 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:52,019 - WARNING - ページ 35 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:52,020 - DEBUG - ページ 36 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:52,332 - DEBUG - ページ 36 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:52,433 - DEBUG - ページ 36 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:52,533 - DEBUG - ページ 36 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:52,534 - WARNING - ページ 36 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:52,745 - DEBUG - ページ 37 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:52,847 - DEBUG - ページ 37 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:52,948 - DEBUG - ページ 37 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:53,048 - DEBUG - ページ 37 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:53,049 - WARNING - ページ 37 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:53,260 - DEBUG - ページ 38 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:53,361 - DEBUG - ページ 38 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:53,673 - DEBUG - ページ 38 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:53,773 - DEBUG - ページ 38 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:53,773 - WARNING - ページ 38 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:53,881 - WARNING - ページ 39 書き込み前にタグが検出されません
+2025-09-25 09:39:53,882 - DEBUG - ページ 39 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:39:54,195 - DEBUG - ページ 39 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:39:54,506 - DEBUG - ページ 39 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:39:54,607 - DEBUG - ページ 39 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:39:54,608 - WARNING - ページ 39 の書き込みでレスポンスがNoneでした
+2025-09-25 09:39:54,609 - INFO - 書き込み完了: 5/36 ページ成功
+2025-09-25 09:39:54,610 - INFO - 書き込み検証を実行中...
+2025-09-25 09:39:55,116 - WARNING - 書き込み後、タグが検出されませんでした
+2025-09-25 09:39:55,116 - INFO - NFCタグ書き込み処理完了
+2025-09-25 09:39:55,117 - INFO - NFCタグ書き込み完了
+2025-09-25 09:39:55,118 - INFO - Bluetooth送信開始
+2025-09-25 09:39:55,119 - INFO - Bluetooth送信開始 - UID: 1de520720f1080, 送信メッセージ: [1]1de520720f1080
+2025-09-25 09:39:55,169 - INFO - Bluetooth送信完了 - UID: 1de520720f1080, 送信メッセージ: [1]1de520720f1080
+2025-09-25 09:39:55,170 - INFO - Bluetooth送信完了
+2025-09-25 09:39:55,175 - INFO - タグ処理完了
+2025-09-25 09:40:06,429 - INFO - アプリケーション終了
+2025-09-25 09:40:08,559 - INFO - アプリケーション開始
+2025-09-25 09:40:08,695 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 09:40:08,695 - INFO - Linux全画面表示設定完了
+2025-09-25 09:40:08,749 - INFO - NFC初期化開始
+2025-09-25 09:40:08,764 - INFO - I2C初期化完了
+2025-09-25 09:40:08,797 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:40:08,813 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:40:08,830 - INFO - SAM設定完了
+2025-09-25 09:40:08,831 - INFO - NFC初期化完了
+2025-09-25 09:40:08,832 - INFO - 読み取りループ開始
+2025-09-25 09:40:17,812 - INFO - タグ検出: 1de520720f1080
+2025-09-25 09:40:17,813 - INFO - タグ処理開始
+2025-09-25 09:40:17,814 - INFO - UID: 1de520720f1080, バイト列: [29, 229, 32, 114, 15, 16, 128]
+2025-09-25 09:40:17,824 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:40:17,827 - INFO - NFCタグ書き込み開始
+2025-09-25 09:40:17,830 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:40:17,830 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:40:17,843 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:40:17,847 - INFO - Bluetooth送信開始
+2025-09-25 09:40:17,849 - INFO - Bluetooth送信開始 - UID: 1de520720f1080, 送信メッセージ: [1:]1de520720f1080
+2025-09-25 09:40:17,888 - INFO - Bluetooth送信完了 - UID: 1de520720f1080, 送信メッセージ: [1:]1de520720f1080
+2025-09-25 09:40:17,920 - INFO - Bluetooth送信完了
+2025-09-25 09:40:17,926 - INFO - タグ処理完了
+2025-09-25 09:40:36,307 - INFO - 読み取りループ終了
+2025-09-25 09:40:37,460 - INFO - アプリケーション終了
+2025-09-25 09:40:47,571 - INFO - アプリケーション開始
+2025-09-25 09:40:47,705 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 09:40:47,705 - INFO - Linux全画面表示設定完了
+2025-09-25 09:40:47,756 - INFO - NFC初期化開始
+2025-09-25 09:40:47,767 - INFO - I2C初期化完了
+2025-09-25 09:40:47,800 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:40:47,817 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:40:47,833 - INFO - SAM設定完了
+2025-09-25 09:40:47,834 - INFO - NFC初期化完了
+2025-09-25 09:40:47,835 - INFO - 読み取りループ開始
+2025-09-25 09:40:51,379 - INFO - タグ検出: 1de520720f1080
+2025-09-25 09:40:51,380 - INFO - タグ処理開始
+2025-09-25 09:40:51,380 - INFO - UID: 1de520720f1080, バイト列: [29, 229, 32, 114, 15, 16, 128]
+2025-09-25 09:40:51,388 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:40:51,398 - INFO - NFCタグ書き込み開始
+2025-09-25 09:40:51,409 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:40:51,409 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:40:51,418 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:40:51,420 - INFO - Bluetooth送信開始
+2025-09-25 09:40:51,424 - INFO - Bluetooth送信開始 - UID: 1de520720f1080, 送信メッセージ: [1:]1de520720f1080
+2025-09-25 09:40:51,497 - INFO - Bluetooth送信完了 - UID: 1de520720f1080, 送信メッセージ: [1:]1de520720f1080
+2025-09-25 09:40:51,498 - INFO - Bluetooth送信完了
+2025-09-25 09:40:51,501 - INFO - タグ処理完了
+2025-09-25 09:41:07,356 - INFO - 読み取りループ終了
+2025-09-25 09:41:08,466 - INFO - アプリケーション終了
+2025-09-25 09:41:10,721 - INFO - アプリケーション開始
+2025-09-25 09:41:10,853 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 09:41:10,854 - INFO - Linux全画面表示設定完了
+2025-09-25 09:41:10,903 - INFO - NFC初期化開始
+2025-09-25 09:41:10,916 - INFO - I2C初期化完了
+2025-09-25 09:41:10,948 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:41:10,965 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:41:10,982 - INFO - SAM設定完了
+2025-09-25 09:41:10,982 - INFO - NFC初期化完了
+2025-09-25 09:41:10,983 - INFO - 読み取りループ開始
+2025-09-25 09:41:44,412 - INFO - アプリケーション終了
+2025-09-25 09:41:46,338 - INFO - アプリケーション開始
+2025-09-25 09:41:46,470 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 09:41:46,471 - INFO - Linux全画面表示設定完了
+2025-09-25 09:41:46,519 - INFO - NFC初期化開始
+2025-09-25 09:41:46,530 - INFO - I2C初期化完了
+2025-09-25 09:41:46,563 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:41:46,582 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:41:46,598 - INFO - SAM設定完了
+2025-09-25 09:41:46,599 - INFO - NFC初期化完了
+2025-09-25 09:41:46,600 - INFO - 読み取りループ開始
+2025-09-25 09:41:55,958 - INFO - アプリケーション終了
+2025-09-25 09:41:57,643 - INFO - 設定ファイル読み込み完了
+2025-09-25 09:41:57,643 - INFO - アプリケーション開始
+2025-09-25 09:41:57,776 - INFO - NFCリーダーアプリケーション開始 - モード: write
+2025-09-25 09:41:57,777 - INFO - Linux全画面表示設定完了
+2025-09-25 09:41:57,825 - INFO - NFC初期化開始
+2025-09-25 09:41:57,835 - INFO - I2C初期化完了
+2025-09-25 09:41:57,867 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:41:57,884 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:41:57,900 - INFO - SAM設定完了
+2025-09-25 09:41:57,903 - INFO - NFC初期化完了
+2025-09-25 09:41:57,904 - INFO - 読み取りループ開始
+2025-09-25 09:42:03,669 - INFO - タグ検出: 1de520720f1080
+2025-09-25 09:42:03,672 - INFO - タグ処理開始
+2025-09-25 09:42:03,675 - INFO - UID: 1de520720f1080, バイト列: [29, 229, 32, 114, 15, 16, 128]
+2025-09-25 09:42:03,704 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:42:03,714 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:42:03,715 - INFO - NFCタグ書き込み開始
+2025-09-25 09:42:03,733 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:42:03,817 - INFO - タグが検出されました。書き込みを続行します
+2025-09-25 09:42:03,819 - DEBUG - ページ 4 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:03,958 - DEBUG - ページ 4 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:04,113 - DEBUG - ページ 4 書き込み成功（試行 3/3）: True
+2025-09-25 09:42:04,113 - DEBUG - ページ 4 の書き込み成功 (1/36)
+2025-09-25 09:42:04,119 - DEBUG - ページ 5 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:04,258 - DEBUG - ページ 5 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:04,359 - DEBUG - ページ 5 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:04,460 - DEBUG - ページ 5 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:04,460 - WARNING - ページ 5 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:04,500 - DEBUG - ページ 6 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:04,654 - DEBUG - ページ 6 書き込み成功（試行 2/3）: True
+2025-09-25 09:42:04,654 - DEBUG - ページ 6 の書き込み成功 (2/36)
+2025-09-25 09:42:04,714 - DEBUG - ページ 7 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:04,714 - DEBUG - ページ 7 の書き込み成功 (3/36)
+2025-09-25 09:42:04,719 - DEBUG - ページ 8 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:04,858 - DEBUG - ページ 8 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:04,959 - DEBUG - ページ 8 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:05,060 - DEBUG - ページ 8 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:05,060 - WARNING - ページ 8 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:05,061 - WARNING - ページ 9 書き込み前にタグが検出されません
+2025-09-25 09:42:05,118 - DEBUG - ページ 9 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:05,119 - DEBUG - ページ 9 の書き込み成功 (4/36)
+2025-09-25 09:42:05,174 - DEBUG - ページ 10 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:05,275 - DEBUG - ページ 10 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:05,414 - DEBUG - ページ 10 書き込み試行 3/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:05,515 - DEBUG - ページ 10 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:05,515 - WARNING - ページ 10 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:05,554 - DEBUG - ページ 11 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:05,655 - DEBUG - ページ 11 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:05,794 - DEBUG - ページ 11 書き込み試行 3/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:05,895 - DEBUG - ページ 11 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:05,895 - WARNING - ページ 11 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:05,896 - DEBUG - ページ 12 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:05,997 - DEBUG - ページ 12 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:06,098 - DEBUG - ページ 12 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:06,198 - DEBUG - ページ 12 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:06,198 - WARNING - ページ 12 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:06,258 - DEBUG - ページ 13 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:06,408 - DEBUG - ページ 13 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:06,509 - DEBUG - ページ 13 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:06,610 - DEBUG - ページ 13 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:06,610 - WARNING - ページ 13 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:06,649 - DEBUG - ページ 14 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:06,813 - DEBUG - ページ 14 書き込み成功（試行 2/3）: True
+2025-09-25 09:42:06,813 - DEBUG - ページ 14 の書き込み成功 (5/36)
+2025-09-25 09:42:06,858 - DEBUG - ページ 15 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:06,958 - DEBUG - ページ 15 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:07,270 - DEBUG - ページ 15 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:07,370 - DEBUG - ページ 15 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:07,371 - WARNING - ページ 15 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:07,372 - DEBUG - ページ 16 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:07,682 - DEBUG - ページ 16 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:07,784 - DEBUG - ページ 16 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:07,884 - DEBUG - ページ 16 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:07,885 - WARNING - ページ 16 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:08,097 - DEBUG - ページ 17 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:08,409 - DEBUG - ページ 17 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:08,510 - DEBUG - ページ 17 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:08,610 - DEBUG - ページ 17 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:08,611 - WARNING - ページ 17 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:08,824 - DEBUG - ページ 18 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:09,133 - DEBUG - ページ 18 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:09,445 - DEBUG - ページ 18 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:09,546 - DEBUG - ページ 18 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:09,547 - WARNING - ページ 18 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:09,663 - WARNING - ページ 19 書き込み前にタグが検出されません
+2025-09-25 09:42:09,666 - DEBUG - ページ 19 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:09,976 - DEBUG - ページ 19 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:10,078 - DEBUG - ページ 19 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:10,179 - DEBUG - ページ 19 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:10,180 - WARNING - ページ 19 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:10,391 - DEBUG - ページ 20 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:10,704 - DEBUG - ページ 20 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:10,805 - DEBUG - ページ 20 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:10,905 - DEBUG - ページ 20 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:10,906 - WARNING - ページ 20 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:10,907 - DEBUG - ページ 21 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:11,218 - DEBUG - ページ 21 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:11,319 - DEBUG - ページ 21 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:11,419 - DEBUG - ページ 21 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:11,420 - WARNING - ページ 21 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:11,632 - DEBUG - ページ 22 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:11,943 - DEBUG - ページ 22 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:12,044 - DEBUG - ページ 22 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:12,145 - DEBUG - ページ 22 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:12,145 - WARNING - ページ 22 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:12,357 - DEBUG - ページ 23 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:12,669 - DEBUG - ページ 23 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:12,980 - DEBUG - ページ 23 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:13,080 - DEBUG - ページ 23 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:13,081 - WARNING - ページ 23 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:13,081 - WARNING - ページ 24 書き込み前にタグが検出されません
+2025-09-25 09:42:13,135 - DEBUG - ページ 24 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:13,135 - DEBUG - ページ 24 の書き込み成功 (6/36)
+2025-09-25 09:42:13,179 - DEBUG - ページ 25 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:13,354 - DEBUG - ページ 25 書き込み成功（試行 2/3）: True
+2025-09-25 09:42:13,354 - DEBUG - ページ 25 の書き込み成功 (7/36)
+2025-09-25 09:42:13,360 - DEBUG - ページ 26 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:13,671 - DEBUG - ページ 26 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:13,773 - DEBUG - ページ 26 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:13,873 - DEBUG - ページ 26 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:13,873 - WARNING - ページ 26 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:14,085 - DEBUG - ページ 27 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:14,186 - DEBUG - ページ 27 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:14,497 - DEBUG - ページ 27 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:14,598 - DEBUG - ページ 27 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:14,598 - WARNING - ページ 27 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:14,599 - DEBUG - ページ 28 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:14,700 - DEBUG - ページ 28 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:15,011 - DEBUG - ページ 28 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:15,111 - DEBUG - ページ 28 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:15,111 - WARNING - ページ 28 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:15,218 - WARNING - ページ 29 書き込み前にタグが検出されません
+2025-09-25 09:42:15,219 - DEBUG - ページ 29 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:15,530 - DEBUG - ページ 29 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:15,632 - DEBUG - ページ 29 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:15,733 - DEBUG - ページ 29 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:15,733 - WARNING - ページ 29 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:15,946 - DEBUG - ページ 30 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:16,259 - DEBUG - ページ 30 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:16,571 - DEBUG - ページ 30 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:16,671 - DEBUG - ページ 30 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:16,672 - WARNING - ページ 30 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:16,672 - DEBUG - ページ 31 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:16,946 - DEBUG - ページ 31 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:17,101 - DEBUG - ページ 31 書き込み成功（試行 3/3）: True
+2025-09-25 09:42:17,101 - DEBUG - ページ 31 の書き込み成功 (8/36)
+2025-09-25 09:42:17,107 - DEBUG - ページ 32 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:17,246 - DEBUG - ページ 32 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:17,400 - DEBUG - ページ 32 書き込み成功（試行 3/3）: True
+2025-09-25 09:42:17,401 - DEBUG - ページ 32 の書き込み成功 (9/36)
+2025-09-25 09:42:17,459 - DEBUG - ページ 33 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:17,459 - DEBUG - ページ 33 の書き込み成功 (10/36)
+2025-09-25 09:42:17,569 - DEBUG - ページ 34 書き込み成功（試行 1/3）: False
+2025-09-25 09:42:17,570 - WARNING - ページ 34 の書き込みが失敗しました
+2025-09-25 09:42:17,571 - DEBUG - ページ 35 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:17,672 - DEBUG - ページ 35 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:17,983 - DEBUG - ページ 35 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:18,084 - DEBUG - ページ 35 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:18,084 - WARNING - ページ 35 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:18,086 - DEBUG - ページ 36 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:18,398 - DEBUG - ページ 36 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:18,711 - DEBUG - ページ 36 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:18,811 - DEBUG - ページ 36 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:18,812 - WARNING - ページ 36 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:19,017 - DEBUG - ページ 37 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:19,329 - DEBUG - ページ 37 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:19,430 - DEBUG - ページ 37 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:19,531 - DEBUG - ページ 37 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:19,531 - WARNING - ページ 37 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:19,630 - DEBUG - ページ 38 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:19,630 - DEBUG - ページ 38 の書き込み成功 (11/36)
+2025-09-25 09:42:19,728 - DEBUG - ページ 39 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:19,728 - DEBUG - ページ 39 の書き込み成功 (12/36)
+2025-09-25 09:42:19,734 - INFO - 書き込み完了: 12/36 ページ成功
+2025-09-25 09:42:19,734 - INFO - 書き込み検証を実行中...
+2025-09-25 09:42:20,013 - INFO - 読み取りループ開始
+2025-09-25 09:42:20,235 - WARNING - 書き込み後、タグが検出されませんでした
+2025-09-25 09:42:20,235 - INFO - NFCタグ書き込み処理完了
+2025-09-25 09:42:20,236 - INFO - NFCタグ書き込み完了
+2025-09-25 09:42:20,239 - INFO - タグ処理完了
+2025-09-25 09:42:20,714 - INFO - タグ検出: 1de520720f1080
+2025-09-25 09:42:20,715 - INFO - タグ処理開始
+2025-09-25 09:42:20,716 - INFO - UID: 1de520720f1080, バイト列: [29, 229, 32, 114, 15, 16, 128]
+2025-09-25 09:42:20,721 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:42:20,735 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:42:20,737 - INFO - NFCタグ書き込み開始
+2025-09-25 09:42:20,741 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1de520720f1080
+2025-09-25 09:42:20,743 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:42:20,744 - INFO - NFCタグ書き込み完了
+2025-09-25 09:42:20,748 - INFO - タグ処理完了
+2025-09-25 09:42:33,410 - INFO - タグ検出: 1d321e720f1080
+2025-09-25 09:42:33,412 - INFO - タグ処理開始
+2025-09-25 09:42:33,422 - INFO - UID: 1d321e720f1080, バイト列: [29, 50, 30, 114, 15, 16, 128]
+2025-09-25 09:42:33,442 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:42:33,448 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:42:33,449 - INFO - NFCタグ書き込み開始
+2025-09-25 09:42:33,465 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:42:33,468 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:42:33,470 - INFO - NFCタグ書き込み完了
+2025-09-25 09:42:33,515 - INFO - タグ処理完了
+2025-09-25 09:42:34,237 - INFO - タグ検出: 1d321e720f1080
+2025-09-25 09:42:34,238 - INFO - タグ処理開始
+2025-09-25 09:42:34,240 - INFO - UID: 1d321e720f1080, バイト列: [29, 50, 30, 114, 15, 16, 128]
+2025-09-25 09:42:34,244 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:42:34,247 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:42:34,249 - INFO - NFCタグ書き込み開始
+2025-09-25 09:42:34,251 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 09:42:34,301 - INFO - タグが検出されました。書き込みを続行します
+2025-09-25 09:42:34,365 - DEBUG - ページ 4 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:34,365 - DEBUG - ページ 4 の書き込み成功 (1/36)
+2025-09-25 09:42:34,371 - DEBUG - ページ 5 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:34,510 - DEBUG - ページ 5 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:34,649 - DEBUG - ページ 5 書き込み試行 3/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:34,750 - DEBUG - ページ 5 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:34,750 - WARNING - ページ 5 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:34,789 - DEBUG - ページ 6 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:34,928 - DEBUG - ページ 6 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:35,239 - DEBUG - ページ 6 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:35,339 - DEBUG - ページ 6 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:35,340 - WARNING - ページ 6 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:35,341 - DEBUG - ページ 7 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:35,652 - DEBUG - ページ 7 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:35,753 - DEBUG - ページ 7 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:35,853 - DEBUG - ページ 7 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:35,854 - WARNING - ページ 7 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:36,065 - DEBUG - ページ 8 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:36,166 - DEBUG - ページ 8 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:36,477 - DEBUG - ページ 8 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:36,578 - DEBUG - ページ 8 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:36,578 - WARNING - ページ 8 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:36,685 - WARNING - ページ 9 書き込み前にタグが検出されません
+2025-09-25 09:42:36,686 - DEBUG - ページ 9 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:36,997 - DEBUG - ページ 9 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:37,098 - DEBUG - ページ 9 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:37,199 - DEBUG - ページ 9 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:37,199 - WARNING - ページ 9 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:37,410 - DEBUG - ページ 10 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:37,511 - DEBUG - ページ 10 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:37,823 - DEBUG - ページ 10 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:37,923 - DEBUG - ページ 10 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:37,924 - WARNING - ページ 10 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:37,924 - DEBUG - ページ 11 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:38,235 - DEBUG - ページ 11 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:38,550 - DEBUG - ページ 11 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:38,651 - DEBUG - ページ 11 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:38,651 - WARNING - ページ 11 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:38,652 - DEBUG - ページ 12 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:38,962 - DEBUG - ページ 12 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:39,274 - DEBUG - ページ 12 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:39,374 - DEBUG - ページ 12 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:39,375 - WARNING - ページ 12 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:39,375 - DEBUG - ページ 13 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:39,686 - DEBUG - ページ 13 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:39,786 - DEBUG - ページ 13 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:39,887 - DEBUG - ページ 13 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:39,887 - WARNING - ページ 13 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:39,888 - WARNING - ページ 14 書き込み前にタグが検出されません
+2025-09-25 09:42:40,099 - DEBUG - ページ 14 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:40,410 - DEBUG - ページ 14 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:40,721 - DEBUG - ページ 14 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:40,821 - DEBUG - ページ 14 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:40,822 - WARNING - ページ 14 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:41,032 - DEBUG - ページ 15 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:41,133 - DEBUG - ページ 15 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:41,234 - DEBUG - ページ 15 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:41,334 - DEBUG - ページ 15 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:41,335 - WARNING - ページ 15 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:41,548 - DEBUG - ページ 16 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:41,859 - DEBUG - ページ 16 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:42,170 - DEBUG - ページ 16 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:42,271 - DEBUG - ページ 16 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:42,271 - WARNING - ページ 16 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:42,482 - DEBUG - ページ 17 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:42,794 - DEBUG - ページ 17 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:42,895 - DEBUG - ページ 17 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:42,995 - DEBUG - ページ 17 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:42,996 - WARNING - ページ 17 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:42,997 - DEBUG - ページ 18 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:43,308 - DEBUG - ページ 18 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:43,409 - DEBUG - ページ 18 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:43,509 - DEBUG - ページ 18 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:43,510 - WARNING - ページ 18 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:43,510 - WARNING - ページ 19 書き込み前にタグが検出されません
+2025-09-25 09:42:43,720 - DEBUG - ページ 19 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:44,031 - DEBUG - ページ 19 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:44,133 - DEBUG - ページ 19 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:44,234 - DEBUG - ページ 19 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:44,235 - WARNING - ページ 19 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:44,443 - DEBUG - ページ 20 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:44,755 - DEBUG - ページ 20 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:45,065 - DEBUG - ページ 20 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:45,166 - DEBUG - ページ 20 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:45,167 - WARNING - ページ 20 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:45,168 - DEBUG - ページ 21 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:45,478 - DEBUG - ページ 21 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:45,789 - DEBUG - ページ 21 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:45,890 - DEBUG - ページ 21 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:45,891 - WARNING - ページ 21 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:46,106 - DEBUG - ページ 22 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:46,418 - DEBUG - ページ 22 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:46,729 - DEBUG - ページ 22 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:46,830 - DEBUG - ページ 22 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:46,831 - WARNING - ページ 22 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:47,042 - DEBUG - ページ 23 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:47,347 - DEBUG - ページ 23 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:47,658 - DEBUG - ページ 23 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:47,759 - DEBUG - ページ 23 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:47,760 - WARNING - ページ 23 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:47,875 - WARNING - ページ 24 書き込み前にタグが検出されません
+2025-09-25 09:42:48,088 - DEBUG - ページ 24 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:48,190 - DEBUG - ページ 24 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:48,500 - DEBUG - ページ 24 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:48,601 - DEBUG - ページ 24 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:48,602 - WARNING - ページ 24 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:48,814 - DEBUG - ページ 25 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:49,127 - DEBUG - ページ 25 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:49,229 - DEBUG - ページ 25 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:49,329 - DEBUG - ページ 25 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:49,330 - WARNING - ページ 25 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:49,544 - DEBUG - ページ 26 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:49,646 - DEBUG - ページ 26 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:49,955 - DEBUG - ページ 26 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:50,055 - DEBUG - ページ 26 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:50,056 - WARNING - ページ 26 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:50,058 - DEBUG - ページ 27 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:50,373 - DEBUG - ページ 27 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:50,474 - DEBUG - ページ 27 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:50,575 - DEBUG - ページ 27 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:50,575 - WARNING - ページ 27 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:50,576 - DEBUG - ページ 28 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:50,887 - DEBUG - ページ 28 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:50,988 - DEBUG - ページ 28 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:51,088 - DEBUG - ページ 28 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:51,088 - WARNING - ページ 28 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:51,089 - WARNING - ページ 29 書き込み前にタグが検出されません
+2025-09-25 09:42:51,300 - DEBUG - ページ 29 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:51,401 - DEBUG - ページ 29 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:51,713 - DEBUG - ページ 29 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:51,813 - DEBUG - ページ 29 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:51,814 - WARNING - ページ 29 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:51,815 - DEBUG - ページ 30 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:52,126 - DEBUG - ページ 30 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:52,438 - DEBUG - ページ 30 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:52,538 - DEBUG - ページ 30 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:52,538 - WARNING - ページ 30 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:52,750 - DEBUG - ページ 31 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:52,851 - DEBUG - ページ 31 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:53,163 - DEBUG - ページ 31 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:53,263 - DEBUG - ページ 31 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:53,263 - WARNING - ページ 31 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:53,475 - DEBUG - ページ 32 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:53,786 - DEBUG - ページ 32 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:53,887 - DEBUG - ページ 32 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:53,988 - DEBUG - ページ 32 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:53,988 - WARNING - ページ 32 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:54,144 - INFO - タグ検出: 1d5721720f1080
+2025-09-25 09:42:54,145 - INFO - タグ処理開始
+2025-09-25 09:42:54,147 - INFO - UID: 1d5721720f1080, バイト列: [29, 87, 33, 114, 15, 16, 128]
+2025-09-25 09:42:54,157 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:42:54,169 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:42:54,170 - INFO - NFCタグ書き込み開始
+2025-09-25 09:42:54,173 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:42:54,174 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:42:54,175 - INFO - NFCタグ書き込み完了
+2025-09-25 09:42:54,189 - INFO - タグ処理完了
+2025-09-25 09:42:54,197 - DEBUG - ページ 33 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:54,351 - DEBUG - ページ 33 書き込み成功（試行 2/3）: True
+2025-09-25 09:42:54,352 - DEBUG - ページ 33 の書き込み成功 (2/36)
+2025-09-25 09:42:54,449 - DEBUG - ページ 34 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:54,449 - DEBUG - ページ 34 の書き込み成功 (3/36)
+2025-09-25 09:42:54,493 - DEBUG - ページ 35 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:42:54,648 - DEBUG - ページ 35 書き込み成功（試行 2/3）: True
+2025-09-25 09:42:54,648 - DEBUG - ページ 35 の書き込み成功 (4/36)
+2025-09-25 09:42:54,707 - DEBUG - ページ 36 書き込み成功（試行 1/3）: True
+2025-09-25 09:42:54,707 - DEBUG - ページ 36 の書き込み成功 (5/36)
+2025-09-25 09:42:54,713 - DEBUG - ページ 37 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:54,814 - DEBUG - ページ 37 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:55,124 - DEBUG - ページ 37 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:55,225 - DEBUG - ページ 37 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:55,226 - WARNING - ページ 37 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:55,436 - DEBUG - ページ 38 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:55,749 - DEBUG - ページ 38 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:56,060 - DEBUG - ページ 38 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:56,160 - DEBUG - ページ 38 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:56,161 - WARNING - ページ 38 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:56,279 - WARNING - ページ 39 書き込み前にタグが検出されません
+2025-09-25 09:42:56,490 - DEBUG - ページ 39 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:42:56,591 - DEBUG - ページ 39 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:42:56,692 - DEBUG - ページ 39 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:42:56,792 - DEBUG - ページ 39 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:42:56,792 - WARNING - ページ 39 の書き込みでレスポンスがNoneでした
+2025-09-25 09:42:56,793 - INFO - 書き込み完了: 5/36 ページ成功
+2025-09-25 09:42:56,793 - INFO - 書き込み検証を実行中...
+2025-09-25 09:42:57,294 - WARNING - 書き込み後、タグが検出されませんでした
+2025-09-25 09:42:57,295 - INFO - NFCタグ書き込み処理完了
+2025-09-25 09:42:57,295 - INFO - NFCタグ書き込み完了
+2025-09-25 09:42:57,297 - INFO - タグ処理完了
+2025-09-25 09:43:14,962 - INFO - タグ検出: 1d5721720f1080
+2025-09-25 09:43:14,963 - INFO - タグ処理開始
+2025-09-25 09:43:14,965 - INFO - UID: 1d5721720f1080, バイト列: [29, 87, 33, 114, 15, 16, 128]
+2025-09-25 09:43:14,969 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:43:14,985 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:43:14,987 - INFO - NFCタグ書き込み開始
+2025-09-25 09:43:14,994 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:43:14,995 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:43:14,995 - INFO - NFCタグ書き込み完了
+2025-09-25 09:43:15,011 - INFO - タグ処理完了
+2025-09-25 09:43:15,739 - INFO - タグ検出: 1d5721720f1080
+2025-09-25 09:43:15,740 - INFO - タグ処理開始
+2025-09-25 09:43:15,741 - INFO - UID: 1d5721720f1080, バイト列: [29, 87, 33, 114, 15, 16, 128]
+2025-09-25 09:43:15,744 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:43:15,753 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:43:15,754 - INFO - NFCタグ書き込み開始
+2025-09-25 09:43:15,756 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1d5721720f1080
+2025-09-25 09:43:15,757 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:43:15,758 - INFO - NFCタグ書き込み完了
+2025-09-25 09:43:15,760 - INFO - タグ処理完了
+2025-09-25 09:43:25,839 - INFO - タグ検出: 1dd021720f1080
+2025-09-25 09:43:25,841 - INFO - タグ処理開始
+2025-09-25 09:43:25,848 - INFO - UID: 1dd021720f1080, バイト列: [29, 208, 33, 114, 15, 16, 128]
+2025-09-25 09:43:25,866 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dd021720f1080
+2025-09-25 09:43:25,880 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:43:25,881 - INFO - NFCタグ書き込み開始
+2025-09-25 09:43:25,921 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1dd021720f1080
+2025-09-25 09:43:25,966 - INFO - タグが検出されました。書き込みを続行します
+2025-09-25 09:43:26,022 - DEBUG - ページ 4 書き込み成功（試行 1/3）: True
+2025-09-25 09:43:26,023 - DEBUG - ページ 4 の書き込み成功 (1/36)
+2025-09-25 09:43:26,028 - DEBUG - ページ 5 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:26,167 - DEBUG - ページ 5 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:43:26,317 - DEBUG - ページ 5 書き込み試行 3/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:43:26,418 - DEBUG - ページ 5 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:26,418 - WARNING - ページ 5 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:26,418 - DEBUG - ページ 6 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:26,731 - DEBUG - ページ 6 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:26,832 - DEBUG - ページ 6 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:26,932 - DEBUG - ページ 6 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:26,933 - WARNING - ページ 6 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:26,934 - DEBUG - ページ 7 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:27,245 - DEBUG - ページ 7 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:27,346 - DEBUG - ページ 7 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:27,446 - DEBUG - ページ 7 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:27,447 - WARNING - ページ 7 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:27,658 - DEBUG - ページ 8 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:27,759 - DEBUG - ページ 8 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:28,071 - DEBUG - ページ 8 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:28,171 - DEBUG - ページ 8 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:28,172 - WARNING - ページ 8 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:28,280 - WARNING - ページ 9 書き込み前にタグが検出されません
+2025-09-25 09:43:28,491 - DEBUG - ページ 9 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:28,592 - DEBUG - ページ 9 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:28,819 - DEBUG - ページ 9 書き込み成功（試行 3/3）: True
+2025-09-25 09:43:28,819 - DEBUG - ページ 9 の書き込み成功 (2/36)
+2025-09-25 09:43:28,894 - DEBUG - ページ 10 書き込み試行 1/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:43:29,205 - DEBUG - ページ 10 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:29,306 - DEBUG - ページ 10 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:29,406 - DEBUG - ページ 10 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:29,407 - WARNING - ページ 10 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:29,408 - DEBUG - ページ 11 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:29,547 - DEBUG - ページ 11 書き込み試行 2/3 エラー: 'NoneType' object is not subscriptable
+2025-09-25 09:43:29,692 - INFO - タグ検出: 1dd021720f1080
+2025-09-25 09:43:29,693 - INFO - タグ処理開始
+2025-09-25 09:43:29,697 - INFO - UID: 1dd021720f1080, バイト列: [29, 208, 33, 114, 15, 16, 128]
+2025-09-25 09:43:29,700 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dd021720f1080
+2025-09-25 09:43:29,710 - INFO - 書込みモード: NFCタグへの書き込みを実行
+2025-09-25 09:43:29,711 - INFO - NFCタグ書き込み開始
+2025-09-25 09:43:29,712 - INFO - NFCタグ書き込み開始 - URL: https://akioka-sub.cloud/questionnaire/1dd021720f1080
+2025-09-25 09:43:29,713 - WARNING - タグが検出されません。書き込みをスキップします
+2025-09-25 09:43:29,714 - INFO - NFCタグ書き込み完了
+2025-09-25 09:43:29,718 - INFO - タグ処理完了
+2025-09-25 09:43:29,851 - DEBUG - ページ 11 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:29,952 - DEBUG - ページ 11 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:29,952 - WARNING - ページ 11 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:29,953 - DEBUG - ページ 12 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:30,054 - DEBUG - ページ 12 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:30,155 - DEBUG - ページ 12 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:30,256 - DEBUG - ページ 12 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:30,256 - WARNING - ページ 12 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:30,468 - DEBUG - ページ 13 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:30,569 - DEBUG - ページ 13 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:30,880 - DEBUG - ページ 13 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:30,981 - DEBUG - ページ 13 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:30,981 - WARNING - ページ 13 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:30,982 - WARNING - ページ 14 書き込み前にタグが検出されません
+2025-09-25 09:43:31,191 - DEBUG - ページ 14 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:31,503 - DEBUG - ページ 14 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:31,605 - DEBUG - ページ 14 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:31,708 - DEBUG - ページ 14 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:31,709 - WARNING - ページ 14 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:31,918 - DEBUG - ページ 15 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:32,229 - DEBUG - ページ 15 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:32,541 - DEBUG - ページ 15 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:32,641 - DEBUG - ページ 15 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:32,641 - WARNING - ページ 15 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:32,642 - DEBUG - ページ 16 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:32,953 - DEBUG - ページ 16 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:33,265 - DEBUG - ページ 16 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:33,365 - DEBUG - ページ 16 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:33,366 - WARNING - ページ 16 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:33,577 - DEBUG - ページ 17 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:33,888 - DEBUG - ページ 17 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:34,192 - DEBUG - ページ 17 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:34,292 - DEBUG - ページ 17 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:34,293 - WARNING - ページ 17 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:34,293 - DEBUG - ページ 18 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:34,604 - DEBUG - ページ 18 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:34,705 - DEBUG - ページ 18 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:34,806 - DEBUG - ページ 18 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:34,806 - WARNING - ページ 18 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:34,914 - WARNING - ページ 19 書き込み前にタグが検出されません
+2025-09-25 09:43:35,125 - DEBUG - ページ 19 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:35,226 - DEBUG - ページ 19 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:35,538 - DEBUG - ページ 19 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:35,638 - DEBUG - ページ 19 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:35,639 - WARNING - ページ 19 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:35,850 - DEBUG - ページ 20 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:35,951 - DEBUG - ページ 20 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:36,262 - DEBUG - ページ 20 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:36,363 - DEBUG - ページ 20 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:36,363 - WARNING - ページ 20 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:36,575 - DEBUG - ページ 21 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:36,676 - DEBUG - ページ 21 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:36,987 - DEBUG - ページ 21 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:37,088 - DEBUG - ページ 21 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:37,089 - WARNING - ページ 21 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:37,301 - DEBUG - ページ 22 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:37,612 - DEBUG - ページ 22 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:37,924 - DEBUG - ページ 22 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:38,025 - DEBUG - ページ 22 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:38,025 - WARNING - ページ 22 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:38,231 - DEBUG - ページ 23 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:38,333 - DEBUG - ページ 23 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:38,643 - DEBUG - ページ 23 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:38,744 - DEBUG - ページ 23 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:38,745 - WARNING - ページ 23 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:38,747 - WARNING - ページ 24 書き込み前にタグが検出されません
+2025-09-25 09:43:38,961 - DEBUG - ページ 24 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:39,276 - DEBUG - ページ 24 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:39,587 - DEBUG - ページ 24 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:39,688 - DEBUG - ページ 24 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:39,689 - WARNING - ページ 24 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:39,691 - DEBUG - ページ 25 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:40,001 - DEBUG - ページ 25 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:40,311 - DEBUG - ページ 25 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:40,412 - DEBUG - ページ 25 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:40,412 - WARNING - ページ 25 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:40,624 - DEBUG - ページ 26 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:40,726 - DEBUG - ページ 26 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:41,036 - DEBUG - ページ 26 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:41,137 - DEBUG - ページ 26 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:41,138 - WARNING - ページ 26 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:41,139 - DEBUG - ページ 27 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:41,449 - DEBUG - ページ 27 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:41,760 - DEBUG - ページ 27 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:41,863 - DEBUG - ページ 27 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:41,863 - WARNING - ページ 27 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:41,865 - DEBUG - ページ 28 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:42,172 - DEBUG - ページ 28 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:42,485 - DEBUG - ページ 28 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:42,586 - DEBUG - ページ 28 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:42,586 - WARNING - ページ 28 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:42,588 - WARNING - ページ 29 書き込み前にタグが検出されません
+2025-09-25 09:43:42,798 - DEBUG - ページ 29 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:42,899 - DEBUG - ページ 29 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:43,000 - DEBUG - ページ 29 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:43,100 - DEBUG - ページ 29 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:43,101 - WARNING - ページ 29 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:43,312 - DEBUG - ページ 30 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:43,413 - DEBUG - ページ 30 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:43,514 - DEBUG - ページ 30 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:43,614 - DEBUG - ページ 30 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:43,615 - WARNING - ページ 30 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:43,827 - DEBUG - ページ 31 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:44,138 - DEBUG - ページ 31 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:44,239 - DEBUG - ページ 31 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:44,340 - DEBUG - ページ 31 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:44,340 - WARNING - ページ 31 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:44,341 - DEBUG - ページ 32 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:44,654 - DEBUG - ページ 32 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:44,968 - DEBUG - ページ 32 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:45,068 - DEBUG - ページ 32 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:45,069 - WARNING - ページ 32 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:45,070 - DEBUG - ページ 33 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:45,171 - DEBUG - ページ 33 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:45,482 - DEBUG - ページ 33 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:45,582 - DEBUG - ページ 33 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:45,583 - WARNING - ページ 33 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:45,584 - WARNING - ページ 34 書き込み前にタグが検出されません
+2025-09-25 09:43:45,794 - DEBUG - ページ 34 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:46,108 - DEBUG - ページ 34 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:46,419 - DEBUG - ページ 34 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:46,520 - DEBUG - ページ 34 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:46,520 - WARNING - ページ 34 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:46,521 - DEBUG - ページ 35 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:46,622 - DEBUG - ページ 35 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:46,723 - DEBUG - ページ 35 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:46,823 - DEBUG - ページ 35 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:46,824 - WARNING - ページ 35 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:47,034 - DEBUG - ページ 36 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:47,347 - DEBUG - ページ 36 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:47,447 - DEBUG - ページ 36 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:47,548 - DEBUG - ページ 36 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:47,548 - WARNING - ページ 36 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:47,761 - DEBUG - ページ 37 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:48,070 - DEBUG - ページ 37 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:48,383 - DEBUG - ページ 37 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:48,484 - DEBUG - ページ 37 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:48,485 - WARNING - ページ 37 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:48,697 - DEBUG - ページ 38 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:49,009 - DEBUG - ページ 38 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:49,326 - DEBUG - ページ 38 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:49,427 - DEBUG - ページ 38 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:49,427 - WARNING - ページ 38 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:49,536 - WARNING - ページ 39 書き込み前にタグが検出されません
+2025-09-25 09:43:49,748 - DEBUG - ページ 39 書き込み試行 1/3: タグが検出されません
+2025-09-25 09:43:50,061 - DEBUG - ページ 39 書き込み試行 2/3: タグが検出されません
+2025-09-25 09:43:50,374 - DEBUG - ページ 39 書き込み試行 3/3: タグが検出されません
+2025-09-25 09:43:50,474 - DEBUG - ページ 39 書き込み失敗: 3回の試行すべて失敗
+2025-09-25 09:43:50,475 - WARNING - ページ 39 の書き込みでレスポンスがNoneでした
+2025-09-25 09:43:50,475 - INFO - 書き込み完了: 2/36 ページ成功
+2025-09-25 09:43:50,475 - INFO - 書き込み検証を実行中...
+2025-09-25 09:43:50,976 - WARNING - 書き込み後、タグが検出されませんでした
+2025-09-25 09:43:50,976 - INFO - NFCタグ書き込み処理完了
+2025-09-25 09:43:50,976 - INFO - NFCタグ書き込み完了
+2025-09-25 09:43:50,978 - INFO - タグ処理完了
+2025-09-25 09:44:10,654 - INFO - アプリケーション終了
+2025-09-25 09:44:12,935 - INFO - アプリケーション開始
+2025-09-25 09:44:13,065 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 09:44:13,065 - INFO - Linux全画面表示設定完了
+2025-09-25 09:44:13,120 - INFO - NFC初期化開始
+2025-09-25 09:44:13,132 - INFO - I2C初期化完了
+2025-09-25 09:44:13,164 - INFO - PN532オブジェクト作成完了
+2025-09-25 09:44:13,181 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 09:44:13,198 - INFO - SAM設定完了
+2025-09-25 09:44:13,199 - INFO - NFC初期化完了
+2025-09-25 09:44:13,200 - INFO - 読み取りループ開始
+2025-09-25 09:44:18,069 - INFO - タグ検出: 1dd021720f1080
+2025-09-25 09:44:18,074 - INFO - タグ処理開始
+2025-09-25 09:44:18,078 - INFO - UID: 1dd021720f1080, バイト列: [29, 208, 33, 114, 15, 16, 128]
+2025-09-25 09:44:18,091 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dd021720f1080
+2025-09-25 09:44:18,107 - INFO - NFCタグ書き込み開始
+2025-09-25 09:44:18,145 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:44:18,146 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 09:44:18,159 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 09:44:18,162 - INFO - Bluetooth送信開始
+2025-09-25 09:44:18,170 - INFO - Bluetooth送信開始 - UID: 1dd021720f1080
+2025-09-25 09:44:18,219 - INFO - Bluetooth送信完了 - UID: 1dd021720f1080
+2025-09-25 09:44:18,221 - INFO - Bluetooth送信完了
+2025-09-25 09:44:18,223 - INFO - タグ処理完了
+2025-09-25 12:43:32,694 - INFO - 読み取りループ終了
+2025-09-25 12:43:35,944 - INFO - アプリケーション終了
+2025-09-25 12:43:48,074 - INFO - アプリケーション開始
+2025-09-25 12:43:48,204 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 12:43:48,204 - INFO - Linux全画面表示設定完了
+2025-09-25 12:43:48,260 - INFO - NFC初期化開始
+2025-09-25 12:43:48,273 - INFO - I2C初期化完了
+2025-09-25 12:43:48,308 - INFO - PN532オブジェクト作成完了
+2025-09-25 12:43:48,324 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 12:43:48,342 - INFO - SAM設定完了
+2025-09-25 12:43:48,343 - INFO - NFC初期化完了
+2025-09-25 12:43:48,344 - INFO - 読み取りループ開始
+2025-09-25 12:43:53,539 - INFO - タグ検出: 1d721e720f1080
+2025-09-25 12:43:53,541 - INFO - タグ処理開始
+2025-09-25 12:43:53,550 - INFO - UID: 1d721e720f1080, バイト列: [29, 114, 30, 114, 15, 16, 128]
+2025-09-25 12:43:53,563 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d721e720f1080
+2025-09-25 12:43:53,577 - INFO - NFCタグ書き込み開始
+2025-09-25 12:43:53,582 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:43:53,583 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:43:53,603 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:43:53,618 - INFO - Bluetooth送信開始
+2025-09-25 12:43:53,622 - INFO - Bluetooth送信開始 - UID: 1d721e720f1080
+2025-09-25 12:43:53,699 - INFO - Bluetooth送信完了 - UID: 1d721e720f1080
+2025-09-25 12:43:53,701 - INFO - Bluetooth送信完了
+2025-09-25 12:43:53,706 - INFO - タグ処理完了
+2025-09-25 12:44:33,309 - INFO - 読み取りループ終了
+2025-09-25 12:44:34,165 - INFO - アプリケーション終了
+2025-09-25 12:44:36,328 - INFO - アプリケーション開始
+2025-09-25 12:44:36,457 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 12:44:36,458 - INFO - Linux全画面表示設定完了
+2025-09-25 12:44:36,510 - INFO - NFC初期化開始
+2025-09-25 12:44:36,522 - INFO - I2C初期化完了
+2025-09-25 12:44:36,541 - INFO - PN532オブジェクト作成完了
+2025-09-25 12:44:36,557 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 12:44:36,573 - INFO - SAM設定完了
+2025-09-25 12:44:36,574 - INFO - NFC初期化完了
+2025-09-25 12:44:36,574 - INFO - 読み取りループ開始
+2025-09-25 12:44:41,472 - INFO - タグ検出: 1d721e720f1080
+2025-09-25 12:44:41,474 - INFO - タグ処理開始
+2025-09-25 12:44:41,477 - INFO - UID: 1d721e720f1080, バイト列: [29, 114, 30, 114, 15, 16, 128]
+2025-09-25 12:44:41,487 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d721e720f1080
+2025-09-25 12:44:41,496 - INFO - NFCタグ書き込み開始
+2025-09-25 12:44:41,519 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:44:41,520 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:44:41,533 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:44:41,554 - INFO - Bluetooth送信開始
+2025-09-25 12:44:41,557 - INFO - Bluetooth送信開始 - UID: 1d721e720f1080
+2025-09-25 12:44:41,598 - INFO - Bluetooth送信完了 - UID: 1d721e720f1080
+2025-09-25 12:44:41,600 - INFO - Bluetooth送信完了
+2025-09-25 12:44:41,604 - INFO - タグ処理完了
+2025-09-25 12:45:40,559 - INFO - タグ検出: 1d641e720f1080
+2025-09-25 12:45:40,560 - INFO - タグ処理開始
+2025-09-25 12:45:40,570 - INFO - UID: 1d641e720f1080, バイト列: [29, 100, 30, 114, 15, 16, 128]
+2025-09-25 12:45:40,586 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d641e720f1080
+2025-09-25 12:45:40,598 - INFO - NFCタグ書き込み開始
+2025-09-25 12:45:40,691 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:45:40,691 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:45:40,692 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:45:40,693 - INFO - Bluetooth送信開始
+2025-09-25 12:45:40,695 - INFO - Bluetooth送信開始 - UID: 1d641e720f1080
+2025-09-25 12:45:40,774 - INFO - Bluetooth送信完了 - UID: 1d641e720f1080
+2025-09-25 12:45:40,777 - INFO - Bluetooth送信完了
+2025-09-25 12:45:40,780 - INFO - タグ処理完了
+2025-09-25 12:45:46,545 - INFO - タグ検出: 1d761e720f1080
+2025-09-25 12:45:46,546 - INFO - タグ処理開始
+2025-09-25 12:45:46,550 - INFO - UID: 1d761e720f1080, バイト列: [29, 118, 30, 114, 15, 16, 128]
+2025-09-25 12:45:46,553 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d761e720f1080
+2025-09-25 12:45:46,560 - INFO - NFCタグ書き込み開始
+2025-09-25 12:45:46,573 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:45:46,574 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:45:46,575 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:45:46,576 - INFO - Bluetooth送信開始
+2025-09-25 12:45:46,581 - INFO - Bluetooth送信開始 - UID: 1d761e720f1080
+2025-09-25 12:45:46,631 - INFO - Bluetooth送信完了 - UID: 1d761e720f1080
+2025-09-25 12:45:46,632 - INFO - Bluetooth送信完了
+2025-09-25 12:45:46,636 - INFO - タグ処理完了
+2025-09-25 12:45:51,594 - INFO - タグ検出: 1d321e720f1080
+2025-09-25 12:45:51,596 - INFO - タグ処理開始
+2025-09-25 12:45:51,597 - INFO - UID: 1d321e720f1080, バイト列: [29, 50, 30, 114, 15, 16, 128]
+2025-09-25 12:45:51,615 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d321e720f1080
+2025-09-25 12:45:51,634 - INFO - NFCタグ書き込み開始
+2025-09-25 12:45:51,662 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:45:51,663 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:45:51,667 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:45:51,669 - INFO - Bluetooth送信開始
+2025-09-25 12:45:51,673 - INFO - Bluetooth送信開始 - UID: 1d321e720f1080
+2025-09-25 12:45:51,731 - INFO - Bluetooth送信完了 - UID: 1d321e720f1080
+2025-09-25 12:45:51,738 - INFO - Bluetooth送信完了
+2025-09-25 12:45:51,768 - INFO - タグ処理完了
+2025-09-25 12:46:10,290 - INFO - タグ検出: 1d5a20720f1080
+2025-09-25 12:46:10,292 - INFO - タグ処理開始
+2025-09-25 12:46:10,302 - INFO - UID: 1d5a20720f1080, バイト列: [29, 90, 32, 114, 15, 16, 128]
+2025-09-25 12:46:10,306 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5a20720f1080
+2025-09-25 12:46:10,325 - INFO - NFCタグ書き込み開始
+2025-09-25 12:46:10,371 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:46:10,372 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:46:10,376 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:46:10,383 - INFO - Bluetooth送信開始
+2025-09-25 12:46:10,385 - INFO - Bluetooth送信開始 - UID: 1d5a20720f1080
+2025-09-25 12:46:10,436 - INFO - Bluetooth送信完了 - UID: 1d5a20720f1080
+2025-09-25 12:46:10,437 - INFO - Bluetooth送信完了
+2025-09-25 12:46:10,441 - INFO - タグ処理完了
+2025-09-25 12:46:34,443 - INFO - タグ検出: 1d5a20720f1080
+2025-09-25 12:46:34,445 - INFO - タグ処理開始
+2025-09-25 12:46:34,448 - INFO - UID: 1d5a20720f1080, バイト列: [29, 90, 32, 114, 15, 16, 128]
+2025-09-25 12:46:34,454 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d5a20720f1080
+2025-09-25 12:46:34,465 - INFO - NFCタグ書き込み開始
+2025-09-25 12:46:34,561 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:46:34,562 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:46:34,563 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:46:34,565 - INFO - Bluetooth送信開始
+2025-09-25 12:46:34,566 - INFO - Bluetooth送信開始 - UID: 1d5a20720f1080
+2025-09-25 12:46:34,596 - INFO - Bluetooth送信完了 - UID: 1d5a20720f1080
+2025-09-25 12:46:34,597 - INFO - Bluetooth送信完了
+2025-09-25 12:46:34,600 - INFO - タグ処理完了
+2025-09-25 12:47:24,902 - INFO - タグ検出: 1d601e720f1080
+2025-09-25 12:47:24,904 - INFO - タグ処理開始
+2025-09-25 12:47:24,906 - INFO - UID: 1d601e720f1080, バイト列: [29, 96, 30, 114, 15, 16, 128]
+2025-09-25 12:47:24,918 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d601e720f1080
+2025-09-25 12:47:24,934 - INFO - NFCタグ書き込み開始
+2025-09-25 12:47:24,980 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:47:24,981 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:47:24,983 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:47:24,984 - INFO - Bluetooth送信開始
+2025-09-25 12:47:24,987 - INFO - Bluetooth送信開始 - UID: 1d601e720f1080
+2025-09-25 12:47:25,018 - INFO - Bluetooth送信完了 - UID: 1d601e720f1080
+2025-09-25 12:47:25,024 - INFO - Bluetooth送信完了
+2025-09-25 12:47:25,033 - INFO - タグ処理完了
+2025-09-25 12:47:27,952 - INFO - タグ検出: 1d601e720f1080
+2025-09-25 12:47:27,953 - INFO - タグ処理開始
+2025-09-25 12:47:27,953 - INFO - UID: 1d601e720f1080, バイト列: [29, 96, 30, 114, 15, 16, 128]
+2025-09-25 12:47:27,959 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1d601e720f1080
+2025-09-25 12:47:27,967 - INFO - NFCタグ書き込み開始
+2025-09-25 12:47:27,972 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:47:27,973 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 12:47:27,975 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 12:47:27,977 - INFO - Bluetooth送信開始
+2025-09-25 12:47:27,979 - INFO - Bluetooth送信開始 - UID: 1d601e720f1080
+2025-09-25 12:47:28,006 - INFO - Bluetooth送信完了 - UID: 1d601e720f1080
+2025-09-25 12:47:28,007 - INFO - Bluetooth送信完了
+2025-09-25 12:47:28,010 - INFO - タグ処理完了
+2025-09-25 13:36:52,527 - INFO - 読み取りループ終了
+2025-09-25 13:36:53,842 - INFO - アプリケーション終了
+2025-09-25 16:50:44,389 - INFO - アプリケーション開始
+2025-09-25 16:50:44,527 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 16:50:44,528 - INFO - Linux全画面表示設定完了
+2025-09-25 16:50:44,593 - INFO - NFC初期化開始
+2025-09-25 16:50:44,606 - INFO - I2C初期化完了
+2025-09-25 16:50:44,638 - INFO - PN532オブジェクト作成完了
+2025-09-25 16:50:44,656 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 16:50:44,673 - INFO - SAM設定完了
+2025-09-25 16:50:44,674 - INFO - NFC初期化完了
+2025-09-25 16:50:44,676 - INFO - 読み取りループ開始
+2025-09-25 16:50:47,401 - INFO - タグ検出: 1dcd21720f1080
+2025-09-25 16:50:47,403 - INFO - タグ処理開始
+2025-09-25 16:50:47,403 - INFO - UID: 1dcd21720f1080, バイト列: [29, 205, 33, 114, 15, 16, 128]
+2025-09-25 16:50:47,406 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dcd21720f1080
+2025-09-25 16:50:47,414 - INFO - NFCタグ書き込み開始
+2025-09-25 16:50:47,421 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:50:47,422 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:50:47,428 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 16:50:47,432 - INFO - Bluetooth送信開始
+2025-09-25 16:50:47,435 - INFO - Bluetooth送信開始 - UID: 1dcd21720f1080
+2025-09-25 16:50:47,461 - INFO - Bluetooth送信完了 - UID: 1dcd21720f1080
+2025-09-25 16:50:47,473 - INFO - Bluetooth送信完了
+2025-09-25 16:50:47,478 - INFO - タグ処理完了
+2025-09-25 16:50:49,515 - INFO - タグ検出: 1dcd21720f1080
+2025-09-25 16:50:49,517 - INFO - タグ処理開始
+2025-09-25 16:50:49,521 - INFO - UID: 1dcd21720f1080, バイト列: [29, 205, 33, 114, 15, 16, 128]
+2025-09-25 16:50:49,535 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dcd21720f1080
+2025-09-25 16:50:49,542 - INFO - NFCタグ書き込み開始
+2025-09-25 16:50:49,581 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:50:49,583 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:50:49,586 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 16:50:49,588 - INFO - Bluetooth送信開始
+2025-09-25 16:50:49,598 - INFO - Bluetooth送信開始 - UID: 1dcd21720f1080
+2025-09-25 16:50:49,617 - INFO - Bluetooth送信完了 - UID: 1dcd21720f1080
+2025-09-25 16:50:49,619 - INFO - Bluetooth送信完了
+2025-09-25 16:50:49,623 - INFO - タグ処理完了
+2025-09-25 16:50:51,773 - INFO - タグ検出: 1dcd21720f1080
+2025-09-25 16:50:51,775 - INFO - タグ処理開始
+2025-09-25 16:50:51,778 - INFO - UID: 1dcd21720f1080, バイト列: [29, 205, 33, 114, 15, 16, 128]
+2025-09-25 16:50:51,787 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dcd21720f1080
+2025-09-25 16:50:51,803 - INFO - NFCタグ書き込み開始
+2025-09-25 16:50:51,812 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:50:51,813 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:50:51,817 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 16:50:51,822 - INFO - Bluetooth送信開始
+2025-09-25 16:50:51,827 - INFO - Bluetooth送信開始 - UID: 1dcd21720f1080
+2025-09-25 16:50:51,870 - INFO - Bluetooth送信完了 - UID: 1dcd21720f1080
+2025-09-25 16:50:51,875 - INFO - Bluetooth送信完了
+2025-09-25 16:50:51,882 - INFO - タグ処理完了
+2025-09-25 16:50:53,922 - INFO - タグ検出: 1dcd21720f1080
+2025-09-25 16:50:53,923 - INFO - タグ処理開始
+2025-09-25 16:50:53,927 - INFO - UID: 1dcd21720f1080, バイト列: [29, 205, 33, 114, 15, 16, 128]
+2025-09-25 16:50:53,933 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dcd21720f1080
+2025-09-25 16:50:53,942 - INFO - NFCタグ書き込み開始
+2025-09-25 16:50:53,960 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:50:53,960 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:50:53,962 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 337, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 381, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 16:50:53,963 - INFO - Bluetooth送信開始
+2025-09-25 16:50:53,965 - INFO - Bluetooth送信開始 - UID: 1dcd21720f1080
+2025-09-25 16:50:53,981 - INFO - Bluetooth送信完了 - UID: 1dcd21720f1080
+2025-09-25 16:50:53,983 - INFO - Bluetooth送信完了
+2025-09-25 16:50:53,988 - INFO - タグ処理完了
+2025-09-25 16:52:10,695 - INFO - 読み取りループ終了
+2025-09-25 16:52:11,053 - INFO - アプリケーション終了
+2025-09-25 16:52:36,243 - INFO - アプリケーション開始
+2025-09-25 16:52:36,378 - INFO - NFCリーダーアプリケーション開始
+2025-09-25 16:52:36,379 - INFO - Linux全画面表示設定完了
+2025-09-25 16:52:36,440 - INFO - NFC初期化開始
+2025-09-25 16:52:36,454 - INFO - I2C初期化完了
+2025-09-25 16:52:36,489 - INFO - PN532オブジェクト作成完了
+2025-09-25 16:52:36,507 - INFO - ファームウェアバージョン: 1.6
+2025-09-25 16:52:36,526 - INFO - SAM設定完了
+2025-09-25 16:52:36,527 - INFO - NFC初期化完了
+2025-09-25 16:52:36,529 - INFO - 読み取りループ開始
+2025-09-25 16:52:40,443 - INFO - タグ検出: 1dcd21720f1080
+2025-09-25 16:52:40,445 - INFO - タグ処理開始
+2025-09-25 16:52:40,446 - INFO - UID: 1dcd21720f1080, バイト列: [29, 205, 33, 114, 15, 16, 128]
+2025-09-25 16:52:40,452 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dcd21720f1080
+2025-09-25 16:52:40,461 - INFO - NFCタグ書き込み開始
+2025-09-25 16:52:40,463 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:52:40,465 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:52:40,468 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 340, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 384, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 16:52:40,478 - INFO - Bluetooth送信開始
+2025-09-25 16:52:40,496 - INFO - Bluetooth送信開始 - マシン番号付きUID: 11dcd21720f1080
+2025-09-25 16:52:40,519 - INFO - Bluetooth送信完了 - マシン番号付きUID: 11dcd21720f1080
+2025-09-25 16:52:40,529 - INFO - Bluetooth送信完了
+2025-09-25 16:52:40,550 - INFO - タグ処理完了
+2025-09-25 16:52:49,412 - INFO - タグ検出: 1dcd21720f1080
+2025-09-25 16:52:49,415 - INFO - タグ処理開始
+2025-09-25 16:52:49,423 - INFO - UID: 1dcd21720f1080, バイト列: [29, 205, 33, 114, 15, 16, 128]
+2025-09-25 16:52:49,433 - INFO - 生成URL: https://akioka-sub.cloud/questionnaire/1dcd21720f1080
+2025-09-25 16:52:49,446 - INFO - NFCタグ書き込み開始
+2025-09-25 16:52:49,461 - ERROR - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:52:49,464 - WARNING - NFCタグ書き込みエラー: 'NoneType' object is not subscriptable
+2025-09-25 16:52:49,467 - WARNING - 詳細エラー情報: Traceback (most recent call last):
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 340, in _write_to_nfc_tag
+    self.write_to_tag(uid_str)
+  File "/home/to-murakami/Documents/otex-nfc-app/main.py", line 384, in write_to_tag
+    self.pn532.ntag2xx_write_block(page, block)
+  File "/home/to-murakami/.local/lib/python3.11/site-packages/adafruit_pn532/adafruit_pn532.py", line 589, in ntag2xx_write_block
+    return response[0] == 0x00
+           ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-09-25 16:52:49,474 - INFO - Bluetooth送信開始
+2025-09-25 16:52:49,478 - INFO - Bluetooth送信開始 - マシン番号付きUID: 11dcd21720f1080
+2025-09-25 16:52:49,531 - INFO - Bluetooth送信完了 - マシン番号付きUID: 11dcd21720f1080
+2025-09-25 16:52:49,533 - INFO - Bluetooth送信完了
+2025-09-25 16:52:49,536 - INFO - タグ処理完了

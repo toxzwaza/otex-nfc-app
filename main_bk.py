@@ -29,9 +29,6 @@ class NFCReaderGUI:
         self.root = root
         self.root.title("NFCリーダー")
         
-        # マシン番号の設定
-        self.machine_no = 1
-        
         logger.info("NFCリーダーアプリケーション開始")
         
         # 全画面表示
@@ -412,17 +409,15 @@ class NFCReaderGUI:
     def send_to_camera(self, uid_str):
         """BluetoothでUIDを送信"""
         try:
-            # machine_noを[1]の形式で先頭に付与
-            message_to_send = f"[{self.machine_no}]{uid_str}"
-            logger.info(f"Bluetooth送信開始 - マシン番号付きUID: {message_to_send}")
+            logger.info(f"Bluetooth送信開始 - UID: {uid_str}")
             self.send_label.config(text="Bluetooth接続中...", foreground="blue")
             self.bluetooth_label.config(text="接続中...", foreground="orange")
             
             # Bluetooth送信実行
-            send_message(message_to_send)
+            send_message(uid_str)
             
             # 成功時の表示更新
-            logger.info(f"Bluetooth送信完了 - マシン番号付きUID: {message_to_send}")
+            logger.info(f"Bluetooth送信完了 - UID: {uid_str}")
             self.send_label.config(text="Bluetooth送信成功", foreground="green")
             self.bluetooth_label.config(text="接続済み", foreground="green")
             
